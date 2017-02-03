@@ -21,3 +21,12 @@ h2 {display:inline;}
     font-size:12px; margin:6px 0;overflow:auto; 
 }
 
+/* Header */
+
+#header{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
