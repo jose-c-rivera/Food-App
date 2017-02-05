@@ -1,0 +1,91 @@
+body{
+ width: 100%;
+ padding: 0;
+ margin: 0; 
+ font-family: 'Montserrat', sans-serif;
+ background-color: white;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#indexHeader{
+  background: url(../images/indexbanner.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#logo{
+  min-width:200px;
+  height: 100px;
+  margin: 50px 0 0 100px;
+  color: white;
+  display: inline;
+  float: left;
+}
+
+#nav{
+  display: inline;
+  height: 100px;
+  float: right;
+  padding: 0px;
+  margin: 50px 100px 0 0;
+}
+
+ul {
+    padding-top: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #cccccc;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  text-decoration: underline;
+}
+
+#content{
+  max-width:1000px;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+  clear: both;
+  
+}
+
+#content p{
+  text-align: justify;
+}
+
+#footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 100px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding-top: 20px;
+}
