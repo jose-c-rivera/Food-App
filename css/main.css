@@ -21,11 +21,11 @@ h1{
 }
 
 .homeHeader{
-  background: url(../images/indexbanner.jpg);
+  background: url(/images/indexbanner.jpg);
 }
 
 .rosterHeader{
-  background: url(../images/teambanner.jpg);
+  background: url(/images/teambanner.jpg);
 }
 
 #logo{
