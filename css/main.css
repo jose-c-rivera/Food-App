@@ -33,6 +33,14 @@ h1{
   background: url(/images/planpagebanner.jpg);
 }
 
+.softwareHeader{
+  background: url(/images/softwarebanner.jpg);
+}
+
+.uiHeader{
+  background: url(/images/uibanner.jpg);
+}
+
 #logo{
   min-width:200px;
   height: 100px;
