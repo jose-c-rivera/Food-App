@@ -106,8 +106,9 @@ li a:hover {
   clear: both;
 }
 
-.class{
+.uml{
    width: 100%;
+   max-width: 100%;
 }
 
 #content p{
