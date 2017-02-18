@@ -2,12 +2,13 @@ package webapp
 
 class Event {
 
-    String date;
-    int time;
-    String location;
+    String date
+    int time
+    String location
     List<profile> invitees
 
     static constraints = {
+
     }
 
     def setDate(){
