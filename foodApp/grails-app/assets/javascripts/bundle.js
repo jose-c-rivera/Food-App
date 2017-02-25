@@ -12501,7 +12501,7 @@ var Discover = _react2.default.createClass({
             ),
             _react2.default.createElement(
                 'button',
-                { id: 'nAmerica', containerElement: _react2.default.createElement(_reactRouter.Link, { to: '/NorthAmerica' }), linkButton: true },
+                { id: 'nAmerica' },
                 'NORTH AMERICA'
             ),
             _react2.default.createElement(
