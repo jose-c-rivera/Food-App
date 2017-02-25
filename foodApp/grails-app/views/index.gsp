@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
 <head>
-    <title>Something Something</title>
+        <title>Food App</title>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'text.css')}" type = "text/css">
 </head>
 <body>
-<div id="createAccount" align="left"></div>
+<div id="root" align="left"></div>
 <br/>
 <asset:javascript src="bundle.js"/>
 </body>

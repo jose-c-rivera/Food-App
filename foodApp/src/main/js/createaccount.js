@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router'
 
 let CreateAcc = React.createClass({
     getInitialState (){
@@ -58,6 +59,7 @@ let CreateAcc = React.createClass({
 
     render (){
        return (
+
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>
@@ -80,6 +82,10 @@ let CreateAcc = React.createClass({
                            onClick = {this.handleClick}/>
                     I agree to the terms of service
                 </form>
+                <br/>
+                <ul>
+                    <li><Link to="/menu">LOG IN</Link></li>
+                </ul>
             </div>
             )
         },

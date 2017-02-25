@@ -5,11 +5,11 @@
 var path = require('path');
 
 module.exports = {
-    entry : "./src/main/js/index.js",
+    entry: './src/main/js/index.js',
     output : {
         path : './grails-app/assets/javascripts',
         publicPath: '/assets/',
-        filename : "bundle.js"
+        filename : 'bundle.js'
     },
     module: {
         loaders: [
@@ -20,7 +20,7 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
-            }
+            },
         ]
     }
 };
