@@ -5,17 +5,15 @@ let Delete = React.createClass({
 
     getInitialState: function() {
         return {
-            new_name: ''
         }
     },
 
       handleChange(e) {
         e.preventDefault();
-        this.setState({new_name: e.target.value});
       }
 
       handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.new_name);
+        alert('Your account is delete');
         event.preventDefault();
       }
 
@@ -23,10 +21,9 @@ let Delete = React.createClass({
            return(
            <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>New Name
-                    <input type="text" value={this.state.new_name} onChange={this.handleChange} />
+                    <label>Are you sure to delete your account?
                     </label>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Delete" />
                 </form>
                 <button><Link to="/setting" style={{display: 'block', height: '100%'}}>Back to Setting</Link></button>
             </div>
