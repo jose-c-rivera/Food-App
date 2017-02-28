@@ -5,6 +5,31 @@ body {
 head {
     background: url(http://www.shunvmall.com/data/out/244/46913747-wallpaper-orange.png) no-repeat;
 }
+
+#Login{
+    position: absolute;
+    text-align:left;
+    vertical-align: middle;
+    background: #567d87;
+    border: 3px solid #245b87;
+    width: 350px;
+    height: 500px;
+    top: 30%;
+    left: 40%;
+    margin: auto;
+
+}
+
+#divider{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 #back{
     outline: 0;
     padding: 0;

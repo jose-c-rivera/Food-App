@@ -60,20 +60,50 @@ let CreateAcc = React.createClass({
     render (){
        return (
 
-            <div>
+            <div id="Login">
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         <input type = "text"
-                               value={this.state.userName}
-                               onChange={this.handleUserChange} />
-                                Enter a username
+                               password = {true}
+                               value = {this.state.password}
+                               onChange = {this.handlePasswordChange} />
+                        First Name
+                        <br/>
                         <br/>
                         <input type = "text"
                                password = {true}
                                value = {this.state.password}
                                onChange = {this.handlePasswordChange} />
-                                Enter a password
+                               Last Name
+                        <br/>
+                        <br/>
+                        <input type = "text"
+                               password = {true}
+                               value = {this.state.password}
+                               onChange = {this.handlePasswordChange} />
+                               Phone Number
+                        <br/>
+                        <br/>
+                        <input type = "text"
+                               password = {true}
+                               value = {this.state.password}
+                               onChange = {this.handlePasswordChange} />
+                               Location
+                        <br/>
+                        <br/>
+                        <input type = "text"
+                               value={this.state.userName}
+                               onChange={this.handleUserChange} />
+                               Enter a username
+                        <br/>
+                        <br/>
+                        <input type = "text"
+                               password = {true}
+                               value = {this.state.password}
+                               onChange = {this.handlePasswordChange} />
+                               Enter a password
                     </label>
+                    <br/>
                     <br/>
                     <input type= "submit"
                     value="Create Account!" />
@@ -83,9 +113,34 @@ let CreateAcc = React.createClass({
                     I agree to the terms of service
                 </form>
                 <br/>
-                <ul>
-                    <li><Link to="/menu">LOG IN</Link></li>
-                </ul>
+                <br/>
+                <hr id="divider"/>
+                <br/>
+
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        <input type = "text"
+                               value={this.state.userName}
+                               onChange={this.handleUserChange} />
+                        Enter a username
+                        <br/>
+                        <br/>
+                        <input type = "text"
+                               password = {true}
+                               value = {this.state.password}
+                               onChange = {this.handlePasswordChange} />
+                        Enter a password
+                    </label>
+                    <br/>
+                    <br/>
+                    <input type= "submit"
+                           value="Log In!" />
+                </form>
+                <br/>
+                <br/>
+
+                <button><Link to="/menu" style={{display: 'block', height: '100%'}}>TEMP LOG IN</Link></button>
+
             </div>
             )
         },

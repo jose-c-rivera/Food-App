@@ -12350,7 +12350,66 @@ var CreateAcc = _react2.default.createClass({
     render: function render() {
         return _react2.default.createElement(
             'div',
-            null,
+            { id: 'Login' },
+            _react2.default.createElement(
+                'form',
+                { onSubmit: this.handleSubmit },
+                _react2.default.createElement(
+                    'label',
+                    null,
+                    _react2.default.createElement('input', { type: 'text',
+                        password: true,
+                        value: this.state.password,
+                        onChange: this.handlePasswordChange }),
+                    'First Name',
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        password: true,
+                        value: this.state.password,
+                        onChange: this.handlePasswordChange }),
+                    'Last Name',
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        password: true,
+                        value: this.state.password,
+                        onChange: this.handlePasswordChange }),
+                    'Phone Number',
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        password: true,
+                        value: this.state.password,
+                        onChange: this.handlePasswordChange }),
+                    'Location',
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        value: this.state.userName,
+                        onChange: this.handleUserChange }),
+                    'Enter a username',
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        password: true,
+                        value: this.state.password,
+                        onChange: this.handlePasswordChange }),
+                    'Enter a password'
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement('input', { type: 'submit',
+                    value: 'Create Account!' }),
+                _react2.default.createElement('input', { type: 'checkbox',
+                    checked: this.state.checked,
+                    onClick: this.handleClick }),
+                'I agree to the terms of service'
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('hr', { id: 'divider' }),
+            _react2.default.createElement('br', null),
             _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
@@ -12362,6 +12421,7 @@ var CreateAcc = _react2.default.createClass({
                         onChange: this.handleUserChange }),
                     'Enter a username',
                     _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null),
                     _react2.default.createElement('input', { type: 'text',
                         password: true,
                         value: this.state.password,
@@ -12369,25 +12429,20 @@ var CreateAcc = _react2.default.createClass({
                     'Enter a password'
                 ),
                 _react2.default.createElement('br', null),
+                _react2.default.createElement('br', null),
                 _react2.default.createElement('input', { type: 'submit',
-                    value: 'Create Account!' }),
-                _react2.default.createElement('input', { type: 'checkbox',
-                    checked: this.state.checked,
-                    onClick: this.handleClick }),
-                'I agree to the terms of service'
+                    value: 'Log In!' })
             ),
             _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
             _react2.default.createElement(
-                'ul',
+                'button',
                 null,
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/menu' },
-                        'LOG IN'
-                    )
+                    _reactRouter.Link,
+                    { to: '/menu', style: { display: 'block', height: '100%' } },
+                    'TEMP LOG IN'
                 )
             )
         );

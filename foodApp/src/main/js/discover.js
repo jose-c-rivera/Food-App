@@ -10,16 +10,16 @@ let Discover = React.createClass({
     render(){
         return(
             <div>
-                <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}></Link></button>
+                <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
 
                 <li><Link to="/">LOG OUT</Link></li>
 
                 <button id="nAmerica"><Link to="/NorthAmerica" style={{display: 'block', height: '100%'}}/></button>
-                <button id="sAmerica"><Link to="/SouthAmerica" style={{display: 'block', height: '100%'}}></Link></button>
-                <button id="Europe"><Link to="/Europe" style={{display: 'block', height: '100%'}}></Link></button>
-                <button id="AsiaME"><Link to="/Asia" style={{display: 'block', height: '100%'}}></Link></button>
-                <button id="Africa"><Link to="/Africa" style={{display: 'block', height: '100%'}}></Link></button>
-                <button id="Australia"><Link to="/Australia" style={{display: 'block', height: '100%'}}></Link></button>
+                <button id="sAmerica"><Link to="/SouthAmerica" style={{display: 'block', height: '100%'}}/></button>
+                <button id="Europe"><Link to="/Europe" style={{display: 'block', height: '100%'}}/></button>
+                <button id="AsiaME"><Link to="/Asia" style={{display: 'block', height: '100%'}}/></button>
+                <button id="Africa"><Link to="/Africa" style={{display: 'block', height: '100%'}}/></button>
+                <button id="Australia"><Link to="/Australia" style={{display: 'block', height: '100%'}}/></button>
             </div>
         )
     },

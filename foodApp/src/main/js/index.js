@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import { CreateAccount } from './createaccount';
-import { Menus } from './menu';
+import { CreateAccount } from './createaccount'
+import { Menus } from './menu'
 import { DiscoverApp } from './discover'
 import { northAmerica } from './northAmerica'
 import { southAmerica } from './southAmerica'
