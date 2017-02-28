@@ -10,6 +10,7 @@ let Africa = React.createClass({
     render(){
         return(
             <div>
+                <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}></Link></button>
                 <h1>AFRICA MAP PLACE-HOLDER</h1>
                 <li><Link to="/discover">DISCOVER</Link></li>
             </div>

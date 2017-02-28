@@ -16,7 +16,7 @@ head {
     position:absolute;
     transition: .5s ease;
     top: 5%;
-    left: 10%;
+    left: 5%;
 }
 
 #back:hover {
@@ -143,6 +143,7 @@ head {
 }
 /*------------------------------------------------------------CONTINENT SELECT BUTTONS-------------------------------------------------------------------------------------*/
 #nAmerica {
+    display: block;
     height: 280px;
     width: 270px;
     position:absolute;

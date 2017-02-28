@@ -13,11 +13,10 @@ let Menu = React.createClass({
     render(){
         return(
            <div>
-               <button id="Discover_button"></button>
                <ul>
                    <li><Link to="/">LOG OUT</Link></li>
-                   <li><Link to="/discover">DISCOVER</Link></li>
                </ul>
+               <button id="Discover_button"><Link to="/discover" style={{display: 'block', height: '100%'}}></Link></button>
                <button id="Planner_button"></button>
                <button id="Trending_button"></button>
                <button id="Profile_button"></button>
