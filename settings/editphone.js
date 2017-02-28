@@ -23,7 +23,7 @@ let Editphone = React.createClass({
            return(
            <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>New Name
+                    <label>New Phone
                     <input type="text" value={this.state.phone} onChange={this.handleChange} />
                     </label>
                     <input type="submit" value="Submit" />
