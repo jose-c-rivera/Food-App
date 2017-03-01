@@ -1,6 +1,7 @@
 package foodapp
 
 class Profile {
+    static mapWith = "mongo"
     UserAccount ownerAccount
     ProfileInfo info
     FriendList friendList

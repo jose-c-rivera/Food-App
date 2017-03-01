@@ -1,7 +1,7 @@
 package foodapp
 
 class ProfileInfo {
-
+    static mapWith = "mongo"
     String firstName
     String lastName
     String email
