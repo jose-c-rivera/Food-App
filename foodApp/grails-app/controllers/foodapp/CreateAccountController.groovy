@@ -19,11 +19,12 @@ class CreateAccountController extends RestfulController {
         def password = params.password
         // We would search for the account in the DB here
         //def account = UserAccount.find{userName == userName}
-        def account = null
+        def account = UserAccount.find{userName == userName}
         if(account == null){
             account = new UserAccount(userName : userName, password : password )
+            account.save()
             // We would save this in a DB here
-            new Profile(ownerAccount: account)
+            //new Profile(ownerAccount: account)
             //just for testing take out later
             System.out.print('created')
             response.status = 200

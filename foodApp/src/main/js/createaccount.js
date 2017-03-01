@@ -6,7 +6,10 @@ let CreateAcc = React.createClass({
         return{
             userName : '',
             password : '',
+            confirmPassword : '',
+            invalidPassword : false,
             success : '',
+            email  : '',
             checked : this.checked || false
         }
     },
@@ -22,12 +25,29 @@ let CreateAcc = React.createClass({
         this.setState({password : e.target.value});
     },
 
+    handleConfirmChange (e){
+      e.preventDefault();
+      this.setState({confirmPassword : e.target.value})
+    },
+
     handleSubmit(e){
         e.preventDefault();
         let userName = this.state.userName;
         let password = this.state.password;
         let termsOfService = this.state.checked;
+        let confirmPassword = this.state.confirmPassword;
 
+        // Checks the confirmed password for validity
+        if(password != confirmPassword) {
+            this.setState({invalidPassword : true});
+            alert("passwords dont match...should make a component appear to tell you this...")
+            this.forceUpdate();
+            return;
+        }
+        else{
+            this.setState({invalidPassword : false});
+        }
+        // Checks if TOS has been agreed to
         if(termsOfService) {
             fetch('http://localhost:8080/createAccount/create?'
                 + 'userName=' + userName + '&password=' + password, {
@@ -57,54 +77,31 @@ let CreateAcc = React.createClass({
         this.setState({checked: e.target.checked})
     },
 
-    render (){
+    render : function() {
        return (
 
-            <div id="Login">
+            <div id="CreateAccount">
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <label>UserName</label>
+                    <div>
                         <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
+                               placeholder="Username"
+                               ref="username"
+                               onChange = {this.handleUserChange} />
+                    </div>
+                    <label>Password</label>
+                    <div>
+                        <input type = "password"
+                               placeholder="Password"
                                onChange = {this.handlePasswordChange} />
-                        First Name
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
-                               onChange = {this.handlePasswordChange} />
-                               Last Name
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
-                               onChange = {this.handlePasswordChange} />
-                               Phone Number
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
-                               onChange = {this.handlePasswordChange} />
-                               Location
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               value={this.state.userName}
-                               onChange={this.handleUserChange} />
-                               Enter a username
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
-                               onChange = {this.handlePasswordChange} />
-                               Enter a password
-                    </label>
-                    <br/>
-                    <br/>
+                    </div>
+                    <label>Confirm your password</label>
+                    <div>
+                        <input type = "password"
+                               placeholder="Confirm Password"
+                               onChange={this.handleConfirmChange} />
+                        {this.state.invalidPassword ? <confirmPassword /> : null}
+                    </div>
                     <input type= "submit"
                     value="Create Account!" />
                     <input type = "checkbox"
@@ -112,39 +109,26 @@ let CreateAcc = React.createClass({
                            onClick = {this.handleClick}/>
                     I agree to the terms of service
                 </form>
-                <br/>
-                <br/>
-                <hr id="divider"/>
-                <br/>
 
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        <input type = "text"
-                               value={this.state.userName}
-                               onChange={this.handleUserChange} />
-                        Enter a username
-                        <br/>
-                        <br/>
-                        <input type = "text"
-                               password = {true}
-                               value = {this.state.password}
-                               onChange = {this.handlePasswordChange} />
-                        Enter a password
-                    </label>
-                    <br/>
-                    <br/>
-                    <input type= "submit"
-                           value="Log In!" />
-                </form>
-                <br/>
-                <br/>
-
-                <button><Link to="/menu" style={{display: 'block', height: '100%'}}>TEMP LOG IN</Link></button>
+                <button><Link to="/" style={{display: 'block', height: '100%'}}>Sign In</Link></button>
 
             </div>
             )
         },
     });
+
+/*
+This was the class i was using to display a non matching PW error....
+ */
+var confirmPassword = React.createClass({
+   render : function(){
+       return(
+           <div id="failPW">
+               <label>The passwords entered do not match! Try again..</label>
+           </div>
+       )
+   }
+});
 
 
 

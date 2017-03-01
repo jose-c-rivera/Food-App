@@ -10,21 +10,23 @@ import { europe } from './europe'
 import { africa } from './africa'
 import { asia } from './asiaME'
 import { australia } from './australia'
+import { UserSignIn } from './signin'
 
 
 ReactDOM.render((
 
     <Router history = {browserHistory}>
-        <Route path="/" component={CreateAccount}/>
+        <Route path="/" component={UserSignIn}/>
         <Route path="/menu" component={Menus}/>
-        <Route path="/discover" component={DiscoverApp}/>
+            <Route path="/createaccount" component={CreateAccount} />
+            <Route path="/discover" component={DiscoverApp}/>
 
-        <Route path="/NorthAmerica" component={northAmerica}/>
-        <Route path="/SouthAmerica" component={southAmerica}/>
-        <Route path="/Europe" component={europe}/>
-        <Route path="/Asia" component={asia}/>
-        <Route path="/Africa" component={africa}/>
-        <Route path="/Australia" component={australia}/>
+                <Route path="/NorthAmerica" component={northAmerica}/>
+                <Route path="/SouthAmerica" component={southAmerica}/>
+                <Route path="/Europe" component={europe}/>
+                <Route path="/Asia" component={asia}/>
+                <Route path="/Africa" component={africa}/>
+                <Route path="/Australia" component={australia}/>
     </Router>
 
 ), document.getElementById('root'));

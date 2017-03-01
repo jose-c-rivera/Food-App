@@ -4,6 +4,8 @@ buildscript {
         maven { url "https://repo.grails.org/grails/core" }
     }
     dependencies {
+        classpath 'com.moowork.gradle:gradle-node-plugin:0.12'
+        classpath 'com.moowork.gradle:gradle-grunt-plugin:0.12'
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.11.6"
         classpath "org.grails.plugins:hibernate5:6.0.4"
@@ -37,6 +39,8 @@ dependencyManagement {
 }
 
 dependencies {
+    compile 'org.grails.plugins:mongodb:6.0.7'
+    compile("org.grails:gorm-mongodb-spring-boot:6.0.7.RELEASE")
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

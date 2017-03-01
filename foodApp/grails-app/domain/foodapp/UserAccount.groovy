@@ -1,11 +1,7 @@
 package foodapp
 
-import grails.rest.Resource
-
-
-@Resource(uri='/api/useraccount', formats=['json'])
 class UserAccount {
-
+    static mapWith = "mongo"
     String userName
     String password
 
