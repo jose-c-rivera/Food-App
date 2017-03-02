@@ -537,3 +537,9 @@ head {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
+
+#map{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}

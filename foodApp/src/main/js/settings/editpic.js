@@ -16,7 +16,7 @@ let Editpic = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT PICTURE</h1>
                 <form onSubmit={this.handleSubmit}>
                 //need the picture upload compoents
                     <input type="submit" value="Submit" />

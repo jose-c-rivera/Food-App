@@ -21,7 +21,7 @@ let Editpassword = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT PASSWORD</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.password} onChange={this.handleChange} />

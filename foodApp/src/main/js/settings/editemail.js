@@ -21,7 +21,7 @@ let Editemail = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT EMAIL</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.email} onChange={this.handleChange} />

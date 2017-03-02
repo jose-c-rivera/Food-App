@@ -12068,12 +12068,12 @@ var Africa = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'h1',
-                null,
-                'AFRICA MAP PLACE-HOLDER'
+                { id: 'discover_header' },
+                '/ AFRICA'
             ),
             _react2.default.createElement(
                 'li',
@@ -12150,12 +12150,12 @@ var Asia = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'h1',
-                null,
-                'ASIA MAP PLACE-HOLDER'
+                { id: 'discover_header' },
+                '/ ASIA & M.E.'
             ),
             _react2.default.createElement(
                 'li',
@@ -12232,12 +12232,12 @@ var Australia = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'h1',
-                null,
-                'OCEANIA MAP PLACE-HOLDER'
+                { id: 'discover_header' },
+                '/ OCEANIA'
             ),
             _react2.default.createElement(
                 'li',
@@ -12622,12 +12622,12 @@ var Europe = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'h1',
-                null,
-                'EUROPE MAP PLACE-HOLDER'
+                { id: 'discover_header' },
+                '/ EUROPE'
             ),
             _react2.default.createElement(
                 'li',
@@ -12798,7 +12798,7 @@ var NorthAmerica = function (_Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             var el = _reactDom2.default.findDOMNode(this.display);
-            jQuery(el).vectorMap({ map: 'world_mill' });
+            jQuery(el).vectorMap({ map: 'north_america_mill', backgroundColor: 'transparent' });
         }
     }, {
         key: 'render',
@@ -12815,10 +12815,10 @@ var NorthAmerica = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'h1',
-                    null,
-                    'NORTH AMERICA MAP PLACE-HOLDER'
+                    { id: 'discover_header' },
+                    '/ NORTH AMERICA'
                 ),
-                _react2.default.createElement('div', { ref: function ref(display) {
+                _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
                         return _this2.display = display;
                     }, style: { width: '600px', height: '400px' } })
             );
@@ -13030,6 +13030,11 @@ var Chooselanguage = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ LANGUAGE'
+            ),
+            _react2.default.createElement(
                 'button',
                 { id: 'back' },
                 _react2.default.createElement(_reactRouter.Link, { to: '/setting', style: { display: 'block', height: '100%' } })
@@ -13130,6 +13135,11 @@ var Delete = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ DELETE ACCOUNT'
+            ),
+            _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
                 _react2.default.createElement(
@@ -13217,6 +13227,11 @@ var Editemail = _react2.default.createClass({
         return _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT EMAIL'
+            ),
             _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
@@ -13307,6 +13322,11 @@ var Editlocation = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT LOCATION'
+            ),
+            _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
                 _react2.default.createElement(
@@ -13395,6 +13415,11 @@ var Editname = _react2.default.createClass({
         return _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT NAME'
+            ),
             _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
@@ -13485,6 +13510,11 @@ var Editpassword = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT PASSWORD'
+            ),
+            _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
                 _react2.default.createElement(
@@ -13574,6 +13604,11 @@ var Editphone = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT PHONE #'
+            ),
+            _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
                 _react2.default.createElement(
@@ -13656,6 +13691,11 @@ var Editpic = _react2.default.createClass({
         return _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT PICTURE'
+            ),
             _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
@@ -13741,6 +13781,11 @@ var Edittastes = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ EDIT TASTES'
+            ),
+            _react2.default.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
                 _react2.default.createElement(
@@ -13821,6 +13866,11 @@ var Managefav = _react2.default.createClass({
             null,
             _react2.default.createElement(
                 'h1',
+                { id: 'settings_header' },
+                '/ FAVOURITES'
+            ),
+            _react2.default.createElement(
+                'h1',
                 null,
                 'Manage favourites'
             ),
@@ -13892,6 +13942,11 @@ var Managefriends = _react2.default.createClass({
         return _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ FRIENDS'
+            ),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
@@ -13965,6 +14020,11 @@ var Orderhistory = _react2.default.createClass({
         return _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'settings_header' },
+                '/ HISTORY'
+            ),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
@@ -14182,12 +14242,12 @@ var SouthAmerica = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'h1',
-                null,
-                'SOUTH AMERICA MAP PLACE-HOLDER'
+                { id: 'discover_header' },
+                '/ SOUTH AMERICA'
             ),
             _react2.default.createElement(
                 'li',
@@ -28774,7 +28834,7 @@ _reactDom2.default.render(_react2.default.createElement(
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/editphone', component: _editphone.editphone }),
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/editpassword', component: _editpassword.editpassword }),
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/editname', component: _editname.editname }),
-    _react2.default.createElement(_reactRouter.Route, { path: '/settings/dittastes', component: _edittastes.edittastes }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/settings/edittastes', component: _edittastes.edittastes }),
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/editlocation', component: _editlocation.editlocation }),
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/managefav', component: _managefav.managefav }),
     _react2.default.createElement(_reactRouter.Route, { path: '/settings/managefriends', component: _managefriends.managefriends }),

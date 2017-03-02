@@ -12,7 +12,7 @@ let Managefriends = React.createClass({
 
     render(){
         return(
-            <div>
+            <div><h1 id="settings_header">/ FRIENDS</h1>
                 <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
                 <h1>Manage Friends</h1>
             </div>

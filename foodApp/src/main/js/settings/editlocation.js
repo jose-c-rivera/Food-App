@@ -21,7 +21,7 @@ let Editlocation = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT LOCATION</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.location} onChange={this.handleChange} />

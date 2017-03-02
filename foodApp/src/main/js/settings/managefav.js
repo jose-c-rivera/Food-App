@@ -12,7 +12,7 @@ let Managefav = React.createClass({
 
     render(){
         return(
-            <div>
+            <div><h1 id="settings_header">/ FAVOURITES</h1>
                 <h1>Manage favourites</h1>
                 <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
             </div>

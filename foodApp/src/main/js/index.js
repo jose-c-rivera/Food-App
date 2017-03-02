@@ -49,7 +49,7 @@ ReactDOM.render((
         <Route path ="/settings/editphone" component={editphone}/>
         <Route path ="/settings/editpassword" component={editpassword}/>
         <Route path ="/settings/editname" component={editname}/>
-        <Route path ="/settings/dittastes" component={edittastes}/>
+        <Route path ="/settings/edittastes" component={edittastes}/>
         <Route path ="/settings/editlocation" component={editlocation}/>
         <Route path ="/settings/managefav" component={managefav}/>
         <Route path ="/settings/managefriends" component={managefriends}/>

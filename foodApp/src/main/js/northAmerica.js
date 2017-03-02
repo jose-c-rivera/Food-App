@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom';
 class NorthAmerica extends Component{
     componentDidMount() {
         const el = ReactDOM.findDOMNode(this.display);
-        jQuery(el).vectorMap({map: 'world_mill'});
+        jQuery(el).vectorMap({map: 'north_america_mill', backgroundColor: 'transparent'});
     }
 
 
@@ -19,9 +19,8 @@ class NorthAmerica extends Component{
         return(
             <div>
                 <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}/></button>
-                <h1>NORTH AMERICA MAP PLACE-HOLDER</h1>
-                <div ref={display => this.display = display} style={{width: '600px', height: '400px'}}/>
-
+                <h1 id="discover_header">/ NORTH AMERICA</h1>
+                <div id="map" ref={display => this.display = display} style={{width: '600px', height: '400px'}}/>
             </div>
         )
     }

@@ -21,7 +21,7 @@ let Editname = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT NAME</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.userName} onChange={this.handleChange} />
