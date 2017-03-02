@@ -265,6 +265,67 @@ head {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
+/*-------------------------------------------------PLANNER BUTTONS----------------------------------------------*/
+
+#addFriends {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 5%;
+}
+
+#addFriends:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#findRestaurants {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 37%;
+}
+
+#findRestaurants:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#vote {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 70%;
+}
+
+#vote:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+
 /*-------------------------------------------------SETTINGS BUTTONS---------------------------------------------*/
 #discover_header{
     font-family: Calibri, sans-serif;
@@ -540,6 +601,6 @@ head {
 
 #map{
     position: absolute;
-    left: 60%;
-    top: 40%;
+    left: 40%;
+    top: 25%;
 }

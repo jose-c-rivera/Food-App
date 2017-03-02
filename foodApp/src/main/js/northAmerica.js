@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react'
 import {Link} from 'react-router'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
 
 
@@ -11,7 +11,19 @@ import ReactDOM from 'react-dom';
 class NorthAmerica extends Component{
     componentDidMount() {
         const el = ReactDOM.findDOMNode(this.display);
-        jQuery(el).vectorMap({map: 'north_america_mill', backgroundColor: 'transparent'});
+        jQuery(el).vectorMap({
+            map: 'north_america_mill',
+            backgroundColor: 'transparent',
+            hoverColor: true,
+            regionStyle: {
+                initial: {
+                    fill: '#245b87'
+                },
+                hover: {
+                    fill: "#76c4ea"
+                }
+            }
+        });
     }
 
 
@@ -20,7 +32,7 @@ class NorthAmerica extends Component{
             <div>
                 <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}/></button>
                 <h1 id="discover_header">/ NORTH AMERICA</h1>
-                <div id="map" ref={display => this.display = display} style={{width: '600px', height: '400px'}}/>
+                <div id="map" ref={display => this.display = display} style={{width: '1000px', height: '700px'}}/>
             </div>
         )
     }
