@@ -133,8 +133,8 @@
 		<level name="Gradle: commons-validator:commons-validator:1.5.1" value="project"/>
 		<level name="Gradle: org.apache.maven:maven-model:3.2.1" value="project"/>
 		<level name="Gradle: org.apache.maven:maven-model-builder:3.2.1" value="project"/>
-		<level name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" value="project"/>
 		<level name="Gradle: org.apache.maven:maven-repository-metadata:3.2.1" value="project"/>
+		<level name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" value="project"/>
 		<level name="Gradle: org.codehaus.plexus:plexus-component-annotations:1.5.5" value="project"/>
 		<level name="Gradle: org.codehaus.plexus:plexus-utils:3.0.17" value="project"/>
 		<level name="Gradle: org.codehaus.plexus:plexus-interpolation:1.19" value="project"/>
@@ -175,8 +175,8 @@
 		<level name="Gradle: org.codehaus.gpars:gpars:1.2.1" value="project"/>
 		<level name="Gradle: io.projectreactor:reactor-core:2.0.8.RELEASE" value="project"/>
 		<level name="Gradle: com.google.javascript:closure-compiler-externs:v20160713" value="project"/>
-		<level name="Gradle: args4j:args4j:2.0.26" value="project"/>
 		<level name="Gradle: io.projectreactor:reactor-stream:2.0.8.RELEASE" value="project"/>
+		<level name="Gradle: args4j:args4j:2.0.26" value="project"/>
 		<level name="Gradle: com.google.guava:guava:19.0" value="project"/>
 		<level name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" value="project"/>
 		<level name="Gradle: com.google.protobuf:protobuf-java:2.5.0" value="project"/>

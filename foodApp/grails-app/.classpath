@@ -130,8 +130,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: commons-validator:commons-validator:1.5.1"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.apache.maven:maven-model:3.2.1"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.apache.maven:maven-model-builder:3.2.1"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.google.javascript:closure-compiler-unshaded:v20160713"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.apache.maven:maven-repository-metadata:3.2.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.google.javascript:closure-compiler-unshaded:v20160713"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.codehaus.plexus:plexus-component-annotations:1.5.5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.codehaus.plexus:plexus-utils:3.0.17"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.codehaus.plexus:plexus-interpolation:1.19"/>
@@ -172,8 +172,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.codehaus.gpars:gpars:1.2.1"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: io.projectreactor:reactor-core:2.0.8.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.google.javascript:closure-compiler-externs:v20160713"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: args4j:args4j:2.0.26"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: io.projectreactor:reactor-stream:2.0.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: args4j:args4j:2.0.26"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.google.guava:guava:19.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.apache.tomcat:tomcat-juli:8.5.11"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.google.protobuf:protobuf-java:2.5.0"/>
@@ -184,5 +184,5 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.reactivestreams:reactive-streams:1.0.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: com.goldmansachs:gs-collections-api:5.1.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Gradle: org.mongodb:bson:3.3.0"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="/build/classes/main"/>
 </classpath>
