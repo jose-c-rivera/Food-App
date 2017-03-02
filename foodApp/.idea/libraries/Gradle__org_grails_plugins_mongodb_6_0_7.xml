@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.grails.plugins:mongodb:6.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/mongodb/6.0.7/74733bb1d1656535f8dd29f5126c1ac4fef653b3/mongodb-6.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/mongodb/6.0.7/fa2b6d06e494059d5ea77cfd997cd76cb611c580/mongodb-6.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

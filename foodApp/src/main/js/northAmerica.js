@@ -4,14 +4,14 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router'
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
+
 
 
 
 class NorthAmerica extends Component{
     componentDidMount() {
         const el = ReactDOM.findDOMNode(this.display);
-        $(el).vectorMap({map: 'world_mill'});
+        jQuery(el).vectorMap({map: 'world_mill'});
     }
 
 

@@ -50,6 +50,8 @@ var SignIn = React.createClass({
     render (){
         return (
             <div className="signin">
+                <Link to="/menu" style={{display: 'block', height: '100%'}}>TEMP SIGN IN</Link>
+
                 <form onSubmit={this.handleSubmit}>
                     <label>Enter your username</label>
                     <div>

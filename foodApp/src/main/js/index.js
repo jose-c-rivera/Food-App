@@ -11,6 +11,19 @@ import { africa } from './africa'
 import { asia } from './asiaME'
 import { australia } from './australia'
 import { UserSignIn } from './signin'
+import { SettingApp } from './setting'
+import { chooselanguage } from './settings/chooselanguage'
+import { deleteAcc } from './settings/delete'
+import { editemail } from './settings/editemail'
+import { editlocation} from './settings/editlocation'
+import { editname } from './settings/editname'
+import { editpassword} from './settings/editpassword'
+import { editphone} from './settings/editphone'
+import { editpic} from './settings/editpic'
+import { edittastes} from './settings/edittastes'
+import { managefav} from './settings/managefav'
+import { managefriends } from './settings/managefriends'
+import { orderhistory} from './settings/orderhistory'
 
 
 ReactDOM.render((
@@ -20,6 +33,7 @@ ReactDOM.render((
         <Route path="/menu" component={Menus}/>
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/discover" component={DiscoverApp}/>
+            <Route path ="/setting" component={SettingApp}/>
 
                 <Route path="/NorthAmerica" component={northAmerica}/>
                 <Route path="/SouthAmerica" component={southAmerica}/>
@@ -27,6 +41,19 @@ ReactDOM.render((
                 <Route path="/Asia" component={asia}/>
                 <Route path="/Africa" component={africa}/>
                 <Route path="/Australia" component={australia}/>
+
+        <Route path ="/settings/chooselanguage" component={chooselanguage}/>
+        <Route path ="/settings/delete" component={deleteAcc}/>
+        <Route path ="/settings/editemail" component={editemail}/>
+        <Route path ="/settings/editpic" component={editpic}/>
+        <Route path ="/settings/editphone" component={editphone}/>
+        <Route path ="/settings/editpassword" component={editpassword}/>
+        <Route path ="/settings/editname" component={editname}/>
+        <Route path ="/settings/dittastes" component={edittastes}/>
+        <Route path ="/settings/editlocation" component={editlocation}/>
+        <Route path ="/settings/managefav" component={managefav}/>
+        <Route path ="/settings/managefriends" component={managefriends}/>
+        <Route path ="/settings/orderhistory" component={orderhistory}/>
     </Router>
 
 ), document.getElementById('root'));

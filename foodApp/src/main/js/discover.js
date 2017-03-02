@@ -10,6 +10,7 @@ let Discover = React.createClass({
     render(){
         return(
             <div>
+                <h1 id="discover_header">/ DISCOVER</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
 
                 <li><Link to="/">LOG OUT</Link></li>

@@ -20,7 +20,7 @@ let Menu = React.createClass({
                <button id="Planner_button"></button>
                <button id="Trending_button"></button>
                <button id="Profile_button"></button>
-               <button id="Settings_button"></button>
+               <button id="Settings_button"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
            </div>
         )
     },
