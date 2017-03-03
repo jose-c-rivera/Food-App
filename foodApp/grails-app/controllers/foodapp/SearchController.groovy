@@ -5,6 +5,9 @@ import foodapp.YelpAPI
 
 class SearchController extends RestfulController {
 
+//    static allowedMethods = [searchRestaurants: 'POST']
+//    static responseFormats = ['json']
+
     SearchController(){
         super(RestaurantSearch)
     }
@@ -25,7 +28,7 @@ class SearchController extends RestfulController {
 
         YelpAPI yelp = new YelpAPI(c_key, c_secret, token, token_secret)
         def result = yelp.searchForBusinessesByLocation(term, location)
-        System.out.print(result)
+        System.out.print(result) //just prints the result so far
         response.status = 200
     }
 }

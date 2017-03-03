@@ -13119,10 +13119,16 @@ var FindRestaurant = _react2.default.createClass({
     getInitialState: function getInitialState() {
         return {};
     },
-    handleSubmit: function handleSubmit(e) {
+    handleClick: function handleClick(e) {
         e.preventDefault;
-        fetch('http://localhost8080/SearchController?searchRestaurants').then(function (response) {
-            alert(response.toString);
+        fetch('http://localhost8080/Search/searchRestaurants?' + 'searchTerm=tacos&location=London,ON', {
+            method: 'GET',
+            headers: {
+                "Content-Type": 'String'
+            }
+        }).then(function (response) {
+            console.log('request made');
+            alert(response);
         });
     },
     render: function render() {
@@ -13141,8 +13147,8 @@ var FindRestaurant = _react2.default.createClass({
             ),
             _react2.default.createElement(
                 'button',
-                { id: 'findRestaurants', onClick: this.handleSubmit },
-                'Search'
+                { onClick: this.handleClick },
+                'SEARCH'
             )
         );
     }

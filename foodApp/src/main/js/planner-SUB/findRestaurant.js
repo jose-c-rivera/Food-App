@@ -10,11 +10,17 @@ let FindRestaurant = React.createClass({
         return{}
     },
 
-    handleSubmit(e){
+    handleClick(e){
         e.preventDefault;
-        fetch('http://localhost8080/SearchController?searchRestaurants' +
-            '/searchTerm=tacos&location=London, ON').then(response => {
-            alert(response.toString)
+        fetch('http://localhost8080/Search/searchRestaurants?' +
+            'searchTerm=tacos&location=London,ON', {
+            method : 'GET',
+            headers : {
+                "Content-Type": 'String'
+            }
+        }).then(response => {
+            console.log('request made');
+            alert(response);
         })
     },
 
@@ -23,7 +29,7 @@ let FindRestaurant = React.createClass({
             <div>
                 <h1 id="discover_header">(RESTAURANT)</h1>
                 <button id="back"><Link to="/planner" style={{display: 'block', height: '100%'}}/></button>
-                <button onClick={this.handleSubmit}>SEARCH</button>
+                <button onClick={this.handleClick}>SEARCH</button>
             </div>
         )
     },
