@@ -136,8 +136,8 @@
           <element id="library" level="project" name="Gradle: commons-validator:commons-validator:1.5.1" />
           <element id="library" level="project" name="Gradle: org.apache.maven:maven-model:3.2.1" />
           <element id="library" level="project" name="Gradle: org.apache.maven:maven-model-builder:3.2.1" />
-          <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" />
           <element id="library" level="project" name="Gradle: org.apache.maven:maven-repository-metadata:3.2.1" />
+          <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" />
           <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
           <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-utils:3.0.17" />
           <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-interpolation:1.19" />
@@ -178,8 +178,8 @@
           <element id="library" level="project" name="Gradle: org.codehaus.gpars:gpars:1.2.1" />
           <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:2.0.8.RELEASE" />
           <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-externs:v20160713" />
-          <element id="library" level="project" name="Gradle: args4j:args4j:2.0.26" />
           <element id="library" level="project" name="Gradle: io.projectreactor:reactor-stream:2.0.8.RELEASE" />
+          <element id="library" level="project" name="Gradle: args4j:args4j:2.0.26" />
           <element id="library" level="project" name="Gradle: com.google.guava:guava:19.0" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" />
           <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:2.5.0" />
