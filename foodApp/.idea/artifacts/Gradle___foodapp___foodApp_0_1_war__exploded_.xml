@@ -17,6 +17,8 @@
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.grails.plugins:mongodb:6.0.7" />
+          <element id="library" level="project" name="Gradle: org.grails:gorm-mongodb-spring-boot:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.4.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.4.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.grails:grails-core:3.2.6" />
@@ -28,19 +30,25 @@
           <element id="library" level="project" name="Gradle: org.grails.plugins:hibernate5:6.0.7" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:5.1.2.Final" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-ehcache:5.1.2.Final" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-web:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-simple:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-support:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-mongodb-ext:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.bertramlabs.plugins:asset-pipeline-grails:2.11.6" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-mongodb:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-cli:1.3.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy:2.4.7" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.1.9" />
           <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.22" />
           <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.22" />
-          <element id="library" level="project" name="Gradle: com.bertramlabs.plugins:asset-pipeline-grails:2.11.6" />
           <element id="library" level="project" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.22" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.4.4.RELEASE" />
           <element id="library" level="project" name="Gradle: xalan:serializer:2.7.2" />
-          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy:2.4.7" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.22" />
           <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
           <element id="library" level="project" name="Gradle: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.grails:grails-bootstrap:3.2.6" />
@@ -62,9 +70,6 @@
           <element id="library" level="project" name="Gradle: org.grails:grails-web-common:3.2.6" />
           <element id="library" level="project" name="Gradle: org.javassist:javassist:3.20.0-GA" />
           <element id="library" level="project" name="Gradle: org.grails.plugins:fields:2.1.3" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-web:6.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-simple:6.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-support:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-hibernate5:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-orm:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" />
@@ -75,14 +80,34 @@
           <element id="library" level="project" name="Gradle: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" />
           <element id="library" level="project" name="Gradle: net.sf.ehcache:ehcache:2.10.3" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-core:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.mongodb:mongodb-driver:3.2.2" />
+          <element id="library" level="project" name="Gradle: org.mozilla:rhino:1.7R4" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-validation:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.bertramlabs.plugins:asset-pipeline-core:2.11.6" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-bson:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-loader-tools:1.4.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: jline:jline:2.11" />
+          <element id="library" level="project" name="Gradle: net.sf.jopt-simple:jopt-simple:4.6" />
+          <element id="library" level="project" name="Gradle: org.json:json:20140107" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-aether-provider:3.2.1" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-settings-builder:3.1.1" />
+          <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-component-api:1.0-alpha-33" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-api:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-connector-basic:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-impl:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-spi:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-transport-file:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-transport-http:1.0.2.v20150114" />
+          <element id="library" level="project" name="Gradle: org.eclipse.aether:aether-util:1.0.2.v20150114" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.9" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-xml:2.4.7" />
-          <element id="library" level="project" name="Gradle: org.mozilla:rhino:1.7R4" />
           <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-templates:2.4.7" />
-          <element id="library" level="project" name="Gradle: com.bertramlabs.plugins:asset-pipeline-core:2.11.6" />
           <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.17" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.6" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web:3.2.6" />
@@ -100,14 +125,25 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.7" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-core:6.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: javax.el:javax.el-api:2.2.4" />
           <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-hibernate-core:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-validator:5.2.4.Final" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.4.01" />
+          <element id="library" level="project" name="Gradle: javax.transaction:jta:1.1" />
+          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-async:6.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.mongodb:mongodb-driver-core:3.2.2" />
+          <element id="library" level="project" name="Gradle: commons-validator:commons-validator:1.5.1" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-model:3.2.1" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-model-builder:3.2.1" />
+          <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-repository-metadata:3.2.1" />
+          <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
+          <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-utils:3.0.17" />
+          <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-interpolation:1.19" />
+          <element id="library" level="project" name="Gradle: org.apache.maven:maven-settings:3.1.1" />
+          <element id="library" level="project" name="Gradle: org.sonatype.plexus:plexus-sec-dispatcher:1.3" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.6" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.6" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.3.6.RELEASE" />
@@ -115,7 +151,6 @@
           <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.9" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-gsp:3.2.6" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-databinding:3.2.6" />
-          <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-unshaded:v20160713" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-url-mappings:3.2.6" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-jsp:3.2.6" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-mvc:3.2.6" />
@@ -131,65 +166,30 @@
           <element id="library" level="project" name="Gradle: org.grails:grails-codecs:3.2.6" />
           <element id="library" level="project" name="Gradle: io.projectreactor.spring:reactor-spring-context:2.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: io.projectreactor:reactor-bus:2.0.8.RELEASE" />
-          <element id="library" level="project" name="Gradle: commons-validator:commons-validator:1.5.1" />
           <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-json:2.4.7" />
           <element id="library" level="project" name="Gradle: org.grails:grails-taglib:3.2.6" />
-          <element id="library" level="project" name="Gradle: javax.transaction:jta:1.1" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-async:6.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.grails:grails-datastore-gorm-validation:6.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Gradle: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Gradle: org.sonatype.plexus:plexus-cipher:1.4" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.4.6" />
+          <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Gradle: org.grails:grails-web-taglib:3.2.6" />
           <element id="library" level="project" name="Gradle: opensymphony:sitemesh:2.4" />
           <element id="library" level="project" name="Gradle: org.codehaus.gpars:gpars:1.2.1" />
           <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:2.0.8.RELEASE" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-stream:2.0.8.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" />
-          <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.10" />
-          <element id="library" level="project" name="Gradle: io.projectreactor.spring:reactor-spring-core:2.0.7.RELEASE" />
           <element id="library" level="project" name="Gradle: com.google.javascript:closure-compiler-externs:v20160713" />
           <element id="library" level="project" name="Gradle: args4j:args4j:2.0.26" />
-          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections:5.1.0" />
-          <element id="library" level="project" name="Gradle: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-stream:2.0.8.RELEASE" />
           <element id="library" level="project" name="Gradle: com.google.guava:guava:19.0" />
-          <element id="library" level="project" name="Gradle: org.codehaus.jsr166-mirror:jsr166y:1.7.0" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" />
           <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:2.5.0" />
+          <element id="library" level="project" name="Gradle: io.projectreactor.spring:reactor-spring-core:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections:5.1.0" />
           <element id="library" level="project" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jsr166-mirror:jsr166y:1.7.0" />
           <element id="library" level="project" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" />
           <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections-api:5.1.0" />
-          <element id="library" level="project" name="Gradle: org.json:json:20140107" />
-          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" />
-          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.4.6" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/mongodb/6.0.7/74733bb1d1656535f8dd29f5126c1ac4fef653b3/mongodb-6.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/gorm-mongodb-spring-boot/6.0.7.RELEASE/89ad9fc2d1cedc11978e3d48d1216cae64234648/gorm-mongodb-spring-boot-6.0.7.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-mongodb-ext/6.0.7.RELEASE/39a2fc365e5cc2e5cbf35f13e1b0cefa4172bcb/grails-datastore-gorm-mongodb-ext-6.0.7.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-mongodb/6.0.7.RELEASE/8db2ef7a724eec1ebadb76679bb1e001e2f906de/grails-datastore-gorm-mongodb-6.0.7.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-cli/1.3.7.RELEASE/365155521ef660666cb80c4e291c1dfb751e9696/spring-boot-cli-1.3.7.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver/3.2.2/8b5c4610953eec83435d87547d34976848508875/mongodb-driver-3.2.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-bson/6.0.7.RELEASE/a02aee145a4720633297427d63688d4344ead703/grails-datastore-gorm-bson-6.0.7.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.4.4.RELEASE/e730f335fa15795b51a4a45d47e01f8862dd4a33/spring-boot-loader-tools-1.4.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jline/jline/2.11/9504d5e2da5d78237239c5226e8200ec21182040/jline-2.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-aether-provider/3.2.1/ab57cafec4e9c2650df963d83cb173d311fcadf0/maven-aether-provider-3.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings-builder/3.1.1/e2d5e96ea4bbd4fc463dbb76d07dd8aefac05e3c/maven-settings-builder-3.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-api/1.0-alpha-33/7d9560effcadf867937ac6885d0d1045ea98ab59/plexus-component-api-1.0-alpha-33.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-api/1.0.2.v20150114/839f93a5213fb3e233b09bfd6d6b95669f7043c0/aether-api-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-connector-basic/1.0.2.v20150114/d55c03b16efc16f25e1fd9fe0f37878fddbeed68/aether-connector-basic-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-impl/1.0.2.v20150114/f147539e6e60dfbda9ef7f6d750066170f61b7a1/aether-impl-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-spi/1.0.2.v20150114/8428dfa330107984f3e3ac05cc3ebd50b2676866/aether-spi-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-file/1.0.2.v20150114/79ffcce2aa9c525ad5a1d0fc3f9669133c3f9572/aether-transport-file-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-http/1.0.2.v20150114/262b7fb2e9872f470c059bc4053a3f2f7449932d/aether-transport-http-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-util/1.0.2.v20150114/d2d3c74a5210544b5cdce89a2c1d1c62835692d1/aether-util-1.0.2.v20150114.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/3.2.2/5fe989e7863333970ab0698f18c2ae9d3cb1b2d0/mongodb-driver-core-3.2.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.2.1/328a3c5cfaf9b2832e6e1d21c76fcefe01e01fde/maven-model-3.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.2.1/48611e08f8d8e967e6df591c8eb9c9eba329b1fc/maven-model-builder-3.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.2.1/e171898b9fa61449e1ca3eea45c071fd82c48789/maven-repository-metadata-3.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/c72f2660d0cbed24246ddb55d7fdc4f7374d2078/plexus-component-annotations-1.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.17/7b86f7a4ceffc8eadbb1a84207134af776f7cb95/plexus-utils-3.0.17.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.19/b260ca7a23bb0d209771db7aae35049899433fe3/plexus-interpolation-1.19.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings/3.1.1/311d38cf15ec7f5c713985862632db91b7a827af/maven-settings-3.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.3/dedc02034fb8fcd7615d66593228cb71709134b4/plexus-sec-dispatcher-1.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/50ade46f23bb38cd984b4ec560c46223432aac38/plexus-cipher-1.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/bson/3.3.0/d57b1626e7007a93deb12b2b607e85f6822bf060/bson-3.3.0.jar" />
+          <element id="library" level="project" name="Gradle: org.mongodb:bson:3.3.0" />
         </element>
       </element>
     </root>

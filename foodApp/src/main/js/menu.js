@@ -17,10 +17,10 @@ let Menu = React.createClass({
                    <li><Link to="/">LOG OUT</Link></li>
                </ul>
                <button id="Discover_button"><Link to="/discover" style={{display: 'block', height: '100%'}}></Link></button>
-               <button id="Planner_button"></button>
+               <button id="Planner_button"><Link to="/planner" style={{display: 'block', height: '100%'}}/></button>
                <button id="Trending_button"></button>
                <button id="Profile_button"></button>
-               <button id="Settings_button"></button>
+               <button id="Settings_button"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
            </div>
         )
     },

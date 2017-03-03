@@ -36,8 +36,8 @@ head {
     border: none;
     height: 100px;
     width: 100px;
-    background: url(../img/back.png) no-repeat;
-    background-size: 100%;
+    background: url(../img/arrow_blue.png) no-repeat;
+    background-size: contain;
     position:absolute;
     transition: .5s ease;
     top: 5%;
@@ -45,6 +45,8 @@ head {
 }
 
 #back:hover {
+    background: url(../img/arrow_skyblue.png) no-repeat;
+    background-size: contain;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -262,4 +264,343 @@ head {
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
+}
+/*-------------------------------------------------PLANNER BUTTONS----------------------------------------------*/
+
+#addFriends {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 5%;
+}
+
+#addFriends:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#findRestaurants {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 37%;
+}
+
+#findRestaurants:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#vote {
+    outline:0;
+    padding: 0;
+    border: none;
+    height: 500px;
+    width: 450px;
+    position:absolute;
+    transition: .5s ease;
+    top: 31%;
+    left: 70%;
+}
+
+#vote:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+
+/*-------------------------------------------------SETTINGS BUTTONS---------------------------------------------*/
+#discover_header{
+    font-family: Calibri, sans-serif;
+    color: #76c4ea;
+    text-shadow: 5px 5px #245b87;
+    font-size: 150px;
+    position: absolute;
+    top: -7%;
+    left: 20%;
+}
+
+#settings_header{
+    font-family: Calibri, sans-serif;
+    color: #76c4ea;
+    text-shadow: 5px 5px #245b87;
+    font-size: 150px;
+    position: absolute;
+    top: -7%;
+    left: 20%;
+}
+
+#name {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editname_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 24%;
+    left: 20%;
+}
+
+#name:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#picture {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editpic_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 24%;
+    left: 55%;
+}
+
+#picture:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#phone {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editphone_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 36%;
+    left: 20%;
+}
+
+#phone:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#tastes {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/edittastes_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 36%;
+    left: 55%;
+}
+
+#tastes:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#friends {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/managefriends_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 48%;
+    left: 20%;
+}
+
+#friends:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#history {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/orderhistory_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 48%;
+    left: 55%;
+}
+
+#history:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#email {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editemail_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 60%;
+    left: 20%;
+}
+
+#email:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#location {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editlocation_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 60%;
+    left: 55%;
+}
+
+#location:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#password {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/editpassword_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 72%;
+    left: 20%;
+}
+
+#password:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#fav {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/managefav_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 72%;
+    left: 55%;
+}
+
+#fav:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#language {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/chooselanguage_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 84%;
+    left: 20%;
+}
+
+#language:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#delete {
+    outline:0;
+    padding: 0;
+    border: none;
+    background: url(../img/delete_button.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 400px;
+    position:absolute;
+    transition: .5s ease;
+    top: 84%;
+    left: 55%;
+}
+
+#delete:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#map{
+    position: absolute;
+    left: 40%;
+    top: 25%;
 }

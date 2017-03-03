@@ -1,22 +1,37 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router'
+import ReactDOM from 'react-dom';
 
-let Africa = React.createClass({
+class Africa extends Component{
 
-    getInitialState(){
-        return{}
-    },
+    componentDidMount() {
+        const el = ReactDOM.findDOMNode(this.display);
+        jQuery(el).vectorMap({
+            map: 'africa_mill',
+            backgroundColor: 'transparent',
+            hoverColor: true,
+            regionStyle: {
+                initial: {
+                    fill: '#245b87'
+                },
+                hover: {
+                    fill: "#76c4ea"
+                }
+            }
+        });
+    }
 
     render(){
         return(
             <div>
-                <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}></Link></button>
-                <h1>AFRICA MAP PLACE-HOLDER</h1>
+                <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}></Link></button>
+                <h1 id="discover_header">/ AFRICA</h1>
+                <div id="map" ref={display => this.display = display} style={{width: '1000px', height: '700px'}}/>
                 <li><Link to="/discover">DISCOVER</Link></li>
             </div>
         )
-    },
-});
+    }
+}
 
 export class africa extends React.Component{
     render(){
