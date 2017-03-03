@@ -13119,6 +13119,12 @@ var FindRestaurant = _react2.default.createClass({
     getInitialState: function getInitialState() {
         return {};
     },
+    handleSubmit: function handleSubmit(e) {
+        e.preventDefault;
+        fetch('http://localhost8080/SearchController?searchRestaurants').then(function (response) {
+            alert(response.toString);
+        });
+    },
     render: function render() {
         return _react2.default.createElement(
             'div',
@@ -13132,6 +13138,11 @@ var FindRestaurant = _react2.default.createClass({
                 'button',
                 { id: 'back' },
                 _react2.default.createElement(_reactRouter.Link, { to: '/planner', style: { display: 'block', height: '100%' } })
+            ),
+            _react2.default.createElement(
+                'button',
+                { id: 'findRestaurants', onClick: this.handleSubmit },
+                'Search'
             )
         );
     }

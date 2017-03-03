@@ -78,7 +78,7 @@ public class YelpAPI {
         request.addQuerystringParameter("term", term);
         request.addQuerystringParameter("location", location);
         request.addQuerystringParameter("limit", String.valueOf(SEARCH_LIMIT));
-        //
+        //Fran
         request.addQuerystringParameter("cc", "CA");
         return sendRequestAndGetResponse(request);
     }

@@ -10,11 +10,20 @@ let FindRestaurant = React.createClass({
         return{}
     },
 
+    handleSubmit(e){
+        e.preventDefault;
+        fetch('http://localhost8080/SearchController?searchRestaurants' +
+            '/searchTerm=tacos&location=London, ON').then(response => {
+            alert(response.toString)
+        })
+    },
+
     render(){
         return(
             <div>
                 <h1 id="discover_header">(RESTAURANT)</h1>
                 <button id="back"><Link to="/planner" style={{display: 'block', height: '100%'}}/></button>
+                <button onClick={this.handleSubmit}>SEARCH</button>
             </div>
         )
     },
