@@ -13121,14 +13121,19 @@ var FindRestaurant = _react2.default.createClass({
     },
     handleClick: function handleClick(e) {
         e.preventDefault;
-        fetch('http://localhost8080/Search/searchRestaurants?' + 'searchTerm=tacos&location=London,ON', {
+        var term = 'tacos';
+        var location = 'London,ON';
+        fetch('http://localhost8080/Search/searchRestaurants?' + 'searchTerm=' + term + '&location=' + location, {
             method: 'GET',
             headers: {
-                "Content-Type": 'String'
+                "Content-Type": "String"
             }
         }).then(function (response) {
-            console.log('request made');
-            alert(response);
+            if (response.ok) {
+                alert('response okay!');
+            } else {
+                alert('response not okay :(');
+            }
         });
     },
     render: function render() {

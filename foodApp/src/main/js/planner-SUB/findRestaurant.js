@@ -12,15 +12,18 @@ let FindRestaurant = React.createClass({
 
     handleClick(e){
         e.preventDefault;
+        let term = 'tacos';
+        let location = 'London,ON';
         fetch('http://localhost8080/Search/searchRestaurants?' +
-            'searchTerm=tacos&location=London,ON', {
+            'searchTerm=' + term + '&location=' + location, {
             method : 'GET',
-            headers : {
-                "Content-Type": 'String'
-            }
         }).then(response => {
-            console.log('request made');
-            alert(response);
+            if(response.ok) {
+                alert('response okay!')
+            }
+            else {
+                alert('response not okay :(')
+            }
         })
     },
 

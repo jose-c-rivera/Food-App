@@ -5,8 +5,8 @@ import foodapp.YelpAPI
 
 class SearchController extends RestfulController {
 
-//    static allowedMethods = [searchRestaurants: 'POST']
-//    static responseFormats = ['json']
+    static allowedMethods = [searchRestaurants: 'GET']
+    static responseFormats = ['String']
 
     SearchController(){
         super(RestaurantSearch)
