@@ -2,6 +2,7 @@ package foodapp
 
 import grails.rest.RestfulController
 
+
 class CreateAccountController extends RestfulController {
 
     static allowedMethods = [create: 'POST']
@@ -21,11 +22,8 @@ class CreateAccountController extends RestfulController {
         //def account = UserAccount.find{userName == userName}
         def account = UserAccount.find{userName == userName}
         if(account == null){
-            account = new UserAccount(userName : userName, password : password )
-            account.save()
-            // We would save this in a DB here
-            //new Profile(ownerAccount: account)
-            //just for testing take out later
+            account = new UserAccount(userName: userName, password: password ).save()
+            new Profile(ownerAccount: account).save()
             System.out.print('created')
             response.status = 200
         }

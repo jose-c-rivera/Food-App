@@ -18,7 +18,6 @@ class SigninController extends RestfulController{
         if (loginUser != null ) {
             if (password == loginUser.getPassword()) {
                 System.out.println('Signin good!!')
-                loginUser.authenticated = true
                 //Setup some kind of response....
                 //respond loginUser.getProfile()
                 response.status = 200
