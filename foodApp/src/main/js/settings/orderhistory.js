@@ -12,7 +12,7 @@ let Orderhistory = React.createClass({
 
     render(){
         return(
-            <div>
+            <div><h1 id="settings_header">/ HISTORY</h1>
                 <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
                 <h1>Order History</h1>
             </div>

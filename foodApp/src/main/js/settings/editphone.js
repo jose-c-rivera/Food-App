@@ -21,7 +21,7 @@ let Editphone = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ EDIT PHONE #</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Phone
                     <input type="text" value={this.state.phone} onChange={this.handleChange} />

@@ -10,6 +10,7 @@ let Chooselanguage = React.createClass({
     render(){
         return(
             <div>
+                <h1 id="settings_header">/ LANGUAGE</h1>
                 <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
                 <h1>Choose Your Language</h1>
                 <br/>

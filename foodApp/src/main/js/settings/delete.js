@@ -19,7 +19,7 @@ let Delete = React.createClass({
 
    render(){
            return(
-           <div>
+           <div><h1 id="settings_header">/ DELETE ACCOUNT</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Are you sure to delete your account?
                     </label>

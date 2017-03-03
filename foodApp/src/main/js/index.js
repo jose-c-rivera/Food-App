@@ -24,6 +24,10 @@ import { edittastes} from './settings/edittastes'
 import { managefav} from './settings/managefav'
 import { managefriends } from './settings/managefriends'
 import { orderhistory} from './settings/orderhistory'
+import { planner } from './planner'
+import { friendsAdd} from './planner-SUB/addFriends'
+import { findRestaurant } from './planner-SUB/findRestaurant'
+import { groupVote } from './planner-SUB/groupVote'
 
 
 ReactDOM.render((
@@ -34,6 +38,7 @@ ReactDOM.render((
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/discover" component={DiscoverApp}/>
             <Route path ="/setting" component={SettingApp}/>
+            <Route path="/planner" component={planner}/>
 
                 <Route path="/NorthAmerica" component={northAmerica}/>
                 <Route path="/SouthAmerica" component={southAmerica}/>
@@ -42,6 +47,10 @@ ReactDOM.render((
                 <Route path="/Africa" component={africa}/>
                 <Route path="/Australia" component={australia}/>
 
+                <Route path="/planner-SUB/addFriends" component={friendsAdd}/>
+                <Route path="/planner-SUB/findRestaurant" component={findRestaurant}/>
+                <Route path="/planner-SUB/groupVote" component={groupVote}/>
+
         <Route path ="/settings/chooselanguage" component={chooselanguage}/>
         <Route path ="/settings/delete" component={deleteAcc}/>
         <Route path ="/settings/editemail" component={editemail}/>
@@ -49,7 +58,7 @@ ReactDOM.render((
         <Route path ="/settings/editphone" component={editphone}/>
         <Route path ="/settings/editpassword" component={editpassword}/>
         <Route path ="/settings/editname" component={editname}/>
-        <Route path ="/settings/dittastes" component={edittastes}/>
+        <Route path ="/settings/edittastes" component={edittastes}/>
         <Route path ="/settings/editlocation" component={editlocation}/>
         <Route path ="/settings/managefav" component={managefav}/>
         <Route path ="/settings/managefriends" component={managefriends}/>
