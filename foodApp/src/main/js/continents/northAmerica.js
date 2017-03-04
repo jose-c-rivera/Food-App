@@ -13,12 +13,13 @@ class NorthAmerica extends Component{
 
     constructor(){
         super();
-        this.state = {jsonData: []};
+        this.state = {
+            name: []
+        };
     }
 
-
     fetchFromAPI(regionName) {
-        fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + regionName + '&location=' + 'toronto')
+        fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + 'Restaurant food ' + regionName + '&location=' + 'toronto')
             .then(response => {
                 if (response.ok) {
                     response.json().then(json => {
@@ -26,11 +27,11 @@ class NorthAmerica extends Component{
                         for (let i = 0; i < json.length; i++) {
                             results.push(<div><Status status={json[i]}/><br /></div>);
                         }
-                        this.setState({jsonData: JSON.stringify(json)});
+                        this.setState({name: json.businesses[0].name});
                     });
                 }
                 else {
-                    this.setState({jsonData: []});
+                    this.setState({name: []});
                 }
             })
     }
@@ -52,14 +53,10 @@ class NorthAmerica extends Component{
                 }
             },
             onRegionClick:function(event, code){
-                //  let jsonData = this.props.jsonData;
                 var region = map.getRegionName(code);
                 self.fetchFromAPI(region);
-
             }
         });
-      //  let jsonData = this.props.jsonData;
-        //      this.fetchFromAPI(region);
     }
 
     render(){
@@ -68,7 +65,8 @@ class NorthAmerica extends Component{
                 <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}/></button>
                 <h1 id="discover_header">/ NORTH AMERICA</h1>
                 <div id="map" ref={display => this.display = display} style={{width: '1000px', height: '700px'}}/>
-                <div id="info"><p> Restarants:</p><br /><p> {this.state.jsonData}</p></div>
+                <li><Link to="/discover">DISCOVER</Link></li>
+                <div id="info"><p> Restaurants:</p><p> {this.state.name}</p></div>
             </div>
         )
     }
