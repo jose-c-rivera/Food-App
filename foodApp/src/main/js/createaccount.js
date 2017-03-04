@@ -125,7 +125,7 @@ let CreateAcc = React.createClass({
     });
 
 /*
-This was the class i was using to display a non matching PW error....
+This was the class I was using to display a non matching PW error....
  */
 var confirmPassword = React.createClass({
    render : function(){
@@ -138,7 +138,7 @@ var confirmPassword = React.createClass({
 });
 
 
-
+//This exports the class to be imported by index.js
 export class CreateAccount extends React.Component{
     render(){
         return(<CreateAcc/>);

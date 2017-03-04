@@ -21,13 +21,13 @@ let Editpassword = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your password is edited: ' + this.state.password);
+        alert('Your password has been updated: ' + this.state.password);
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT PASSWORD</h1>
+           <div><h1 id="settings_header">EDIT PASSWORD</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.password} onChange={this.handleChange} />

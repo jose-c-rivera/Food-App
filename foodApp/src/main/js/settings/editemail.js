@@ -21,20 +21,20 @@ let Editemail = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your Email is edited: ' + this.state.email);
+        alert('Your email has been updated: ' + this.state.email);
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT EMAIL</h1>
+           <div><h1 id="settings_header">EDIT EMAIL</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.email} onChange={this.handleChange} />
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
-               <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
+               <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
             </div>
         )
     },

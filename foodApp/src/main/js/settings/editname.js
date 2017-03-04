@@ -21,13 +21,13 @@ let Editname = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your username is edited: ' + this.state.userName);
+        alert('Your username has been set: ' + this.state.userName);
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT NAME</h1>
+           <div><h1 id="settings_header">EDIT NAME</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.userName} onChange={this.handleChange} />

@@ -8,7 +8,7 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-var SignIn = React.createClass({
+let SignIn = React.createClass({
     getInitialState(){
         return{
             userName: '',
@@ -51,6 +51,9 @@ var SignIn = React.createClass({
         })
     },
 
+    /*The following render inputs the specified elements into
+     *the parent HTML page when we visit this view.
+     */
     render (){
         return (
             <div className="signin">
@@ -80,6 +83,7 @@ var SignIn = React.createClass({
     }
 });
 
+//This exports the class to be imported by index.js
 export class UserSignIn extends React.Component{
     render(){
         return(<SignIn/>);

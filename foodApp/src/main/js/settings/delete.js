@@ -19,19 +19,19 @@ let Delete = React.createClass({
       },
 
       handleSubmit(event) {
-        alert('Your account is delete');
+        alert('Your account has been deleted');
         event.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ DELETE ACCOUNT</h1>
+           <div><h1 id="settings_header">DELETE ACCOUNT</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Are you sure to delete your account?
+                    <label>Are you sure you wish to delete your account?
                     </label>
                     <input type="submit" value="Delete" />
                 </form>
-               <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
+               <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
             </div>
         )
     },

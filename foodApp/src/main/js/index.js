@@ -9,15 +9,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import { CreateAccount } from './createaccount'
-import { GetProfileData } from './createprofile'
+import { Profile } from './profile'
 import { Menus } from './menu'
 import { DiscoverApp } from './discover'
-import { northAmerica } from './northAmerica'
-import { southAmerica } from './southAmerica'
-import { europe } from './europe'
-import { africa } from './africa'
-import { asia } from './asiaME'
-import { australia } from './australia'
+import { northAmerica } from './continents/northAmerica'
+import { southAmerica } from './continents/southAmerica'
+import { europe } from './continents/europe'
+import { africa } from './continents/africa'
+import { asia } from './continents/asiaME'
+import { australia } from './continents/australia'
 import { UserSignIn } from './signin'
 import { SettingApp } from './setting'
 import { chooselanguage } from './settings/chooselanguage'
@@ -41,37 +41,44 @@ import { groupVote } from './planner-SUB/groupVote'
 ReactDOM.render((
 
     <Router history = {browserHistory}>
+
+        {/*-------------------------------------------MAIN PAGES--------------------------------------*/}
         <Route path="/" component={UserSignIn}/>
-        <Route path="/menu" component={Menus}/>
-            <Route path="/createaccount" component={CreateAccount} />
-            <Route path="/createprofile" component={ GetProfileData }/>
-            <Route path="/discover" component={DiscoverApp}/>
-            <Route path ="/setting" component={SettingApp}/>
-            <Route path="/planner" component={planner}/>
+        <Route path="/Menu" component={Menus}/>
+        <Route path="/CreateAccount" component={CreateAccount} />
+        <Route path="/profile" component={Profile}/>
+        <Route path="/Discover" component={DiscoverApp}/>
+        <Route path ="/Setting" component={SettingApp}/>
+        <Route path="/Planner" component={planner}/>
 
-                <Route path="/NorthAmerica" component={northAmerica}/>
-                <Route path="/SouthAmerica" component={southAmerica}/>
-                <Route path="/Europe" component={europe}/>
-                <Route path="/Asia" component={asia}/>
-                <Route path="/Africa" component={africa}/>
-                <Route path="/Australia" component={australia}/>
+        {/*----------------------------------------CONTINENT PAGES------------------------------------*/}
+        <Route path="/NorthAmerica" component={northAmerica}/>
+        <Route path="/SouthAmerica" component={southAmerica}/>
+        <Route path="/Europe" component={europe}/>
+        <Route path="/Asia" component={asia}/>
+        <Route path="/Africa" component={africa}/>
+        <Route path="/Australia" component={australia}/>
 
-                <Route path="/planner-SUB/addFriends" component={friendsAdd}/>
-                <Route path="/planner-SUB/findRestaurant" component={findRestaurant}/>
-                <Route path="/planner-SUB/groupVote" component={groupVote}/>
+        {/*-----------------------------------------PLANNER PAGES-------------------------------------*/}
+        <Route path="/planner-SUB/AddFriends" component={friendsAdd}/>
+        <Route path="/planner-SUB/FindRestaurant" component={findRestaurant}/>
+        <Route path="/planner-SUB/GroupVote" component={groupVote}/>
 
-        <Route path ="/settings/chooselanguage" component={chooselanguage}/>
-        <Route path ="/settings/delete" component={deleteAcc}/>
-        <Route path ="/settings/editemail" component={editemail}/>
-        <Route path ="/settings/editpic" component={editpic}/>
-        <Route path ="/settings/editphone" component={editphone}/>
-        <Route path ="/settings/editpassword" component={editpassword}/>
-        <Route path ="/settings/editname" component={editname}/>
-        <Route path ="/settings/edittastes" component={edittastes}/>
-        <Route path ="/settings/editlocation" component={editlocation}/>
-        <Route path ="/settings/managefav" component={managefav}/>
-        <Route path ="/settings/managefriends" component={managefriends}/>
-        <Route path ="/settings/orderhistory" component={orderhistory}/>
+        {/*-----------------------------------------SETTINGS PAGES------------------------------------*/}
+        <Route path ="/settings/ChooseLanguage" component={chooselanguage}/>
+        <Route path ="/settings/Delete" component={deleteAcc}/>
+        <Route path ="/settings/EditEmail" component={editemail}/>
+        <Route path ="/settings/EditPic" component={editpic}/>
+        <Route path ="/settings/EditPhone" component={editphone}/>
+        <Route path ="/settings/EditPassword" component={editpassword}/>
+        <Route path ="/settings/EditName" component={editname}/>
+        <Route path ="/settings/EditTastes" component={edittastes}/>
+        <Route path ="/settings/EditLocation" component={editlocation}/>
+        <Route path ="/settings/ManageFav" component={managefav}/>
+        <Route path ="/settings/ManageFriends" component={managefriends}/>
+        <Route path ="/settings/OrderHistory" component={orderhistory}/>
+
+        {/*-------------------------------------------------------------------------------------------*/}
     </Router>
 
 ), document.getElementById('root'));

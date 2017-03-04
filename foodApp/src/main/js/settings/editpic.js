@@ -1,6 +1,6 @@
 /**
  * File: editpic.js
-     * Purpose: Allows the user to upload/change their profile picture
+ * Purpose: Allows the user to upload/change their profile picture
  * @AUTHOR: Yixin Li
  * Course: CS 2212
  */
@@ -16,15 +16,14 @@ let Editpic = React.createClass({
 
 
       handleSubmit(e) {
-        alert('Your Profile Picture is edited: ');
+        alert('Your Profile Picture has been updated. ');
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT PICTURE</h1>
+           <div><h1 id="settings_header">EDIT PICTURE</h1>
                 <form onSubmit={this.handleSubmit}>
-                //need the picture upload compoents
                     <input type="submit" value="Submit" />
                 </form>
                <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>

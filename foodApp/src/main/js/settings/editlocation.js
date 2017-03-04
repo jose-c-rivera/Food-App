@@ -22,13 +22,13 @@ let Editlocation = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your Location is edited: ' + this.state.location);
+        alert('Your location has been updated: ' + this.state.location);
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT LOCATION</h1>
+           <div><h1 id="settings_header">EDIT LOCATION</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.location} onChange={this.handleChange} />

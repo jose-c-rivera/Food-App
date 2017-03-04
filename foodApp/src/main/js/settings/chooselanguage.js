@@ -16,14 +16,14 @@ let Chooselanguage = React.createClass({
     render(){
         return(
             <div>
-                <h1 id="settings_header">/ LANGUAGE</h1>
-                <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}></Link></button>
+                <h1 id="settings_header">LANGUAGE</h1>
+                <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
                 <h1>Choose Your Language</h1>
                 <br/>
                 <select>
-                  <option value ="english">English</option>
-                  <option value ="frensh">Frensh</option>
-                  <option value="other">Other</option>
+                  <option value ="English">English</option>
+                  <option value ="French">French</option>
+                  <option value="Other">Other</option>
                 </select>
             </div>
         )

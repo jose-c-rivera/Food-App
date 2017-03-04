@@ -21,13 +21,13 @@ let Editphone = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your Phone Number is edited: ' + this.state.phone);
+        alert('Your phone number has been updated: ' + this.state.phone);
         e.preventDefault();
       },
 
    render(){
            return(
-           <div><h1 id="settings_header">/ EDIT PHONE #</h1>
+           <div><h1 id="settings_header">EDIT PHONE #</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Phone
                     <input type="text" value={this.state.phone} onChange={this.handleChange} />

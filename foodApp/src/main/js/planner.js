@@ -14,20 +14,35 @@ let Planner = React.createClass({
         return{}
     },
 
+    /*
+     *The following renders options for the planning feature of our app
+     * It lets the user choose between {Adding Friends, Find Restaurants and Group Vote}
+     */
     render(){
         return(
             <div>
-                <h1 id="discover_header">/ PLANNER</h1>
-                <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
-                <button id="addFriends"><Link to="/planner-SUB/addFriends" style={{display: 'block', height: '100%'}}>ADD FRIENDS</Link></button>
-                <button id="findRestaurants"><Link to="/planner-SUB/findRestaurant" style={{display: 'block', height: '100%'}}>FIND RESTAURANTS</Link></button>
-                <button id="vote"><Link to="/planner-SUB/groupVote" style={{display: 'block', height: '100%'}}>GROUP VOTE</Link></button>
+                <h1 id="discover_header">PLANNER</h1>
+
+                <button id="back">
+                    <Link to="/menu" style={{display: 'block', height: '100%'}}/>
+                </button>
+
+                <button id="addFriends">
+                    <Link to="/planner-SUB/addFriends" style={{display: 'block', height: '100%'}}/>
+                </button>
+                <button id="findRestaurants">
+                    <Link to="/planner-SUB/findRestaurant" style={{display: 'block', height: '100%'}}/>
+                </button>
+                <button id="vote">
+                    <Link to="/planner-SUB/groupVote" style={{display: 'block', height: '100%'}}/>
+                </button>
             </div>
         )
     },
 
 });
 
+//This exports the class to be imported by index.js
 export class planner extends React.Component{
     render(){
         return(<Planner/>);

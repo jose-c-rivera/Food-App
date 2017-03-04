@@ -313,6 +313,8 @@ head {
     outline:0;
     padding: 0;
     border: none;
+    background: url(../img/planner1.png) no-repeat;
+    background-size: contain;
     height: 500px;
     width: 450px;
     position:absolute;
@@ -322,6 +324,8 @@ head {
 }
 
 #addFriends:hover {
+    background: url(../img/planner1_hover.png) no-repeat;
+    background-size: contain;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -332,6 +336,8 @@ head {
     outline:0;
     padding: 0;
     border: none;
+    background: url(../img/planner2.png) no-repeat;
+    background-size: contain;
     height: 500px;
     width: 450px;
     position:absolute;
@@ -341,6 +347,8 @@ head {
 }
 
 #findRestaurants:hover {
+    background: url(../img/planner2_hover.png) no-repeat;
+    background-size: contain;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -351,6 +359,8 @@ head {
     outline:0;
     padding: 0;
     border: none;
+    background: url(../img/planner3.png) no-repeat;
+    background-size: contain;
     height: 500px;
     width: 450px;
     position:absolute;
@@ -360,6 +370,8 @@ head {
 }
 
 #vote:hover {
+    background: url(../img/planner3_hover.png) no-repeat;
+    background-size: contain;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);

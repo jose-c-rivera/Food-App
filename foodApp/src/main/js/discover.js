@@ -14,10 +14,14 @@ let Discover = React.createClass({
         return{}
     },
 
+    /*The following render provides the user several buttons to the different
+     *regions of the world. Once they make a selection they will be taken to
+     * a map of the region.
+     */
     render(){
         return(
             <div>
-                <h1 id="discover_header">/ DISCOVER</h1>
+                <h1 id="discover_header">DISCOVER</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
 
                 <li><Link to="/">LOG OUT</Link></li>
@@ -33,6 +37,7 @@ let Discover = React.createClass({
     },
 });
 
+//This exports the class to be imported by index.js
 export class DiscoverApp extends React.Component{
     render(){
         return(<Discover/>);
