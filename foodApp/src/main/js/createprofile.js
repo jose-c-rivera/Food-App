@@ -72,9 +72,7 @@ var Profile = React.createClass({
         this.setState({ value });
     },
 
-    /*The following render inputs the specified elements into
-     *the parent HTML page when we visit this view.
-     */
+
     render (){
         return (
             <div className="profilesetup">

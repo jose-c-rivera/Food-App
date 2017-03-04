@@ -12572,19 +12572,43 @@ var NorthAmerica = function (_Component) {
     function NorthAmerica() {
         _classCallCheck(this, NorthAmerica);
 
-        return _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).call(this));
+
+        _this.state = { jsonData: [] };
+        return _this;
     }
 
     _createClass(NorthAmerica, [{
+        key: 'fetchFromAPI',
+        value: function fetchFromAPI(regionName) {
+            var _this2 = this;
+
+            fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + regionName + '&location=' + 'toronto').then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        var results = [];
+                        for (var i = 0; i < json.length; i++) {
+                            results.push(_react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(Status, { status: json[i] }),
+                                _react2.default.createElement('br', null)
+                            ));
+                        }
+                        _this2.setState({ jsonData: JSON.stringify(json) });
+                    });
+                } else {
+                    _this2.setState({ jsonData: [] });
+                }
+            });
+        }
+    }, {
         key: 'componentDidMount',
-
-
-        /*This function creates our map according to the parameters
-         *that are passed to it.
-         */
         value: function componentDidMount() {
+            var self = this;
             var el = _reactDom2.default.findDOMNode(this.display);
-            jQuery(el).vectorMap({
+            var map = new jvm.Map({
+                container: jQuery(el),
                 map: 'north_america_mill',
                 backgroundColor: 'transparent',
                 hoverColor: true,
@@ -12595,18 +12619,20 @@ var NorthAmerica = function (_Component) {
                     hover: {
                         fill: "#76c4ea"
                     }
+                },
+                onRegionClick: function onRegionClick(event, code) {
+                    //  let jsonData = this.props.jsonData;
+                    var region = map.getRegionName(code);
+                    self.fetchFromAPI(region);
                 }
             });
+            //  let jsonData = this.props.jsonData;
+            //      this.fetchFromAPI(region);
         }
-
-        /*The following render hold the div element that will hold
-         *the map for the region once the function is called to create it.
-         */
-
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             return _react2.default.createElement(
                 'div',
@@ -12619,20 +12645,33 @@ var NorthAmerica = function (_Component) {
                 _react2.default.createElement(
                     'h1',
                     { id: 'discover_header' },
-                    'NORTH AMERICA'
+                    '/ NORTH AMERICA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this2.display = display;
-                    }, style: { width: '1000px', height: '700px' } })
+                        return _this3.display = display;
+                    }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Restarants:'
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.jsonData
+                    )
+                )
             );
         }
     }]);
 
     return NorthAmerica;
 }(_react.Component);
-
-//This exports the class to be imported by index.js
-
 
 var northAmerica = exports.northAmerica = function (_React$Component) {
     _inherits(northAmerica, _React$Component);

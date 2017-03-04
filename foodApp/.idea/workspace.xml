@@ -2,49 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ea8b59c-f6ec-4876-a6b1-f3f188d4f86c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/devDB.mv.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner1_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner2_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/planner3_hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/africa.js" afterPath="$PROJECT_DIR$/src/main/js/continents/africa.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/asiaME.js" afterPath="$PROJECT_DIR$/src/main/js/continents/asiaME.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/australia.js" afterPath="$PROJECT_DIR$/src/main/js/continents/australia.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/europe.js" afterPath="$PROJECT_DIR$/src/main/js/continents/europe.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/northAmerica.js" afterPath="$PROJECT_DIR$/src/main/js/continents/northAmerica.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/js/southAmerica.js" afterPath="$PROJECT_DIR$/src/main/js/continents/southAmerica.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProjectPlan.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SoftwareDesign.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TeamRoster.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UIDesign.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../css/generic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/CreateAccountControllerSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/FriendListSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/FriendRequestSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/FriendsSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/ProfileInfoSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/ProfileSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/foodapp/UserAccountSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/groovy/foodapp/FriendListSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/groovy/foodapp/FriendRequestSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/groovy/foodapp/FriendsSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/groovy/foodapp/ProfileInfoSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/Fran - Bio Picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/Main_Blue1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/Planner_Mockup_850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/Settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/UML-G12 - Page 1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/WIN_20170210_10_27_54_Pro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/amy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/discover_blue_850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/elaine_bio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/indexbanner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/jose-profile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/mike-photo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/planpagebanner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/scott.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/softwarebanner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/teambanner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/trending_850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/uibanner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../images/uml.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/chooselanguage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/delete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editemail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editlocation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editname.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editpassword.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editphone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/editpic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/edittastes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/managefav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/managefriends.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/orderhistory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/setting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../settings/test.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../themes/1/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../themes/1/bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../themes/1/js-image-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../themes/1/js-image-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../themes/1/loading.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/.asscache" afterPath="$PROJECT_DIR$/build/.asscache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___foodapp___foodApp_0_1_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___foodapp___foodApp_0_1_war__exploded_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/foodApp_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/foodApp_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/foodApp_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/foodApp_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/application.yml" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/.dependencies" afterPath="$PROJECT_DIR$/build/.dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/stacktrace.log" afterPath="$PROJECT_DIR$/build/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/foodApp/application.yml" afterPath="$PROJECT_DIR$/classes/production/foodApp/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js" afterPath="$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/createaccount.js" afterPath="$PROJECT_DIR$/src/main/js/createaccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/package.json" afterPath="$PROJECT_DIR$/node_modules/npm/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/createprofile.js" afterPath="$PROJECT_DIR$/src/main/js/createprofile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/discover.js" afterPath="$PROJECT_DIR$/src/main/js/discover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/index.js" afterPath="$PROJECT_DIR$/src/main/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/menu.js" afterPath="$PROJECT_DIR$/src/main/js/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/planner.js" afterPath="$PROJECT_DIR$/src/main/js/planner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/profile.js" afterPath="$PROJECT_DIR$/src/main/js/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/setting.js" afterPath="$PROJECT_DIR$/src/main/js/setting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/chooselanguage.js" afterPath="$PROJECT_DIR$/src/main/js/settings/chooselanguage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/delete.js" afterPath="$PROJECT_DIR$/src/main/js/settings/delete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editemail.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editemail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editlocation.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editlocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editname.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editname.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editpassword.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editpassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editphone.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editphone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editpic.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editpic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/edittastes.js" afterPath="$PROJECT_DIR$/src/main/js/settings/edittastes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/managefav.js" afterPath="$PROJECT_DIR$/src/main/js/settings/managefav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/managefriends.js" afterPath="$PROJECT_DIR$/src/main/js/settings/managefriends.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" afterPath="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/signin.js" afterPath="$PROJECT_DIR$/src/main/js/signin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/text.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/text.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -56,7 +88,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/foodApp$Grails__foodApp.coverage" NAME="Grails: foodApp Coverage Results" MODIFIED="1488595774927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/foodApp$Grails__foodApp.coverage" NAME="Grails: foodApp Coverage Results" MODIFIED="1488599913131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -810,10 +842,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/js/plannerPage.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/menu.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/menu.gsp" />
-        <option value="$PROJECT_DIR$/src/main/js/menuPage.js" />
         <option value="$PROJECT_DIR$/src/main/js/discover-country.js" />
         <option value="$PROJECT_DIR$/src/main/js/countrySelect.js" />
         <option value="$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js" />
@@ -828,7 +856,6 @@
         <option value="$PROJECT_DIR$/grails-app/conf/application.yml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/text.css" />
-        <option value="$PROJECT_DIR$/src/main/js/createprofile.js" />
         <option value="$PROJECT_DIR$/src/main/js/africa.js" />
         <option value="$PROJECT_DIR$/src/main/js/createaccount.js" />
         <option value="$PROJECT_DIR$/src/main/js/australia.js" />
@@ -861,6 +888,11 @@
         <option value="$PROJECT_DIR$/src/main/js/settings/managefav.js" />
         <option value="$PROJECT_DIR$/src/main/js/settings/managefriends.js" />
         <option value="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" />
+        <option value="$PROJECT_DIR$/src/test/groovy/foodapp/ProfileInfoSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/js/createprofile.js" />
+        <option value="$PROJECT_DIR$/src/test/groovy/foodapp/FriendRequestSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/foodapp/FriendListSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/foodapp/FriendsSpec.groovy" />
       </list>
     </option>
   </component>
@@ -880,10 +912,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="52" />
+    <option name="x" value="84" />
+    <option name="y" value="76" />
     <option name="width" value="928" />
-    <option name="height" value="1028" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -923,7 +955,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -937,141 +991,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner-SUB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="continents" />
+              <option name="myItemId" value="foodapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1141,7 +1069,24 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/grails-app/conf/application.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/.asscache</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/.dependencies</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/classes/main/foodapp/Profile.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/classes/main/foodapp/UserAccount.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/resources/main/application.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/stacktrace.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/grails-app/controllers/foodapp/SearchController.groovy</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/npm/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/js/asiaME.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/js/northAmerica.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/css/text.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -1242,6 +1187,16 @@
       <method />
     </configuration>
     <configuration default="false" name="discover.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="discover.js" working-dir="$PROJECT_DIR$/src/main/js">
+      <method />
+    </configuration>
+    <configuration default="false" name="ProfileSpec" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <setting name="vmparams" value="-Dgrails.full.stacktrace=true" />
+      <setting name="cmdLine" value="test-app foodapp.ProfileSpec -echoOut" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="$PROJECT_DIR$" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1665,15 +1620,17 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Grails.Grails: foodApp" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.home.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.discover.js" />
+      <item index="3" class="java.lang.String" itemvalue="Grails.ProfileSpec" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.discover.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.home.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Grails.ProfileSpec" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.discover.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.home.js" />
       </list>
     </recent_temporary>
   </component>
@@ -1743,7 +1700,7 @@
       <workItem from="1488563383115" duration="4073000" />
       <workItem from="1488567519039" duration="117000" />
       <workItem from="1488567817225" duration="118000" />
-      <workItem from="1488580485962" duration="13159000" />
+      <workItem from="1488580485962" duration="16759000" />
     </task>
     <task id="LOCAL-00001" summary="Semi Functional UI">
       <created>1488007703518</created>
@@ -1811,8 +1768,16 @@
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ProfileSpec - 2017.03.03 at 22h 48m 34s.xml">
+      <configuration name="ProfileSpec" configurationId="GrailsRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProfileSpec - 2017.03.03 at 22h 51m 13s.xml">
+      <configuration name="ProfileSpec" configurationId="GrailsRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166613000" />
+    <option name="totallyTimeSpent" value="170213000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1824,12 +1789,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="928" height="1028" extended-state="4" />
+    <frame x="84" y="76" width="928" height="998" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33683106" sideWeight="0.51077586" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29144096" sideWeight="0.5721983" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.024875622" sideWeight="0.4903226" order="11" side_tool="false" content_ui="tabs" />
@@ -1839,28 +1804,28 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38634047" sideWeight="0.48922056" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38634047" sideWeight="0.48733154" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49380055" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27420998" sideWeight="0.44420484" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13685344" sideWeight="0.51088536" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282365" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29144096" sideWeight="0.42780173" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23126684" sideWeight="0.5166113" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33683106" sideWeight="0.48922414" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35452586" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32619774" sideWeight="0.48679245" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5528017" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07020453" sideWeight="0.48911467" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44612068" sideWeight="0.4833887" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49585405" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2059,7 +2024,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2068,42 +2033,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/editlocation_button.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/jquery-3.1.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/jquery-jvectormap-north_america-mill.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/foodapp/FriendList.groovy" />
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/foodapp/Friends.groovy" />
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/foodapp/FriendRequest.groovy" />
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/jquery-jvectormap-2.0.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/planner-SUB/groupVote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/jquery-jvectormap-europe-mill.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2178,16 +2107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/foodapp/Profile.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/acorn" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -2205,14 +2124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/createprofile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="76" column="7" lean-forward="false" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/discover.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -2226,7 +2137,7 @@
         <state relative-caret-position="360">
           <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
-            <element signature="e#200#226#0" expanded="true" />
+            <element signature="e#200#226#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2236,7 +2147,7 @@
         <state relative-caret-position="522">
           <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding>
-            <element signature="e#185#210#0" expanded="true" />
+            <element signature="e#185#210#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2254,8 +2165,8 @@
         <state relative-caret-position="360">
           <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#119#145#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#119#145#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2273,8 +2184,8 @@
         <state relative-caret-position="677">
           <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#234#260#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#234#260#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2299,22 +2210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/continents/europe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/continents/northAmerica.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -2439,6 +2334,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/continents/europe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/ProfileSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/planner3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/foodapp/Profile.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/FriendRequestSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/FriendListSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/FriendsSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/ProfileInfoSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/createprofile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/UserAccountSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/foodapp/CreateAccountControllerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/continents/northAmerica.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
   </component>
   <component name="grailsSettings">
     <option name="map">
