@@ -13612,12 +13612,44 @@ var Asia = function (_Component) {
     function Asia() {
         _classCallCheck(this, Asia);
 
-        return _possibleConstructorReturn(this, (Asia.__proto__ || Object.getPrototypeOf(Asia)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Asia.__proto__ || Object.getPrototypeOf(Asia)).call(this));
+
+        _this.state = { jsonData: [] };
+        return _this;
     }
 
     _createClass(Asia, [{
+        key: 'fetchFromAPI',
+        value: function fetchFromAPI(regionName) {
+            var _this2 = this;
+
+            alert('hi');
+            fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + regionName + '&location=' + 'toronto').then(function (response) {
+                if (response.ok) {
+                    alert('woohoo');
+                    response.json().then(function (json) {
+                        var results = [];
+                        for (var i = 0; i < json.length; i++) {
+                            results.push(_react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(Status, { status: json[i] }),
+                                _react2.default.createElement('br', null)
+                            ));
+                        }
+                        _this2.setState({ jsonData: results });
+                        console.log(json);
+                        console.log(results[0]);
+                    });
+                } else {
+                    _this2.setState({ jsonData: [] });
+                }
+            });
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
+            var self = this;
             var el = _reactDom2.default.findDOMNode(this.display);
             jQuery(el).vectorMap({
                 map: 'asia_mill',
@@ -13630,17 +13662,25 @@ var Asia = function (_Component) {
                     hover: {
                         fill: "#76c4ea"
                     }
+                },
+                onRegionClick: function onRegionClick(event, code) {
+                    //  let jsonData = this.props.jsonData;
+                    var region = code;
+                    self.fetchFromAPI(region);
                 }
             });
+            var jsonData = this.props.jsonData;
+            //      this.fetchFromAPI(region);
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             return _react2.default.createElement(
                 'div',
                 null,
+                this.state.jsonData,
                 _react2.default.createElement(
                     'button',
                     { id: 'back' },
@@ -13652,7 +13692,7 @@ var Asia = function (_Component) {
                     '/ ASIA & M.E.'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this2.display = display;
+                        return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
                     'li',
@@ -14580,14 +14620,43 @@ var NorthAmerica = function (_Component) {
     function NorthAmerica() {
         _classCallCheck(this, NorthAmerica);
 
-        return _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).call(this));
+
+        _this.state = { jsonData: [] };
+        return _this;
     }
 
     _createClass(NorthAmerica, [{
+        key: 'fetchFromAPI',
+        value: function fetchFromAPI(regionName) {
+            var _this2 = this;
+
+            fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + regionName + '&location=' + 'toronto').then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        var results = [];
+                        for (var i = 0; i < json.length; i++) {
+                            results.push(_react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(Status, { status: json[i] }),
+                                _react2.default.createElement('br', null)
+                            ));
+                        }
+                        _this2.setState({ jsonData: JSON.stringify(json) });
+                    });
+                } else {
+                    _this2.setState({ jsonData: [] });
+                }
+            });
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
+            var self = this;
             var el = _reactDom2.default.findDOMNode(this.display);
-            jQuery(el).vectorMap({
+            var map = new jvm.Map({
+                container: jQuery(el),
                 map: 'north_america_mill',
                 backgroundColor: 'transparent',
                 hoverColor: true,
@@ -14598,13 +14667,20 @@ var NorthAmerica = function (_Component) {
                     hover: {
                         fill: "#76c4ea"
                     }
+                },
+                onRegionClick: function onRegionClick(event, code) {
+                    //  let jsonData = this.props.jsonData;
+                    var region = map.getRegionName(code);
+                    self.fetchFromAPI(region);
                 }
             });
+            //  let jsonData = this.props.jsonData;
+            //      this.fetchFromAPI(region);
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             return _react2.default.createElement(
                 'div',
@@ -14620,8 +14696,24 @@ var NorthAmerica = function (_Component) {
                     '/ NORTH AMERICA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this2.display = display;
-                    }, style: { width: '1000px', height: '700px' } })
+                        return _this3.display = display;
+                    }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Restarants:'
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.jsonData
+                    )
+                )
             );
         }
     }]);

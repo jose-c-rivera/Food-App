@@ -646,3 +646,11 @@ head {
     left: 40%;
     top: 25%;
 }
+
+#info{
+    position: absolute;
+    top: 25%;
+    width: 600px;
+    background-color: #2e6da4;
+    word-wrap: break-word;
+}
