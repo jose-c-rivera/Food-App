@@ -8,6 +8,7 @@
 import React from 'react';
 import Select from 'react-select';
 import { Link, browserHistory } from 'react-router'
+import AccountStore from "./stores/accountStore"
 require('react-select/dist/react-select.css');
 
 var Profile = React.createClass({
@@ -45,7 +46,7 @@ var Profile = React.createClass({
 
     handleSubmit(e){
         e.preventDefault();
-        let name = this.props.userName;
+        let name = AccountStore.getUser();
         let email = this.state.email;
         let location = this.state.location;
         let phoneNum = this.state.phoneNum;
@@ -59,7 +60,7 @@ var Profile = React.createClass({
         ).then(res => {
             if (res.ok) {
                 this.setState({authenticated: true});
-                browserHistory.push('/profile')
+                browserHistory.push('/createprofile')
             }
             else {
                 this.setState({authenticated: false})

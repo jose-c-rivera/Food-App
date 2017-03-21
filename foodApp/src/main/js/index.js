@@ -9,6 +9,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import { CreateAccount } from './createaccount'
+import { GetProfileData } from './createprofile'
 import { Profile } from './profile'
 import { Menus } from './menu'
 import { DiscoverApp } from './discover'
@@ -46,7 +47,8 @@ ReactDOM.render((
         <Route path="/" component={UserSignIn}/>
         <Route path="/Menu" component={Menus}/>
         <Route path="/CreateAccount" component={CreateAccount} />
-        <Route path="/profile" component={Profile}/>
+            <Route path="/CreateProfile" component={GetProfileData} />
+            <Route path="/profile" component={Profile}/>
         <Route path="/Discover" component={DiscoverApp}/>
         <Route path ="/Setting" component={SettingApp}/>
         <Route path="/Planner" component={planner}/>

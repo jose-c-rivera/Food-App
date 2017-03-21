@@ -6,7 +6,8 @@
  * Course: CS 2212
  */
 import React from 'react';
-import {Link} from 'react-router'
+import {Link, browserHistory} from 'react-router'
+import AccountStore from "./stores/accountStore"
 
 let CreateAcc = React.createClass({
     getInitialState (){
@@ -43,7 +44,7 @@ let CreateAcc = React.createClass({
         let password = this.state.password;
         let termsOfService = this.state.checked;
         let confirmPassword = this.state.confirmPassword;
-
+        AccountStore.changeUser(userName);
         // Checks the confirmed password for validity
         if(password != confirmPassword) {
             this.setState({invalidPassword : true});
@@ -66,6 +67,7 @@ let CreateAcc = React.createClass({
             ).then(res => {
                 if (res.ok) {
                     this.setState({success: 'Account Created!!'});
+                    browserHistory.push('/createprofile')
                 }
                 else {
                     this.setState({

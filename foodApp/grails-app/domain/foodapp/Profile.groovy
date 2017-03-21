@@ -7,8 +7,6 @@ class Profile {
     String location
     String tastes = []
 
-    static belongsTo = [ownerAccount: UserAccount]
-
     static constraints = {
         ownerAccount nullable: false
     }

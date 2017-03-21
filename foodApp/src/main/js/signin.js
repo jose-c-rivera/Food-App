@@ -7,6 +7,7 @@
  */
 import React from 'react';
 import { Link } from 'react-router'
+import AccountStore from "./stores/accountStore"
 
 let SignIn = React.createClass({
     getInitialState(){
@@ -32,6 +33,7 @@ let SignIn = React.createClass({
         e.preventDefault();
         let userName = this.state.userName;
         let password = this.state.password;
+        AccountStore.changeUser(userName);
         fetch('http://localhost:8080/signin/signinUser?'
             + 'userName=' + userName + '&password=' + password, {
                 method: 'GET',
