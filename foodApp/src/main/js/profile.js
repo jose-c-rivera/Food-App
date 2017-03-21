@@ -6,6 +6,7 @@
  */
 import React from 'react';
 import { Link } from 'react-router';
+import { NavBar } from './navbar'
 
 let viewProfile = React.createClass({
 
@@ -18,6 +19,7 @@ let viewProfile = React.createClass({
     render (){
         return (
             <div>
+                < NavBar />
                 <h1 id="discover_header">PROFILE</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
                 <h1>Hi a profile goes here</h1>

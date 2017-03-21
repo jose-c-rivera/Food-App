@@ -7,6 +7,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import { NavBar } from './navbar'
 
 let Setting = React.createClass({
 
@@ -21,6 +22,7 @@ let Setting = React.createClass({
     render(){
         return(
             <div><h1 id="settings_header">SETTINGS</h1>
+                < NavBar />
                 <button id="back">
                     <Link to="/menu" style={{display: 'block', height: '100%'}}/>
                 </button>

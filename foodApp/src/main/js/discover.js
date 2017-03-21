@@ -7,6 +7,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import { NavBar } from './navbar'
 
 let Discover = React.createClass({
 
@@ -21,11 +22,9 @@ let Discover = React.createClass({
     render(){
         return(
             <div>
+                < NavBar />
                 <h1 id="discover_header">DISCOVER</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
-
-                <li><Link to="/">LOG OUT</Link></li>
-
                 <button id="nAmerica"><Link to="/NorthAmerica" style={{display: 'block', height: '100%'}}/></button>
                 <button id="sAmerica"><Link to="/SouthAmerica" style={{display: 'block', height: '100%'}}/></button>
                 <button id="Europe"><Link to="/Europe" style={{display: 'block', height: '100%'}}/></button>

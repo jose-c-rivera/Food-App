@@ -7,6 +7,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import { NavBar } from './navbar'
 
 let Planner = React.createClass({
 
@@ -21,6 +22,7 @@ let Planner = React.createClass({
     render(){
         return(
             <div>
+                < NavBar />
                 <h1 id="discover_header">PLANNER</h1>
 
                 <button id="back">

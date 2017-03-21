@@ -7,6 +7,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router'
 import ReactDOM from 'react-dom'
+import { NavBar } from '../navbar'
 
 
 class NorthAmerica extends Component{
@@ -62,6 +63,7 @@ class NorthAmerica extends Component{
     render(){
         return(
             <div>
+                < NavBar />
                 <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}/></button>
                 <h1 id="discover_header">/ NORTH AMERICA</h1>
                 <div id="map" ref={display => this.display = display} style={{width: '1000px', height: '700px'}}/>
