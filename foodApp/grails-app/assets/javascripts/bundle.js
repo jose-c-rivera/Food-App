@@ -14998,14 +14998,14 @@ var Profile = _react2.default.createClass({
         var location = this.state.location;
         var phoneNum = this.state.phoneNum;
         var tastes = this.state.value;
-        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email' + email + '&location' + location + '&phoneNumber' + phoneNum + '&value' + tastes, {
+        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email=' + email + '&location=' + location + '&phoneNumber=' + phoneNum + '&value=' + tastes, {
             method: 'POST',
             headers: {
                 "Content-Type": "json" }
         }).then(function (res) {
             if (res.ok) {
                 _this.setState({ authenticated: true });
-                _reactRouter.browserHistory.push('/createprofile');
+                _reactRouter.browserHistory.push('/menu');
             } else {
                 _this.setState({ authenticated: false });
             }
