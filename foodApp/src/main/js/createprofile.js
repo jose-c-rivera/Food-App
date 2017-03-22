@@ -51,8 +51,8 @@ var Profile = React.createClass({
         let location = this.state.location;
         let phoneNum = this.state.phoneNum;
         let tastes = this.state.value;
-        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email' + email +
-            '&location' + location + '&phoneNumber' + phoneNum + '&value' + tastes, {
+        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email=' + email +
+            '&location=' + location + '&phoneNumber=' + phoneNum + '&value=' + tastes, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "json"}
@@ -60,7 +60,7 @@ var Profile = React.createClass({
         ).then(res => {
             if (res.ok) {
                 this.setState({authenticated: true});
-                browserHistory.push('/createprofile')
+                browserHistory.push('/menu')
             }
             else {
                 this.setState({authenticated: false})

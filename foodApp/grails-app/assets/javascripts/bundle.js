@@ -17083,8 +17083,8 @@ var SignIn = _react2.default.createClass({
             }
         }).then(function (res) {
             if (res.ok) {
-                alert('we good');
                 _this.setState({ authenticated: true });
+                _reactRouter.browserHistory.push('/menu');
             } else {
                 alert('pw or username error...');
                 _this.setState({ authenticated: false });

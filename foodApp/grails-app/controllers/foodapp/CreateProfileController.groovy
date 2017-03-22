@@ -7,7 +7,7 @@ class CreateProfileController extends RestfulController{
     static responseFormats = ['json']
 
     CreateProfileController(){
-        super(UserAccount)
+        super(Profile)
     }
 
     def index() { }
@@ -23,10 +23,8 @@ class CreateProfileController extends RestfulController{
         def account = UserAccount.find{userName == user}
         if(account != null){
             def profile = account.getProfile()
-            profile.email = emailAddress
-            profile.location = userLocation
-            profile.phoneNumber = userNumber
-            profile.tastes = userTastes
+            profile.info = new ProfileInfo(email: emailAddress, phoneNumber: userNumber,
+                            location: userLocation, tastes: userTastes)
             response.status = 200
         }
         else{

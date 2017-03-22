@@ -6,7 +6,7 @@
  * Course: CS 2212
  */
 import React from 'react';
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
 import AccountStore from "./stores/accountStore"
 
 let SignIn = React.createClass({
@@ -43,8 +43,8 @@ let SignIn = React.createClass({
             }
         ).then(res => {
             if (res.ok) {
-                alert('we good');
                 this.setState({authenticated: true})
+                browserHistory.push('/menu')
             }
             else {
                 alert('pw or username error...');

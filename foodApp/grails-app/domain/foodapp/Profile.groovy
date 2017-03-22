@@ -2,13 +2,11 @@ package foodapp
 
 class Profile {
     UserAccount ownerAccount
-    String email
-    String phoneNumber
-    String location
-    String tastes = []
+    ProfileInfo info
 
     static constraints = {
         ownerAccount nullable: false
+        info unique: true
+        info nullable: true
     }
-
 }

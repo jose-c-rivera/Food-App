@@ -23,7 +23,7 @@ class CreateAccountController extends RestfulController {
         def account = UserAccount.find{userName == userName}
         if(account == null){
             account = new UserAccount(userName: userName, password: password ).save()
-            new Profile(ownerAccount: account).save()
+            new Profile(ownerAccount: account).save(flush: true, failOnError: true)
             System.out.print('created')
             response.status = 200
         }
