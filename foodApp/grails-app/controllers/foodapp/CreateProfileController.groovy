@@ -25,6 +25,7 @@ class CreateProfileController extends RestfulController{
             def profile = account.getProfile()
             profile.info = new ProfileInfo(email: emailAddress, phoneNumber: userNumber,
                             location: userLocation, tastes: userTastes)
+            profile.save(flush: true, failOnError: true)
             response.status = 200
         }
         else{
