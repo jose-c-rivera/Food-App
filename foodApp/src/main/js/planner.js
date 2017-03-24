@@ -23,21 +23,29 @@ let Planner = React.createClass({
         return(
             <div>
                 < NavBar />
-                <h1 id="discover_header">PLANNER</h1>
-
-                <button id="back">
-                    <Link to="/menu" style={{display: 'block', height: '100%'}}/>
-                </button>
-
-                <button id="addFriends">
+                <div id="containermenu">
+                  <div id="topBar">
+                  <button id="back">
+                   <Link to="/menu" style={{display: 'block', height: '100%'}}/>
+                   </button>
+                   <h1 id="settings_header">PLANNER</h1>
+                   </div>
+                 <div id="childDiv3">
+                    <button id="addFriends">
                     <Link to="/planner-SUB/addFriends" style={{display: 'block', height: '100%'}}/>
-                </button>
-                <button id="findRestaurants">
+                    </button>
+                </div>
+                <div id="childDiv3">
+                    <button id="findRestaurants">
                     <Link to="/planner-SUB/findRestaurant" style={{display: 'block', height: '100%'}}/>
-                </button>
-                <button id="vote">
+                    </button>
+                </div>
+                <div id="childDiv3">
+                    <button id="vote">
                     <Link to="/planner-SUB/groupVote" style={{display: 'block', height: '100%'}}/>
-                </button>
+                    </button>
+                </div>
+            </div>
             </div>
         )
     },

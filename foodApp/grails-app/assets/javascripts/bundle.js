@@ -16930,47 +16930,62 @@ var Discover = _react2.default.createClass({
     render: function render() {
         return _react2.default.createElement(
             'div',
-            null,
-            _react2.default.createElement(_navbar.NavBar, null),
+            { id: 'container' },
             _react2.default.createElement(
-                'h1',
-                { id: 'discover_header' },
-                'DISCOVER'
+                'div',
+                { id: 'topBar' },
+                _react2.default.createElement(
+                    'button',
+                    { id: 'back' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                ),
+                _react2.default.createElement(
+                    'h1',
+                    { id: 'settings_header' },
+                    ' Discover Page'
+                )
             ),
             _react2.default.createElement(
-                'button',
-                { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                'div',
+                { id: 'childDiv' },
+                _react2.default.createElement(
+                    'button',
+                    { id: 'nAmerica' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/NorthAmerica', style: { display: 'block', height: '100%' } })
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { id: 'sAmerica' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/SouthAmerica', style: { display: 'block', height: '100%' } })
+                )
             ),
             _react2.default.createElement(
-                'button',
-                { id: 'nAmerica' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/NorthAmerica', style: { display: 'block', height: '100%' } })
+                'div',
+                { id: 'childDiv' },
+                _react2.default.createElement(
+                    'button',
+                    { id: 'Europe' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/Europe', style: { display: 'block', height: '100%' } })
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { id: 'AsiaME' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/Asia', style: { display: 'block', height: '100%' } })
+                )
             ),
             _react2.default.createElement(
-                'button',
-                { id: 'sAmerica' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/SouthAmerica', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Europe' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Europe', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'AsiaME' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Asia', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Africa' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Africa', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Australia' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Australia', style: { display: 'block', height: '100%' } })
+                'div',
+                { id: 'childDiv' },
+                _react2.default.createElement(
+                    'button',
+                    { id: 'Africa' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/Africa', style: { display: 'block', height: '100%' } })
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { id: 'Australia' },
+                    _react2.default.createElement(_reactRouter.Link, { to: '/Australia', style: { display: 'block', height: '100%' } })
+                )
             )
         );
     }
@@ -17050,29 +17065,62 @@ var Menu = _react2.default.createClass({
             null,
             _react2.default.createElement(_navbar.NavBar, null),
             _react2.default.createElement(
-                'button',
-                { id: 'Discover_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Discover', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Planner_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Planner', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Trending_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Trending', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Profile_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/profile', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'Settings_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/Setting', style: { display: 'block', height: '100%' } })
+                'div',
+                { id: 'containermenu' },
+                _react2.default.createElement(
+                    'div',
+                    { id: 'topBar' },
+                    _react2.default.createElement(
+                        'h1',
+                        { id: 'settings_header' },
+                        'WELCOME'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'Discover_button' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'Planner_button' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/planner', style: { display: 'block', height: '100%' } })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement('button', { id: 'Trending_button' }),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'container' },
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'childDiv2' },
+                            _react2.default.createElement(
+                                'button',
+                                { id: 'Profile_button' },
+                                _react2.default.createElement(_reactRouter.Link, { to: '/profile', style: { display: 'block', height: '100%' } })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'childDiv2' },
+                            _react2.default.createElement(
+                                'button',
+                                { id: 'Settings_button' },
+                                _react2.default.createElement(_reactRouter.Link, { to: '/setting', style: { display: 'block', height: '100%' } })
+                            )
+                        )
+                    )
+                )
             )
         );
     }
@@ -17436,29 +17484,49 @@ var Planner = _react2.default.createClass({
             null,
             _react2.default.createElement(_navbar.NavBar, null),
             _react2.default.createElement(
-                'h1',
-                { id: 'discover_header' },
-                'PLANNER'
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'addFriends' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/addFriends', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'findRestaurants' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/findRestaurant', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'vote' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/groupVote', style: { display: 'block', height: '100%' } })
+                'div',
+                { id: 'containermenu' },
+                _react2.default.createElement(
+                    'div',
+                    { id: 'topBar' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'back' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+                    ),
+                    _react2.default.createElement(
+                        'h1',
+                        { id: 'settings_header' },
+                        'PLANNER'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'addFriends' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/addFriends', style: { display: 'block', height: '100%' } })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'findRestaurants' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/findRestaurant', style: { display: 'block', height: '100%' } })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'childDiv3' },
+                    _react2.default.createElement(
+                        'button',
+                        { id: 'vote' },
+                        _react2.default.createElement(_reactRouter.Link, { to: '/planner-SUB/groupVote', style: { display: 'block', height: '100%' } })
+                    )
+                )
             )
         );
     }
