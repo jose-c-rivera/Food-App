@@ -5,12 +5,28 @@ body {
 head {
     background: url(http://www.shunvmall.com/data/out/244/46913747-wallpaper-orange.png) no-repeat;
 }
+
 #entry_form{
     position: fixed;
     top: 50%;
     left: 50%;
     margin-top: -50px;
     margin-left: -100px;
+}
+
+#profile_info{
+    font-family: Calibri, sans-serif;
+    background: #76c4ea;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    margin-left: -50px;
 
 }
 

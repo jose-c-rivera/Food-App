@@ -15781,7 +15781,7 @@ var Profile = _react2.default.createClass({
             ),
             _react2.default.createElement(
                 'div',
-                { id: 'entry_form' },
+                { id: 'profile_info' },
                 _react2.default.createElement(
                     'h1',
                     null,
@@ -15790,31 +15790,56 @@ var Profile = _react2.default.createClass({
                 _react2.default.createElement(
                     'p',
                     null,
-                    'username: ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Username:'
+                    ),
+                    ' ',
                     this.state.userName
                 ),
                 _react2.default.createElement(
                     'p',
                     null,
-                    'location: ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Location:'
+                    ),
+                    ' ',
                     this.state.location
                 ),
                 _react2.default.createElement(
                     'p',
                     null,
-                    'email: ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Email:'
+                    ),
+                    ' ',
                     this.state.email
                 ),
                 _react2.default.createElement(
                     'p',
                     null,
-                    'phone: ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Phone:'
+                    ),
+                    ' ',
                     this.state.phoneNumber
                 ),
                 _react2.default.createElement(
                     'p',
                     null,
-                    'tastes: ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Tastes:'
+                    ),
+                    ' ',
                     this.state.tastes
                 )
             )
