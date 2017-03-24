@@ -341,7 +341,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -419,7 +419,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(247);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(19);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createRoutes", function() { return __WEBPACK_IMPORTED_MODULE_8__RouteUtils__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__RouterContext__ = __webpack_require__(71);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RouterContext", function() { return __WEBPACK_IMPORTED_MODULE_9__RouterContext__["a"]; });
@@ -646,7 +646,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(5);
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var ReactDOMComponentFlags = __webpack_require__(86);
 
 var invariant = __webpack_require__(2);
@@ -948,7 +948,7 @@ module.exports = invariant;
 
 var _prodInvariant = __webpack_require__(24);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -1305,164 +1305,6 @@ module.exports = { debugTool: debugTool };
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.NavBar = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactSelect = __webpack_require__(38);
-
-var _reactSelect2 = _interopRequireDefault(_reactSelect);
-
-var _reactRouter = __webpack_require__(4);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * File: navbar.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Purpose: Navigation bar to follow around the React pages
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @AUTHOR: Ryan Kennedy
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Course: CS 2212
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var NavigationBar = _react2.default.createClass({
-    displayName: 'NavigationBar',
-    getInitialState: function getInitialState() {
-        return {
-            windowWidth: window.innerWidth,
-            mobileNavVisible: false
-        };
-    },
-    handleResize: function handleResize() {
-        this.setState({ windowWidth: window.innerWidth });
-    },
-    componentDidMount: function componentDidMount() {
-        window.addEventListener('resize', this.handleResize.bind(this));
-    },
-    componentWillUnmount: function componentWillUnmount() {
-        window.removeEventListener('resize', this.handleResize.bind(this));
-    },
-    renderMobileNav: function renderMobileNav() {
-        if (this.state.mobileNavVisible) {
-            return this.navigationLinks();
-        }
-    },
-    handleNavClick: function handleNavClick() {
-        if (!this.state.mobileNavVisible) {
-            this.setState({ mobileNavVisible: true });
-        } else {
-            this.setState({ mobileNavVisible: false });
-        }
-    },
-
-    // Got the list to not use bullet points
-    navigationLinks: function navigationLinks() {
-        return [_react2.default.createElement(
-            'ul',
-            { className: 'nav_list', type: 'none' },
-            _react2.default.createElement(
-                'li',
-                { key: 1 },
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/discover' },
-                    'DISCOVER'
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                { key: 2 },
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/planner' },
-                    'PLANNER'
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                { key: 3 },
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/profile' },
-                    'PROFILE'
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                { key: 4 },
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/setting' },
-                    'SETTINGS'
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                { key: 5 },
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/' },
-                    'LOGOUT'
-                )
-            )
-        )];
-    },
-    renderNavigation: function renderNavigation() {
-        return [_react2.default.createElement(
-            'div',
-            null,
-            _react2.default.createElement('button', { id: 'nav_button', onClick: this.handleNavClick.bind(this) }),
-            this.renderMobileNav()
-        )];
-    },
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'nav_container' },
-            this.renderNavigation()
-        );
-    }
-});
-
-//This exports the class to be imported by index.js
-
-var NavBar = exports.NavBar = function (_React$Component) {
-    _inherits(NavBar, _React$Component);
-
-    function NavBar() {
-        _classCallCheck(this, NavBar);
-
-        return _possibleConstructorReturn(this, (NavBar.__proto__ || Object.getPrototypeOf(NavBar)).apply(this, arguments));
-    }
-
-    _createClass(NavBar, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(NavigationBar, null);
-        }
-    }]);
-
-    return NavBar;
-}(_react2.default.Component);
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -1501,7 +1343,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1758,7 +1600,7 @@ module.exports = ReactUpdates;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1794,7 +1636,7 @@ var ReactCurrentOwner = {
 module.exports = ReactCurrentOwner;
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1814,7 +1656,7 @@ var _assign = __webpack_require__(6);
 
 var PooledClass = __webpack_require__(22);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var warning = __webpack_require__(3);
 
 var didWarnForAddedNewProperty = false;
@@ -2068,7 +1910,7 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2078,7 +1920,7 @@ module.exports = __webpack_require__(185);
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2087,7 +1929,7 @@ module.exports = __webpack_require__(185);
 exports.__esModule = true;
 exports.createPath = exports.parsePath = exports.getQueryStringValueFromPath = exports.stripQueryStringValueFromPath = exports.addQueryStringValueToPath = undefined;
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -2186,7 +2028,7 @@ var createPath = exports.createPath = function createPath(location) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2402,7 +2244,7 @@ module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2494,7 +2336,7 @@ function createRoutes(routes) {
 }
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2560,6 +2402,164 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = warning;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.NavBar = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSelect = __webpack_require__(38);
+
+var _reactSelect2 = _interopRequireDefault(_reactSelect);
+
+var _reactRouter = __webpack_require__(4);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * File: navbar.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Purpose: Navigation bar to follow around the React pages
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @AUTHOR: Ryan Kennedy
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Course: CS 2212
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var NavigationBar = _react2.default.createClass({
+    displayName: 'NavigationBar',
+    getInitialState: function getInitialState() {
+        return {
+            windowWidth: window.innerWidth,
+            mobileNavVisible: false
+        };
+    },
+    handleResize: function handleResize() {
+        this.setState({ windowWidth: window.innerWidth });
+    },
+    componentDidMount: function componentDidMount() {
+        window.addEventListener('resize', this.handleResize.bind(this));
+    },
+    componentWillUnmount: function componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize.bind(this));
+    },
+    renderMobileNav: function renderMobileNav() {
+        if (this.state.mobileNavVisible) {
+            return this.navigationLinks();
+        }
+    },
+    handleNavClick: function handleNavClick() {
+        if (!this.state.mobileNavVisible) {
+            this.setState({ mobileNavVisible: true });
+        } else {
+            this.setState({ mobileNavVisible: false });
+        }
+    },
+
+    // Got the list to not use bullet points
+    navigationLinks: function navigationLinks() {
+        return [_react2.default.createElement(
+            'ul',
+            { className: 'nav_list', type: 'none' },
+            _react2.default.createElement(
+                'li',
+                { key: 1 },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/discover' },
+                    'DISCOVER'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                { key: 2 },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/planner' },
+                    'PLANNER'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                { key: 3 },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/profile' },
+                    'PROFILE'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                { key: 4 },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/setting' },
+                    'SETTINGS'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                { key: 5 },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/' },
+                    'LOGOUT'
+                )
+            )
+        )];
+    },
+    renderNavigation: function renderNavigation() {
+        return [_react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement('button', { id: 'nav_button', onClick: this.handleNavClick.bind(this) }),
+            this.renderMobileNav()
+        )];
+    },
+    render: function render() {
+        return _react2.default.createElement(
+            'div',
+            { className: 'nav_container' },
+            this.renderNavigation()
+        );
+    }
+});
+
+//This exports the class to be imported by index.js
+
+var NavBar = exports.NavBar = function (_React$Component) {
+    _inherits(NavBar, _React$Component);
+
+    function NavBar() {
+        _classCallCheck(this, NavBar);
+
+        return _possibleConstructorReturn(this, (NavBar.__proto__ || Object.getPrototypeOf(NavBar)).apply(this, arguments));
+    }
+
+    _createClass(NavBar, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(NavigationBar, null);
+        }
+    }]);
+
+    return NavBar;
+}(_react2.default.Component);
 
 /***/ }),
 /* 22 */
@@ -2698,7 +2698,7 @@ module.exports = PooledClass;
 
 var _assign = __webpack_require__(6);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 
 var warning = __webpack_require__(3);
 var canDefineProperty = __webpack_require__(75);
@@ -3145,11 +3145,11 @@ var _invariant = __webpack_require__(9);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 var _Actions = __webpack_require__(40);
 
@@ -3773,7 +3773,7 @@ function formatPattern(pattern, params) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony export (immutable) */ __webpack_exports__["a"] = routerWarning;
 /* unused harmony export _resetWarned */
@@ -4419,7 +4419,7 @@ module.exports = ReactInstanceMap;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 var getEventTarget = __webpack_require__(64);
 
@@ -4537,7 +4537,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -7092,7 +7092,7 @@ var _DOMUtils = __webpack_require__(41);
 
 var _DOMStateStorage = __webpack_require__(80);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 var _ExecutionEnvironment = __webpack_require__(50);
 
@@ -7201,7 +7201,7 @@ exports.__esModule = true;
 
 var _AsyncUtils = __webpack_require__(164);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 var _runTransitionHook = __webpack_require__(52);
 
@@ -7381,7 +7381,7 @@ exports.default = createHistory;
 
 exports.__esModule = true;
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -8249,10 +8249,10 @@ module.exports = ReactErrorUtils;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactInstanceMap = __webpack_require__(35);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -8773,7 +8773,7 @@ module.exports = shouldUpdateReactComponent;
 
 var _assign = __webpack_require__(6);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var warning = __webpack_require__(3);
 
 var validateDOMNesting = emptyFunction;
@@ -9404,7 +9404,7 @@ var locationShape = shape({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getRouteParams__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ContextUtils__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -9884,7 +9884,7 @@ module.exports = getIteratorFn;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -10031,7 +10031,7 @@ module.exports = getActiveElement;
 exports.__esModule = true;
 exports.readState = exports.saveState = undefined;
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -10128,7 +10128,7 @@ var _runTransitionHook = __webpack_require__(52);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10247,7 +10247,7 @@ var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10650,7 +10650,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(11);
 
@@ -10920,7 +10920,7 @@ var _assign = __webpack_require__(6);
 
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var warning = __webpack_require__(3);
 
@@ -11390,10 +11390,10 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(5);
 
 var DOMLazyTree = __webpack_require__(27);
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var React = __webpack_require__(31);
 var ReactBrowserEventEmitter = __webpack_require__(43);
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactDOMContainerInfo = __webpack_require__(187);
 var ReactDOMFeatureFlags = __webpack_require__(189);
@@ -11403,7 +11403,7 @@ var ReactInstrumentation = __webpack_require__(11);
 var ReactMarkupChecksum = __webpack_require__(209);
 var ReactReconciler = __webpack_require__(28);
 var ReactUpdateQueue = __webpack_require__(60);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var emptyObject = __webpack_require__(32);
 var instantiateReactComponent = __webpack_require__(100);
@@ -12453,7 +12453,7 @@ module.exports = setTextContent;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var REACT_ELEMENT_TYPE = __webpack_require__(203);
 
 var getIteratorFn = __webpack_require__(237);
@@ -12792,7 +12792,7 @@ function isPromise(obj) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RouteUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PatternUtils__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__InternalPropTypes__ = __webpack_require__(37);
 
@@ -13424,7 +13424,7 @@ module.exports = REACT_ELEMENT_TYPE;
 
 
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactComponentTreeHook = __webpack_require__(10);
 var ReactElement = __webpack_require__(23);
 
@@ -13708,11 +13708,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13731,18 +13731,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Africa = function (_Component) {
     _inherits(Africa, _Component);
 
-    function Africa() {
+    function Africa(props) {
         _classCallCheck(this, Africa);
 
-        var _this = _possibleConstructorReturn(this, (Africa.__proto__ || Object.getPrototypeOf(Africa)).call(this));
+        var _this = _possibleConstructorReturn(this, (Africa.__proto__ || Object.getPrototypeOf(Africa)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(Africa, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -13759,10 +13807,79 @@ var Africa = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -13787,14 +13904,22 @@ var Africa = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
@@ -13810,7 +13935,7 @@ var Africa = function (_Component) {
                     '/ AFRICA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
                     'div',
@@ -13825,6 +13950,178 @@ var Africa = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -13873,11 +14170,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _navbar = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13896,18 +14191,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Asia = function (_Component) {
     _inherits(Asia, _Component);
 
-    function Asia() {
+    function Asia(props) {
         _classCallCheck(this, Asia);
 
-        var _this = _possibleConstructorReturn(this, (Asia.__proto__ || Object.getPrototypeOf(Asia)).call(this));
+        var _this = _possibleConstructorReturn(this, (Asia.__proto__ || Object.getPrototypeOf(Asia)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(Asia, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -13924,10 +14267,79 @@ var Asia = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -13952,18 +14364,25 @@ var Asia = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_navbar.NavBar, null),
                 _react2.default.createElement(
                     'button',
                     { id: 'back' },
@@ -13975,8 +14394,17 @@ var Asia = function (_Component) {
                     '/ ASIA & M.E.'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/discover' },
+                        'DISCOVER'
+                    )
+                ),
                 _react2.default.createElement(
                     'div',
                     { id: 'info' },
@@ -13990,6 +14418,178 @@ var Asia = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -14038,11 +14638,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _navbar = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14061,18 +14659,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Australia = function (_Component) {
     _inherits(Australia, _Component);
 
-    function Australia() {
+    function Australia(props) {
         _classCallCheck(this, Australia);
 
-        var _this = _possibleConstructorReturn(this, (Australia.__proto__ || Object.getPrototypeOf(Australia)).call(this));
+        var _this = _possibleConstructorReturn(this, (Australia.__proto__ || Object.getPrototypeOf(Australia)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(Australia, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -14089,10 +14735,79 @@ var Australia = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -14117,18 +14832,25 @@ var Australia = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_navbar.NavBar, null),
                 _react2.default.createElement(
                     'button',
                     { id: 'back' },
@@ -14140,8 +14862,17 @@ var Australia = function (_Component) {
                     '/ OCEANIA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/discover' },
+                        'DISCOVER'
+                    )
+                ),
                 _react2.default.createElement(
                     'div',
                     { id: 'info' },
@@ -14155,6 +14886,176 @@ var Australia = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -14203,11 +15104,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14226,18 +15127,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Europe = function (_Component) {
     _inherits(Europe, _Component);
 
-    function Europe() {
+    function Europe(props) {
         _classCallCheck(this, Europe);
 
-        var _this = _possibleConstructorReturn(this, (Europe.__proto__ || Object.getPrototypeOf(Europe)).call(this));
+        var _this = _possibleConstructorReturn(this, (Europe.__proto__ || Object.getPrototypeOf(Europe)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(Europe, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -14254,10 +15203,79 @@ var Europe = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -14282,14 +15300,22 @@ var Europe = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
@@ -14305,7 +15331,7 @@ var Europe = function (_Component) {
                     '/ EUROPE'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
                     'div',
@@ -14320,6 +15346,178 @@ var Europe = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -14368,11 +15566,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _navbar = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14391,18 +15587,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var NorthAmerica = function (_Component) {
     _inherits(NorthAmerica, _Component);
 
-    function NorthAmerica() {
+    function NorthAmerica(props) {
         _classCallCheck(this, NorthAmerica);
 
-        var _this = _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).call(this));
+        var _this = _possibleConstructorReturn(this, (NorthAmerica.__proto__ || Object.getPrototypeOf(NorthAmerica)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(NorthAmerica, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -14419,10 +15663,79 @@ var NorthAmerica = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -14447,18 +15760,25 @@ var NorthAmerica = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_navbar.NavBar, null),
                 _react2.default.createElement(
                     'button',
                     { id: 'back' },
@@ -14470,8 +15790,17 @@ var NorthAmerica = function (_Component) {
                     '/ NORTH AMERICA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/discover' },
+                        'DISCOVER'
+                    )
+                ),
                 _react2.default.createElement(
                     'div',
                     { id: 'info' },
@@ -14485,6 +15814,176 @@ var NorthAmerica = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -14533,11 +16032,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _navbar = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14556,18 +16053,66 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var SouthAmerica = function (_Component) {
     _inherits(SouthAmerica, _Component);
 
-    function SouthAmerica() {
+    function SouthAmerica(props) {
         _classCallCheck(this, SouthAmerica);
 
-        var _this = _possibleConstructorReturn(this, (SouthAmerica.__proto__ || Object.getPrototypeOf(SouthAmerica)).call(this));
+        var _this = _possibleConstructorReturn(this, (SouthAmerica.__proto__ || Object.getPrototypeOf(SouthAmerica)).call(this, props));
 
+        _this.handleRestaurantClick = _this.handleRestaurantClick.bind(_this);
+        _this.handleCountryClick = _this.handleCountryClick.bind(_this);
         _this.state = {
-            name: []
+            name1: [],
+            image1: [],
+            ratingimg1: [],
+            phone1: [],
+            address1: [],
+            name2: [],
+            image2: [],
+            ratingimg2: [],
+            phone2: [],
+            address2: [],
+            name3: [],
+            image3: [],
+            ratingimg3: [],
+            phone3: [],
+            address3: [],
+            country: [],
+            capital: [],
+            population: [],
+            area: [],
+            currency: [],
+            language: [],
+            flag: [],
+            displayRestaurants: false,
+            faveButton1: '',
+            faveButton2: '',
+            faveButton3: ''
         };
         return _this;
     }
 
     _createClass(SouthAmerica, [{
+        key: 'printBusiness',
+        value: function printBusiness(business) {
+            return _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: business } });
+        }
+    }, {
+        key: 'getButton',
+        value: function getButton() {
+            return _react2.default.createElement('button', { className: 'favButton' });
+        }
+    }, {
+        key: 'handleRestaurantClick',
+        value: function handleRestaurantClick() {
+            this.setState({ displayRestaurants: true });
+            var display = this.state.displayRestaurants;
+        }
+    }, {
+        key: 'handleCountryClick',
+        value: function handleCountryClick() {
+            this.setState({ displayRestaurants: false });
+        }
+    }, {
         key: 'fetchFromAPI',
         value: function fetchFromAPI(regionName) {
             var _this2 = this;
@@ -14584,10 +16129,79 @@ var SouthAmerica = function (_Component) {
                                 _react2.default.createElement('br', null)
                             ));
                         }
-                        _this2.setState({ name: json.businesses[0].name });
+                        if (json.businesses[0]) {
+                            _this2.setState({ name1: json.businesses[0].name });
+                            _this2.setState({ image1: json.businesses[0].image_url });
+                            _this2.setState({ ratingimg1: json.businesses[0].rating_img_url_small });
+                            _this2.setState({ phone1: json.businesses[0].display_phone });
+                            _this2.setState({ address1: json.businesses[0].location.display_address });
+                            _this2.setState({ faveButton1: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name1: ["There are no restaurants in your area that serve this food"] });
+                            _this2.setState({ image1: [] });
+                            _this2.setState({ ratingimg1: [] });
+                            _this2.setState({ phone1: [] });
+                            _this2.setState({ address1: [] });
+                            _this2.setState({ faveButton1: '' });
+                        }
+                        if (json.businesses[1]) {
+                            _this2.setState({ name2: json.businesses[1].name });
+                            _this2.setState({ image2: json.businesses[1].image_url });
+                            _this2.setState({ ratingimg2: json.businesses[1].rating_img_url_small });
+                            _this2.setState({ phone2: json.businesses[1].display_phone });
+                            _this2.setState({ address2: json.businesses[1].location.display_address });
+                            _this2.setState({ faveButton2: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name2: [] });
+                            _this2.setState({ image2: [] });
+                            _this2.setState({ ratingimg2: [] });
+                            _this2.setState({ phone2: [] });
+                            _this2.setState({ address2: [] });
+                            _this2.setState({ faveButton2: '' });
+                        }
+                        if (json.businesses[2]) {
+                            _this2.setState({ name3: json.businesses[2].name });
+                            _this2.setState({ image3: json.businesses[2].image_url });
+                            _this2.setState({ ratingimg3: json.businesses[2].rating_img_url_small });
+                            _this2.setState({ phone3: json.businesses[2].display_phone });
+                            _this2.setState({ address3: json.businesses[2].location.display_address });
+                            _this2.setState({ faveButton3: '<button>Add to Favorites</button>' });
+                        } else {
+                            _this2.setState({ name3: [] });
+                            _this2.setState({ image3: [] });
+                            _this2.setState({ ratingimg3: [] });
+                            _this2.setState({ phone3: [] });
+                            _this2.setState({ address3: [] });
+                            _this2.setState({ faveButton3: '' });
+                        }
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'countryInfo',
+        value: function countryInfo(regionName) {
+            var _this3 = this;
+
+            fetch('https://restcountries.eu/rest/v2/name/' + regionName).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (json) {
+                        _this3.setState({ country: json[0].name });
+                        _this3.setState({ capital: json[0].capital });
+                        _this3.setState({ population: json[0].population });
+                        _this3.setState({ area: json[0].area });
+                        _this3.setState({ currency: json[0].currencies[0].name });
+                        _this3.setState({ language: json[0].languages[0].name });
+                        _this3.setState({ flag: json[0].flag });
                     });
                 } else {
-                    _this2.setState({ name: [] });
+                    _this3.setState({ country: ["Select a country on the map! Basic country info and restaurants that serve that type of cuisine will be displayed"] });
+                    _this3.setState({ capital: [] });
+                    _this3.setState({ population: [] });
+                    _this3.setState({ area: [] });
+                    _this3.setState({ currency: [] });
+                    _this3.setState({ language: [] });
+                    _this3.setState({ flag: [] });
                 }
             });
         }
@@ -14612,20 +16226,25 @@ var SouthAmerica = function (_Component) {
                 onRegionClick: function onRegionClick(event, code) {
                     var region = map.getRegionName(code);
                     self.fetchFromAPI(region);
+                    self.countryInfo(region);
                 }
             });
-            //  let jsonData = this.props.jsonData;
-            //      this.fetchFromAPI(region);
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
+            var countryFlag = this.state.flag;
+            var image1 = this.state.image1;
+            var image2 = this.state.image2;
+            var image3 = this.state.image3;
+            var rating1 = this.state.ratingimg1;
+            var rating2 = this.state.ratingimg2;
+            var rating3 = this.state.ratingimg3;
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_navbar.NavBar, null),
                 _react2.default.createElement(
                     'button',
                     { id: 'back' },
@@ -14637,8 +16256,17 @@ var SouthAmerica = function (_Component) {
                     '/ SOUTH AMERICA'
                 ),
                 _react2.default.createElement('div', { id: 'map', ref: function ref(display) {
-                        return _this3.display = display;
+                        return _this4.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/discover' },
+                        'DISCOVER'
+                    )
+                ),
                 _react2.default.createElement(
                     'div',
                     { id: 'info' },
@@ -14652,6 +16280,176 @@ var SouthAmerica = function (_Component) {
                         null,
                         ' ',
                         this.state.name
+                    )
+                ),
+                this.state.displayRestaurants ? _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name1
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating1 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone1
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address1[2]
+                        ),
+                        this.printBusiness(this.state.faveButton1),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name2
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating2 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone2
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address2[2]
+                        ),
+                        this.printBusiness(this.state.faveButton2),
+                        _react2.default.createElement('br', null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { id: 'restaurant', src: image3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                ' ',
+                                this.state.name3
+                            )
+                        ),
+                        _react2.default.createElement('img', { src: rating3 }),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.phone3
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[0]
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.address3[2]
+                        ),
+                        this.printBusiness(this.state.faveButton3)
+                    )
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'info' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'center' },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleCountryClick },
+                            'Show Country Details '
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.handleRestaurantClick },
+                            'Show Restaurants '
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' ',
+                        this.state.country
+                    ),
+                    _react2.default.createElement('img', { id: 'flag', src: countryFlag }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Capital: ',
+                        this.state.capital
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Population: ',
+                        this.state.population
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Area: ',
+                        this.state.area
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Currency: ',
+                        this.state.currency
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' Language: ',
+                        this.state.language
                     )
                 )
             );
@@ -15101,7 +16899,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15219,7 +17017,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15604,7 +17402,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15707,7 +17505,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 var _accountStore = __webpack_require__(25);
 
@@ -15888,7 +17686,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _navbar = __webpack_require__(12);
+var _navbar = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18455,7 +20253,7 @@ Object.defineProperty(exports, 'go', {
   }
 });
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -18465,7 +20263,7 @@ var _DOMUtils = __webpack_require__(41);
 
 var _DOMStateStorage = __webpack_require__(80);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18600,7 +20398,7 @@ Object.defineProperty(exports, 'go', {
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 var getCurrentLocation = exports.getCurrentLocation = function getCurrentLocation() {
   return (0, _LocationUtils.createLocation)(window.location);
@@ -18727,7 +20525,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -18881,7 +20679,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -18891,7 +20689,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(17);
 
 var _createHistory = __webpack_require__(51);
 
@@ -20018,8 +21816,8 @@ var EventPluginHub = __webpack_require__(33);
 var EventPropagators = __webpack_require__(34);
 var ExecutionEnvironment = __webpack_require__(8);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactUpdates = __webpack_require__(14);
-var SyntheticEvent = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(15);
 
 var getEventTarget = __webpack_require__(64);
 var isEventSupported = __webpack_require__(65);
@@ -20346,7 +22144,7 @@ var DOMLazyTree = __webpack_require__(27);
 var ExecutionEnvironment = __webpack_require__(8);
 
 var createNodesFromMarkup = __webpack_require__(154);
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var invariant = __webpack_require__(2);
 
 var Danger = {
@@ -20630,7 +22428,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -21047,7 +22845,7 @@ var _prodInvariant = __webpack_require__(5),
 
 var React = __webpack_require__(31);
 var ReactComponentEnvironment = __webpack_require__(58);
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactErrorUtils = __webpack_require__(59);
 var ReactInstanceMap = __webpack_require__(35);
 var ReactInstrumentation = __webpack_require__(11);
@@ -21956,7 +23754,7 @@ var ReactDOMComponentTree = __webpack_require__(7);
 var ReactDefaultInjection = __webpack_require__(202);
 var ReactMount = __webpack_require__(92);
 var ReactReconciler = __webpack_require__(28);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 var ReactVersion = __webpack_require__(217);
 
 var findDOMNode = __webpack_require__(234);
@@ -22076,7 +23874,7 @@ var AutoFocusUtils = __webpack_require__(173);
 var CSSPropertyOperations = __webpack_require__(175);
 var DOMLazyTree = __webpack_require__(27);
 var DOMNamespaces = __webpack_require__(54);
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var DOMPropertyOperations = __webpack_require__(85);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginRegistry = __webpack_require__(42);
@@ -22091,7 +23889,7 @@ var ReactInstrumentation = __webpack_require__(11);
 var ReactMultiChild = __webpack_require__(210);
 var ReactServerRenderingTransaction = __webpack_require__(215);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var escapeTextContentForBrowser = __webpack_require__(46);
 var invariant = __webpack_require__(2);
 var isEventSupported = __webpack_require__(65);
@@ -23247,7 +25045,7 @@ var _prodInvariant = __webpack_require__(5),
 var DOMPropertyOperations = __webpack_require__(85);
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -23525,7 +25323,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(3);
@@ -24194,7 +25992,7 @@ var _prodInvariant = __webpack_require__(5),
 
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
@@ -24497,7 +26295,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var EventPluginRegistry = __webpack_require__(42);
 var ReactComponentTreeHook = __webpack_require__(10);
 
@@ -24984,10 +26782,10 @@ module.exports = ReactDebugTool;
 
 var _assign = __webpack_require__(6);
 
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 var Transaction = __webpack_require__(45);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 
 var RESET_BATCHED_UPDATES = {
   initialize: emptyFunction,
@@ -25215,7 +27013,7 @@ var EventListener = __webpack_require__(77);
 var ExecutionEnvironment = __webpack_require__(8);
 var PooledClass = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var getEventTarget = __webpack_require__(64);
 var getUnboundedScrollPosition = __webpack_require__(156);
@@ -25408,14 +27206,14 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(18);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginUtils = __webpack_require__(55);
 var ReactComponentEnvironment = __webpack_require__(58);
 var ReactEmptyComponent = __webpack_require__(88);
 var ReactBrowserEventEmitter = __webpack_require__(43);
 var ReactHostComponent = __webpack_require__(90);
-var ReactUpdates = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(13);
 
 var ReactInjection = {
   Component: ReactComponentEnvironment.injection,
@@ -25551,11 +27349,11 @@ var ReactComponentEnvironment = __webpack_require__(58);
 var ReactInstanceMap = __webpack_require__(35);
 var ReactInstrumentation = __webpack_require__(11);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactReconciler = __webpack_require__(28);
 var ReactChildReconciler = __webpack_require__(182);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var flattenChildren = __webpack_require__(235);
 var invariant = __webpack_require__(2);
 
@@ -26981,7 +28779,7 @@ var EventPropagators = __webpack_require__(34);
 var ExecutionEnvironment = __webpack_require__(8);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInputSelection = __webpack_require__(91);
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 var getActiveElement = __webpack_require__(79);
 var isTextInputElement = __webpack_require__(101);
@@ -27181,7 +28979,7 @@ var EventPropagators = __webpack_require__(34);
 var ReactDOMComponentTree = __webpack_require__(7);
 var SyntheticAnimationEvent = __webpack_require__(221);
 var SyntheticClipboardEvent = __webpack_require__(222);
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 var SyntheticFocusEvent = __webpack_require__(225);
 var SyntheticKeyboardEvent = __webpack_require__(227);
 var SyntheticMouseEvent = __webpack_require__(44);
@@ -27191,7 +28989,7 @@ var SyntheticTransitionEvent = __webpack_require__(229);
 var SyntheticUIEvent = __webpack_require__(36);
 var SyntheticWheelEvent = __webpack_require__(230);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var getEventCharCode = __webpack_require__(62);
 var invariant = __webpack_require__(2);
 
@@ -27407,7 +29205,7 @@ module.exports = SimpleEventPlugin;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 /**
  * @interface Event
@@ -27451,7 +29249,7 @@ module.exports = SyntheticAnimationEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 /**
  * @interface Event
@@ -27494,7 +29292,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 /**
  * @interface Event
@@ -27617,7 +29415,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 /**
  * @interface Event
@@ -27798,7 +29596,7 @@ module.exports = SyntheticTouchEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(16);
+var SyntheticEvent = __webpack_require__(15);
 
 /**
  * @interface Event
@@ -28130,7 +29928,7 @@ module.exports = dangerousStyleValue;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInstanceMap = __webpack_require__(35);
 
@@ -28904,7 +30702,7 @@ var IndexRedirect = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routerWarning__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__InternalPropTypes__ = __webpack_require__(37);
 
 
@@ -28961,7 +30759,7 @@ var IndexRoute = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RouteUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__InternalPropTypes__ = __webpack_require__(37);
 
 
@@ -29021,7 +30819,7 @@ var Route = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createTransitionManager__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__InternalPropTypes__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouterContext__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouteUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouterUtils__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routerWarning__ = __webpack_require__(30);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -29725,7 +31523,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouterUtils__ = __webpack_require__(107);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -29793,7 +31591,7 @@ function match(_ref, callback) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PatternUtils__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routerWarning__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
 /* harmony export (immutable) */ __webpack_exports__["a"] = matchRoutes;
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -31262,7 +33060,7 @@ module.exports = PooledClass;
 var PooledClass = __webpack_require__(268);
 var ReactElement = __webpack_require__(23);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var traverseAllChildren = __webpack_require__(277);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -32358,7 +34156,7 @@ var ReactElement = __webpack_require__(23);
 var ReactPropTypeLocationNames = __webpack_require__(74);
 var ReactPropTypesSecret = __webpack_require__(117);
 
-var emptyFunction = __webpack_require__(13);
+var emptyFunction = __webpack_require__(12);
 var getIteratorFn = __webpack_require__(76);
 var warning = __webpack_require__(3);
 
@@ -32999,7 +34797,7 @@ module.exports = onlyChild;
 
 var _prodInvariant = __webpack_require__(24);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(14);
 var REACT_ELEMENT_TYPE = __webpack_require__(115);
 
 var getIteratorFn = __webpack_require__(76);
@@ -33438,7 +35236,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
