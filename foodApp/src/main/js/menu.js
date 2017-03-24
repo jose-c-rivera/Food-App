@@ -23,19 +23,19 @@ let Menu = React.createClass({
            <div>
                < NavBar />
                <button id="Discover_button">
-                   <Link to="/discover" style={{display: 'block', height: '100%'}}/>
+                   <Link to="/Discover" style={{display: 'block', height: '100%'}}/>
                </button>
                <button id="Planner_button">
-                   <Link to="/planner" style={{display: 'block', height: '100%'}}/>
+                   <Link to="/Planner" style={{display: 'block', height: '100%'}}/>
                </button>
                <button id="Trending_button">
-
+                   <Link to="/Trending" style={{display: 'block', height: '100%'}}/>
                </button>
                <button id="Profile_button">
                    <Link to="/profile" style={{display: 'block', height: '100%'}}/>
                </button>
                <button id="Settings_button">
-                   <Link to="/setting" style={{display: 'block', height: '100%'}}/>
+                   <Link to="/Setting" style={{display: 'block', height: '100%'}}/>
                </button>
            </div>
         )

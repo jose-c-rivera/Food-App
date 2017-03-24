@@ -29,12 +29,14 @@ let Editlocation = React.createClass({
    render(){
            return(
            <div><h1 id="settings_header">EDIT LOCATION</h1>
+               <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>New Name
                     <input type="text" value={this.state.location} onChange={this.handleChange} />
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
+               </div>
                <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>
             </div>
         )

@@ -8,7 +8,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { NavBar } from './navbar'
 
-let viewProfile = React.createClass({
+let Profile = React.createClass({
 
     getInitialState(){
         return{}
@@ -22,15 +22,14 @@ let viewProfile = React.createClass({
                 < NavBar />
                 <h1 id="discover_header">PROFILE</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
-                <h1>Hi a profile goes here</h1>
             </div>
         )
     }
 });
 
 //This exports the class to be imported by index.js
-export class Profile extends React.Component{
+export class ProfileApp extends React.Component{
     render(){
-        return(<viewProfile/>);
+        return(<Profile/>);
     }
 }

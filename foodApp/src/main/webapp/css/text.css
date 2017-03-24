@@ -5,6 +5,14 @@ body {
 head {
     background: url(http://www.shunvmall.com/data/out/244/46913747-wallpaper-orange.png) no-repeat;
 }
+#entry_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+
+}
 
 #Login{
     position: absolute;
@@ -414,7 +422,7 @@ head {
     font-size: 150px;
     position: absolute;
     top: -7%;
-    left: 20%;
+    left: 23%;
 }
 
 #settings_header{
@@ -437,7 +445,7 @@ head {
     width: 400px;
     position:absolute;
     transition: .5s ease;
-    top: 24%;
+    top: 36%;
     left: 20%;
 }
 
@@ -448,26 +456,6 @@ head {
     -o-transform: scale(1.05);
 }
 
-#picture {
-    outline:0;
-    padding: 0;
-    border: none;
-    background: url(../img/editpic_button.png) no-repeat;
-    background-size: contain;
-    height: 80px;
-    width: 400px;
-    position:absolute;
-    transition: .5s ease;
-    top: 24%;
-    left: 55%;
-}
-
-#picture:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-}
 
 #phone {
     outline:0;
@@ -479,7 +467,7 @@ head {
     width: 400px;
     position:absolute;
     transition: .5s ease;
-    top: 36%;
+    top: 48%;
     left: 20%;
 }
 
@@ -521,7 +509,7 @@ head {
     width: 400px;
     position:absolute;
     transition: .5s ease;
-    top: 48%;
+    top: 84%;
     left: 20%;
 }
 
@@ -637,26 +625,6 @@ head {
     -o-transform: scale(1.05);
 }
 
-#language {
-    outline:0;
-    padding: 0;
-    border: none;
-    background: url(../img/chooselanguage_button.png) no-repeat;
-    background-size: contain;
-    height: 80px;
-    width: 400px;
-    position:absolute;
-    transition: .5s ease;
-    top: 84%;
-    left: 20%;
-}
-
-#language:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-}
 
 #delete {
     outline:0;

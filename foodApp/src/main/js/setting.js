@@ -29,8 +29,6 @@ let Setting = React.createClass({
                 <br/>
                 <button id="name"><Link to="settings/editname" style={{display: 'block', height: '100%'}}/></button>
                 <br/>
-                <button id="picture"><Link to="settings/editpic" style={{display: 'block', height: '100%'}}/></button>
-                <br/>
                 <button id="phone"><Link to="settings/editphone" style={{display: 'block', height: '100%'}}/></button>
                 <br/>
                 <button id="tastes"><Link to="settings/edittastes" style={{display: 'block', height: '100%'}}/></button>
@@ -46,8 +44,6 @@ let Setting = React.createClass({
                 <button id="password"><Link to="settings/editpassword" style={{display: 'block', height: '100%'}}/></button>
                 <br/>
                 <button id="fav"><Link to="settings/managefav" style={{display: 'block', height: '100%'}}/></button>
-                <br/>
-                <button id="language"><Link to="settings/chooselanguage" style={{display: 'block', height: '100%'}}/></button>
                 <br/>
                 <button id="delete"><Link to="settings/delete" style={{display: 'block', height: '100%'}}/></button>
             </div>

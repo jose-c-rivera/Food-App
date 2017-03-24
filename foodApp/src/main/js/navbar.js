@@ -58,7 +58,7 @@ var NavigationBar = React.createClass({
     renderNavigation() {
             return [
                 <div>
-                    <button id="nav_button" onClick={this.handleNavClick.bind(this)}></button>
+                    <button id="nav_button" onClick={this.handleNavClick.bind(this)}/>
                     {this.renderMobileNav()}
                 </div>
             ];
