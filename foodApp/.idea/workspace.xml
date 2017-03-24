@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56dc2ea-19d2-490e-ae62-9ef879f01441" name="Default" comment="MInor Text FIxes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/devDB.trace.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/foodapp/EventController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/foodapp/Event.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/js/trending.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/foodapp/EventControllerSpec.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/foodapp/EventSpec.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/devDB.mv.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/js/settings/chooselanguage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/js/settings/editpic.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
@@ -19,55 +10,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/foodapp/CreateAccountController.class" afterPath="$PROJECT_DIR$/build/classes/main/foodapp/CreateAccountController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/foodapp/Profile.class" afterPath="$PROJECT_DIR$/build/classes/main/foodapp/Profile.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/foodapp/UserAccount.class" afterPath="$PROJECT_DIR$/build/classes/main/foodapp/UserAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/foodApp.iml" afterPath="$PROJECT_DIR$/.idea/modules/foodApp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/.dependencies" afterPath="$PROJECT_DIR$/build/.dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_cs_CZ.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_cs_CZ.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_da.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_da.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_de.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_es.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_fr.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_fr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_it.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_it.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_ja.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_ja.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_nb.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_nb.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_pl.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_pl.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_BR.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_pt_BR.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_PT.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_pt_PT.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_ru.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_sv.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_sv.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/messages_th.properties" afterPath="$PROJECT_DIR$/build/resources/main/messages_th.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/stacktrace.log" afterPath="$PROJECT_DIR$/build/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devDB.trace.db" afterPath="$PROJECT_DIR$/devDB.trace.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js" afterPath="$PROJECT_DIR$/grails-app/assets/javascripts/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/foodapp/CreateAccountController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/foodapp/CreateAccountController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/npm" afterPath="$PROJECT_DIR$/node_modules/.bin/npm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/package.json" afterPath="$PROJECT_DIR$/node_modules/npm/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/africa.js" afterPath="$PROJECT_DIR$/src/main/js/continents/africa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/asiaME.js" afterPath="$PROJECT_DIR$/src/main/js/continents/asiaME.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/australia.js" afterPath="$PROJECT_DIR$/src/main/js/continents/australia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/europe.js" afterPath="$PROJECT_DIR$/src/main/js/continents/europe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/northAmerica.js" afterPath="$PROJECT_DIR$/src/main/js/continents/northAmerica.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/continents/southAmerica.js" afterPath="$PROJECT_DIR$/src/main/js/continents/southAmerica.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/index.js" afterPath="$PROJECT_DIR$/src/main/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/menu.js" afterPath="$PROJECT_DIR$/src/main/js/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/navbar.js" afterPath="$PROJECT_DIR$/src/main/js/navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/planner-SUB/addFriends.js" afterPath="$PROJECT_DIR$/src/main/js/planner-SUB/addFriends.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/profile.js" afterPath="$PROJECT_DIR$/src/main/js/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/setting.js" afterPath="$PROJECT_DIR$/src/main/js/setting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/delete.js" afterPath="$PROJECT_DIR$/src/main/js/settings/delete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editemail.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editemail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editlocation.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editlocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editname.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editname.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editpassword.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editpassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/editphone.js" afterPath="$PROJECT_DIR$/src/main/js/settings/editphone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/edittastes.js" afterPath="$PROJECT_DIR$/src/main/js/settings/edittastes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/managefav.js" afterPath="$PROJECT_DIR$/src/main/js/settings/managefav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/managefriends.js" afterPath="$PROJECT_DIR$/src/main/js/settings/managefriends.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" afterPath="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/text.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/text.css" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -80,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/foodApp$Grails__foodApp.coverage" NAME="Grails: foodApp Coverage Results" MODIFIED="1490362486162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/foodApp$Grails__foodApp.coverage" NAME="Grails: foodApp Coverage Results" MODIFIED="1490364693006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -124,8 +73,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="70" column="66" lean-forward="false" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+            <state relative-caret-position="846">
+              <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding>
                 <element signature="e#200#226#0" expanded="true" />
               </folding>
@@ -133,21 +82,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="setting.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/setting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="45" column="116" lean-forward="false" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/js/menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="396">
               <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/js/navbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="70">
               <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/js/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -168,6 +137,7 @@
     <findStrings>
       <find>nav</find>
       <find>form</find>
+      <find>tre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -881,7 +851,6 @@
         <option value="$PROJECT_DIR$/grails-app/domain/foodapp/ProfileInfo.groovy" />
         <option value="$PROJECT_DIR$/src/main/js/signin.js" />
         <option value="$PROJECT_DIR$/src/main/js/createprofile.js" />
-        <option value="$PROJECT_DIR$/src/main/js/profile.js" />
         <option value="$PROJECT_DIR$/grails-app/controllers/foodapp/CreateProfileController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/foodapp/Profile.groovy" />
         <option value="$PROJECT_DIR$/src/main/js/menu.js" />
@@ -900,9 +869,10 @@
         <option value="$PROJECT_DIR$/src/main/js/settings/managefriends.js" />
         <option value="$PROJECT_DIR$/src/main/js/settings/orderhistory.js" />
         <option value="$PROJECT_DIR$/src/main/js/setting.js" />
-        <option value="$PROJECT_DIR$/src/main/js/index.js" />
         <option value="$PROJECT_DIR$/src/main/js/planner-SUB/addFriends.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/text.css" />
+        <option value="$PROJECT_DIR$/src/main/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/js/profile.js" />
       </list>
     </option>
   </component>
@@ -937,8 +907,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1006,34 +974,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner-SUB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Grails" />
     </panes>
   </component>
@@ -1521,6 +1465,8 @@
       <workItem from="1490302127106" duration="103000" />
       <workItem from="1490350664220" duration="4125000" />
       <workItem from="1490361908325" duration="899000" />
+      <workItem from="1490363871711" duration="81000" />
+      <workItem from="1490364332200" duration="926000" />
     </task>
     <task id="LOCAL-00001" summary="ReLinked profile creation">
       <created>1490081878568</created>
@@ -1533,7 +1479,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57969000" />
+    <option name="totallyTimeSpent" value="58976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1550,7 +1496,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25887266" sideWeight="0.3615257" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25887266" sideWeight="0.36705363" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1561,13 +1507,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.4936034" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25887266" sideWeight="0.6329464" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25887266" sideWeight="0.6384743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.49143174" order="12" side_tool="false" content_ui="tabs" />
@@ -1575,6 +1521,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15201768" sideWeight="0.83514774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08512991" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1587,7 +1534,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49806523" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1596,7 +1542,7 @@
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.3477059" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25887266" sideWeight="0.36705363" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1605,7 +1551,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.4936034" order="4" side_tool="false" content_ui="tabs" />
@@ -1617,12 +1563,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2682672" sideWeight="0.6522941" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25887266" sideWeight="0.6329464" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.4936429" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.49143174" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1708126" sideWeight="0.16485226" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1708126" sideWeight="0.83514774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15201768" sideWeight="0.83514774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2129,20 +2076,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/setting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="45" column="116" lean-forward="false" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/settings/editemail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2150,25 +2087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="70" column="66" lean-forward="false" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
-          <folding>
-            <element signature="e#200#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="104" lean-forward="false" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2176,7 +2094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2184,22 +2101,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="424" column="12" lean-forward="false" selection-start-line="424" selection-start-column="12" selection-end-line="424" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="45" column="116" lean-forward="false" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="396">
           <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+          <folding>
+            <element signature="e#200#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="70">
           <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>

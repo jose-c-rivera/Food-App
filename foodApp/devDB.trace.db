@@ -1804,3 +1804,89 @@ select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.date as date3
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
+2017-03-24 10:03:34 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2518)
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:2713)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 5 more
+Caused by: java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:435)
+	at org.h2.mvstore.FileStore.readFully(FileStore.java:98)
+	at org.h2.mvstore.MVStore.readChunkHeader(MVStore.java:1584)
+	at org.h2.mvstore.MVStore.getMetaMap(MVStore.java:527)
+	at org.h2.mvstore.MVStore.openMapVersion(MVStore.java:410)
+	at org.h2.mvstore.MVMap.openVersion(MVMap.java:1128)
+	at org.h2.mvstore.MVMap.rewrite(MVMap.java:775)
+	at org.h2.mvstore.MVStore.compactRewrite(MVStore.java:1920)
+	at org.h2.mvstore.MVStore.compact(MVStore.java:1812)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2514)
+	... 1 more
+Caused by: java.io.EOFException
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:423)
+	... 10 more
+2017-03-24 10:05:29 database: could not close the database
+org.h2.message.DbException: General error: "General error: ""java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]"" [50000-193]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.engine.Database.throwLastBackgroundException(Database.java:2030)
+	at org.h2.engine.Database.close(Database.java:1220)
+	at org.h2.engine.DatabaseCloser.run(DatabaseCloser.java:63)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "General error: ""java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]"" [50000-193]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 4 more
+Caused by: org.h2.message.DbException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2518)
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:2713)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 5 more
+Caused by: java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:435)
+	at org.h2.mvstore.FileStore.readFully(FileStore.java:98)
+	at org.h2.mvstore.MVStore.readChunkHeader(MVStore.java:1584)
+	at org.h2.mvstore.MVStore.getMetaMap(MVStore.java:527)
+	at org.h2.mvstore.MVStore.openMapVersion(MVStore.java:410)
+	at org.h2.mvstore.MVMap.openVersion(MVMap.java:1128)
+	at org.h2.mvstore.MVMap.rewrite(MVMap.java:775)
+	at org.h2.mvstore.MVStore.compactRewrite(MVStore.java:1920)
+	at org.h2.mvstore.MVStore.compact(MVStore.java:1812)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2514)
+	... 1 more
+Caused by: java.io.EOFException
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:423)
+	... 10 more
+2017-03-24 10:05:29 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2518)
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:2713)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 5 more
+Caused by: java.lang.IllegalStateException: Reading from nio:/home/jose/FoodApp/jose-c-rivera.github.io/foodApp/devDB.mv.db failed; file length 0 read length 1024 at 28672 [1.4.193/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:435)
+	at org.h2.mvstore.FileStore.readFully(FileStore.java:98)
+	at org.h2.mvstore.MVStore.readChunkHeader(MVStore.java:1584)
+	at org.h2.mvstore.MVStore.getMetaMap(MVStore.java:527)
+	at org.h2.mvstore.MVStore.openMapVersion(MVStore.java:410)
+	at org.h2.mvstore.MVMap.openVersion(MVMap.java:1128)
+	at org.h2.mvstore.MVMap.rewrite(MVMap.java:775)
+	at org.h2.mvstore.MVStore.compactRewrite(MVStore.java:1920)
+	at org.h2.mvstore.MVStore.compact(MVStore.java:1812)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:2514)
+	... 1 more
+Caused by: java.io.EOFException
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:423)
+	... 10 more

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/assets/";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 281);
+/******/ 	return __webpack_require__(__webpack_require__.s = 280);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -13666,6 +13666,32 @@ module.exports = ReactPropTypesSecret;
 /* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(147);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(279)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../css-loader/index.js!./react-select.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./react-select.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -13787,15 +13813,6 @@ var Africa = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -13837,7 +13854,7 @@ var africa = exports.africa = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13961,15 +13978,6 @@ var Asia = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -14011,7 +14019,7 @@ var asia = exports.asia = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14135,15 +14143,6 @@ var Australia = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -14185,7 +14184,7 @@ var australia = exports.australia = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14309,15 +14308,6 @@ var Europe = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -14359,7 +14349,7 @@ var europe = exports.europe = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14483,15 +14473,6 @@ var NorthAmerica = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -14533,7 +14514,7 @@ var northAmerica = exports.northAmerica = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14659,15 +14640,6 @@ var SouthAmerica = function (_Component) {
                         return _this3.display = display;
                     }, style: { width: '1000px', height: '700px' } }),
                 _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/discover' },
-                        'DISCOVER'
-                    )
-                ),
-                _react2.default.createElement(
                     'div',
                     { id: 'info' },
                     _react2.default.createElement(
@@ -14709,7 +14681,7 @@ var southAmerica = exports.southAmerica = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14922,7 +14894,7 @@ var CreateAccount = exports.CreateAccount = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14964,7 +14936,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 
-__webpack_require__(280);
+__webpack_require__(118);
 
 var Profile = _react2.default.createClass({
     displayName: 'Profile',
@@ -15110,7 +15082,7 @@ var GetProfileData = exports.GetProfileData = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15228,7 +15200,7 @@ var DiscoverApp = exports.DiscoverApp = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15282,14 +15254,18 @@ var Menu = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'Discover_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/discover', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/Discover', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
                 'button',
                 { id: 'Planner_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/planner', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/Planner', style: { display: 'block', height: '100%' } })
             ),
-            _react2.default.createElement('button', { id: 'Trending_button' }),
+            _react2.default.createElement(
+                'button',
+                { id: 'Trending_button' },
+                _react2.default.createElement(_reactRouter.Link, { to: '/Trending', style: { display: 'block', height: '100%' } })
+            ),
             _react2.default.createElement(
                 'button',
                 { id: 'Profile_button' },
@@ -15298,7 +15274,7 @@ var Menu = _react2.default.createClass({
             _react2.default.createElement(
                 'button',
                 { id: 'Settings_button' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/setting', style: { display: 'block', height: '100%' } })
+                _react2.default.createElement(_reactRouter.Link, { to: '/Setting', style: { display: 'block', height: '100%' } })
             )
         );
     }
@@ -15326,7 +15302,7 @@ var Menus = exports.Menus = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15354,15 +15330,20 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * Created by jose on 02/03/17.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
-/**
- * Created by jose on 02/03/17.
- */
 
+
+__webpack_require__(118);
 
 var FriendsAdd = _react2.default.createClass({
     displayName: 'FriendsAdd',
     getInitialState: function getInitialState() {
-        return {};
+        return {
+            options: [{ value: 'sweet', label: 'Sweet' }, { value: 'spicy', label: 'Spicy' }, { value: 'hot', label: 'Hot' }, { value: 'sour', label: 'Sour' }, { value: 'vegetarian', label: 'Vegetarian' }, { value: 'vegan', label: 'Vegan' }, { value: 'sweet', label: 'Sweet' }]
+        };
+    },
+    handleFriendChange: function handleFriendChange(e) {
+        e.preventDefault();
+        this.setState({ friends: e.target.value });
     },
     render: function render() {
         return _react2.default.createElement(
@@ -15371,12 +15352,68 @@ var FriendsAdd = _react2.default.createClass({
             _react2.default.createElement(
                 'h1',
                 { id: 'discover_header' },
-                '(ADD FRIENDS)'
+                'ADD FRIENDS'
             ),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
                 _react2.default.createElement(_reactRouter.Link, { to: '/planner', style: { display: 'block', height: '100%' } })
+            ),
+            _react2.default.createElement(
+                'div',
+                { id: 'entry_form' },
+                _react2.default.createElement(
+                    'form',
+                    null,
+                    _react2.default.createElement(
+                        'strong',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'Okay! So first things first! Let\'s name your event.'
+                        )
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'Event Name'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('input', { type: 'text',
+                            placeholder: 'Event name' })
+                    ),
+                    _react2.default.createElement(
+                        'strong',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'Now lets add your friends. '
+                        )
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text',
+                        placeholder: 'Friend\'s name' }),
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'Choose your friends to add to the party'
+                    )
+                ),
+                _react2.default.createElement(
+                    'button',
+                    null,
+                    'Continue'
+                ),
+                _react2.default.createElement(
+                    'button',
+                    null,
+                    'DELETE EVENT'
+                )
             )
         );
     }
@@ -15402,7 +15439,7 @@ var friendsAdd = exports.friendsAdd = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15475,7 +15512,7 @@ var findRestaurant = exports.findRestaurant = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15548,7 +15585,7 @@ var groupVote = exports.groupVote = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15651,7 +15688,7 @@ var planner = exports.planner = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15743,39 +15780,43 @@ var Profile = _react2.default.createClass({
                 _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
             ),
             _react2.default.createElement(
-                'h1',
-                null,
-                this.state.userName
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                'username: ',
-                this.state.userName
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                'location: ',
-                this.state.location
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                'email: ',
-                this.state.email
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                'phone: ',
-                this.state.phoneNumber
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                'tastes: ',
-                this.state.tastes
+                'div',
+                { id: 'entry_form' },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    this.state.userName
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'username: ',
+                    this.state.userName
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'location: ',
+                    this.state.location
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'email: ',
+                    this.state.email
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'phone: ',
+                    this.state.phoneNumber
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'tastes: ',
+                    this.state.tastes
+                )
             )
         );
     }
@@ -15803,7 +15844,7 @@ var ProfileApp = exports.ProfileApp = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15874,12 +15915,6 @@ var Setting = _react2.default.createClass({
             _react2.default.createElement('br', null),
             _react2.default.createElement(
                 'button',
-                { id: 'picture' },
-                _react2.default.createElement(_reactRouter.Link, { to: 'settings/editpic', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement('br', null),
-            _react2.default.createElement(
-                'button',
                 { id: 'phone' },
                 _react2.default.createElement(_reactRouter.Link, { to: 'settings/editphone', style: { display: 'block', height: '100%' } })
             ),
@@ -15928,12 +15963,6 @@ var Setting = _react2.default.createClass({
             _react2.default.createElement('br', null),
             _react2.default.createElement(
                 'button',
-                { id: 'language' },
-                _react2.default.createElement(_reactRouter.Link, { to: 'settings/chooselanguage', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement('br', null),
-            _react2.default.createElement(
-                'button',
                 { id: 'delete' },
                 _react2.default.createElement(_reactRouter.Link, { to: 'settings/delete', style: { display: 'block', height: '100%' } })
             )
@@ -15960,107 +15989,6 @@ var SettingApp = exports.SettingApp = function (_React$Component) {
     }]);
 
     return SettingApp;
-}(_react2.default.Component);
-
-/***/ }),
-/* 134 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.chooselanguage = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(4);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * File: setting.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Purpose: Allows the user to change the applications language
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @AUTHOR: Yixin Li
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Course: CS 2212
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Chooselanguage = _react2.default.createClass({
-    displayName: 'Chooselanguage',
-    getInitialState: function getInitialState() {
-        return {};
-    },
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            null,
-            _react2.default.createElement(
-                'h1',
-                { id: 'settings_header' },
-                'LANGUAGE'
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/setting', style: { display: 'block', height: '100%' } })
-            ),
-            _react2.default.createElement(
-                'h1',
-                null,
-                'Choose Your Language'
-            ),
-            _react2.default.createElement('br', null),
-            _react2.default.createElement(
-                'select',
-                null,
-                _react2.default.createElement(
-                    'option',
-                    { value: 'English' },
-                    'English'
-                ),
-                _react2.default.createElement(
-                    'option',
-                    { value: 'French' },
-                    'French'
-                ),
-                _react2.default.createElement(
-                    'option',
-                    { value: 'Other' },
-                    'Other'
-                )
-            )
-        );
-    }
-});
-
-var chooselanguage = exports.chooselanguage = function (_React$Component) {
-    _inherits(chooselanguage, _React$Component);
-
-    function chooselanguage() {
-        _classCallCheck(this, chooselanguage);
-
-        return _possibleConstructorReturn(this, (chooselanguage.__proto__ || Object.getPrototypeOf(chooselanguage)).apply(this, arguments));
-    }
-
-    _createClass(chooselanguage, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(Chooselanguage, null);
-        }
-    }]);
-
-    return chooselanguage;
 }(_react2.default.Component);
 
 /***/ }),
@@ -16122,14 +16050,18 @@ var Delete = _react2.default.createClass({
                 'DELETE ACCOUNT'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'Are you sure you wish to delete your account?'
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Delete' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'Are you sure you wish to delete your account?'
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Delete' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16221,15 +16153,19 @@ var Editemail = _react2.default.createClass({
                 'EDIT EMAIL'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Name',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Name',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16332,15 +16268,19 @@ var Editlocation = _react2.default.createClass({
                 'EDIT LOCATION'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                null,
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Name',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.location, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Name',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.location, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16432,15 +16372,19 @@ var Editname = _react2.default.createClass({
                 'EDIT NAME'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Name',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.userName, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Name',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.userName, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16532,15 +16476,19 @@ var Editpassword = _react2.default.createClass({
                 'EDIT PASSWORD'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Name',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.password, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Name',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.password, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16642,15 +16590,19 @@ var Editphone = _react2.default.createClass({
                 'EDIT PHONE #'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Phone',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.phone, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Phone',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.phone, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16682,94 +16634,6 @@ var editphone = exports.editphone = function (_React$Component) {
 
 /***/ }),
 /* 141 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.editpic = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(4);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * File: editpic.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Purpose: Allows the user to upload/change their profile picture
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @AUTHOR: Yixin Li
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Course: CS 2212
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Editpic = _react2.default.createClass({
-    displayName: 'Editpic',
-
-
-    getInitialState: function getInitialState() {
-        return {};
-    },
-
-    handleSubmit: function handleSubmit(e) {
-        alert('Your Profile Picture has been updated. ');
-        e.preventDefault();
-    },
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            null,
-            _react2.default.createElement(
-                'h1',
-                { id: 'settings_header' },
-                'EDIT PICTURE'
-            ),
-            _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
-            ),
-            _react2.default.createElement(
-                'button',
-                { id: 'back' },
-                _react2.default.createElement(_reactRouter.Link, { to: '/setting', style: { display: 'block', height: '100%' } })
-            )
-        );
-    }
-});
-
-var editpic = exports.editpic = function (_React$Component) {
-    _inherits(editpic, _React$Component);
-
-    function editpic() {
-        _classCallCheck(this, editpic);
-
-        return _possibleConstructorReturn(this, (editpic.__proto__ || Object.getPrototypeOf(editpic)).apply(this, arguments));
-    }
-
-    _createClass(editpic, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(Editpic, null);
-        }
-    }]);
-
-    return editpic;
-}(_react2.default.Component);
-
-/***/ }),
-/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16830,15 +16694,19 @@ var Edittastes = _react2.default.createClass({
                 'EDIT TASTES'
             ),
             _react2.default.createElement(
-                'form',
-                { onSubmit: this.handleSubmit },
+                'div',
+                { id: 'entry_form' },
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    'New Name',
-                    _react2.default.createElement('input', { type: 'text', value: this.state.tastes, onChange: this.handleChange })
-                ),
-                _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    'form',
+                    { onSubmit: this.handleSubmit },
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'New Name',
+                        _react2.default.createElement('input', { type: 'text', value: this.state.tastes, onChange: this.handleChange })
+                    ),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                )
             ),
             _react2.default.createElement(
                 'button',
@@ -16869,7 +16737,7 @@ var edittastes = exports.edittastes = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16916,6 +16784,7 @@ var Managefav = _react2.default.createClass({
                 { id: 'settings_header' },
                 'FAVOURITES'
             ),
+            _react2.default.createElement('div', { id: 'entry_form' }),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
@@ -16945,7 +16814,7 @@ var managefav = exports.managefav = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16992,6 +16861,7 @@ var Managefriends = _react2.default.createClass({
                 { id: 'settings_header' },
                 'FRIENDS'
             ),
+            _react2.default.createElement('div', { id: 'entry_form' }),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
@@ -17021,7 +16891,7 @@ var managefriends = exports.managefriends = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17068,6 +16938,7 @@ var Orderhistory = _react2.default.createClass({
                 { id: 'settings_header' },
                 'HISTORY'
             ),
+            _react2.default.createElement('div', { id: 'entry_form' }),
             _react2.default.createElement(
                 'button',
                 { id: 'back' },
@@ -17097,7 +16968,7 @@ var orderhistory = exports.orderhistory = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17251,6 +17122,110 @@ var UserSignIn = exports.UserSignIn = function (_React$Component) {
     }]);
 
     return UserSignIn;
+}(_react2.default.Component);
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.TrendingApp = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(4);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * File: trending.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Purpose: Lets the user see all the restaurants that are trending on social media sites like Instagram and Twitter
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @AUTHOR: Scott Lavelle
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Course: CS 2212
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+var Trending = _react2.default.createClass({
+    displayName: 'Trending',
+    getInitialState: function getInitialState() {
+        return {};
+    },
+
+
+    /*This renders the screen showing trending restaurants.
+     */
+    render: function render() {
+        return _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+                'h1',
+                { id: 'discover_header' },
+                'TRENDING'
+            ),
+            _react2.default.createElement(
+                'button',
+                { id: 'back' },
+                _react2.default.createElement(_reactRouter.Link, { to: '/menu', style: { display: 'block', height: '100%' } })
+            ),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/' },
+                    'LOG OUT'
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { id: 'info' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    ' Trending restaurants:'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    ' ',
+                    this.state.name
+                )
+            )
+        );
+    }
+});
+
+var TrendingApp = exports.TrendingApp = function (_React$Component) {
+    _inherits(TrendingApp, _React$Component);
+
+    function TrendingApp() {
+        _classCallCheck(this, TrendingApp);
+
+        return _possibleConstructorReturn(this, (TrendingApp.__proto__ || Object.getPrototypeOf(TrendingApp)).apply(this, arguments));
+    }
+
+    _createClass(TrendingApp, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(Trending, null);
+        }
+    }]);
+
+    return TrendingApp;
 }(_react2.default.Component);
 
 /***/ }),
@@ -33431,32 +33406,6 @@ function updateLink(linkElement, obj) {
 /* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(147);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(279)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./react-select.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./react-select.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 281 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -33470,33 +33419,33 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouter = __webpack_require__(4);
 
-var _createaccount = __webpack_require__(124);
+var _createaccount = __webpack_require__(125);
 
-var _createprofile = __webpack_require__(125);
+var _createprofile = __webpack_require__(126);
 
-var _profile = __webpack_require__(132);
+var _profile = __webpack_require__(133);
 
-var _menu = __webpack_require__(127);
+var _menu = __webpack_require__(128);
 
-var _discover = __webpack_require__(126);
+var _trending = __webpack_require__(146);
 
-var _northAmerica = __webpack_require__(122);
+var _discover = __webpack_require__(127);
 
-var _southAmerica = __webpack_require__(123);
+var _northAmerica = __webpack_require__(123);
 
-var _europe = __webpack_require__(121);
+var _southAmerica = __webpack_require__(124);
 
-var _africa = __webpack_require__(118);
+var _europe = __webpack_require__(122);
 
-var _asiaME = __webpack_require__(119);
+var _africa = __webpack_require__(119);
 
-var _australia = __webpack_require__(120);
+var _asiaME = __webpack_require__(120);
 
-var _signin = __webpack_require__(146);
+var _australia = __webpack_require__(121);
 
-var _setting = __webpack_require__(133);
+var _signin = __webpack_require__(145);
 
-var _chooselanguage = __webpack_require__(134);
+var _setting = __webpack_require__(134);
 
 var _delete = __webpack_require__(135);
 
@@ -33510,33 +33459,24 @@ var _editpassword = __webpack_require__(139);
 
 var _editphone = __webpack_require__(140);
 
-var _editpic = __webpack_require__(141);
+var _edittastes = __webpack_require__(141);
 
-var _edittastes = __webpack_require__(142);
+var _managefav = __webpack_require__(142);
 
-var _managefav = __webpack_require__(143);
+var _managefriends = __webpack_require__(143);
 
-var _managefriends = __webpack_require__(144);
+var _orderhistory = __webpack_require__(144);
 
-var _orderhistory = __webpack_require__(145);
+var _planner = __webpack_require__(132);
 
-var _planner = __webpack_require__(131);
+var _addFriends = __webpack_require__(129);
 
-var _addFriends = __webpack_require__(128);
+var _findRestaurant = __webpack_require__(130);
 
-var _findRestaurant = __webpack_require__(129);
-
-var _groupVote = __webpack_require__(130);
+var _groupVote = __webpack_require__(131);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * File: index.js
- * Purpose: This JS file imports all the react components,
- *          and handles the navigation between all our different views
- * @AUTHOR: Ryan Kennedy
- * Course: CS 2212
- */
 _reactDom2.default.render(_react2.default.createElement(
         _reactRouter.Router,
         { history: _reactRouter.browserHistory },
@@ -33548,6 +33488,7 @@ _reactDom2.default.render(_react2.default.createElement(
         _react2.default.createElement(_reactRouter.Route, { path: '/Discover', component: _discover.DiscoverApp }),
         _react2.default.createElement(_reactRouter.Route, { path: '/Setting', component: _setting.SettingApp }),
         _react2.default.createElement(_reactRouter.Route, { path: '/Planner', component: _planner.planner }),
+        _react2.default.createElement(_reactRouter.Route, { path: '/Trending', component: _trending.TrendingApp }),
         _react2.default.createElement(_reactRouter.Route, { path: '/NorthAmerica', component: _northAmerica.northAmerica }),
         _react2.default.createElement(_reactRouter.Route, { path: '/SouthAmerica', component: _southAmerica.southAmerica }),
         _react2.default.createElement(_reactRouter.Route, { path: '/Europe', component: _europe.europe }),
@@ -33557,10 +33498,8 @@ _reactDom2.default.render(_react2.default.createElement(
         _react2.default.createElement(_reactRouter.Route, { path: '/planner-SUB/AddFriends', component: _addFriends.friendsAdd }),
         _react2.default.createElement(_reactRouter.Route, { path: '/planner-SUB/FindRestaurant', component: _findRestaurant.findRestaurant }),
         _react2.default.createElement(_reactRouter.Route, { path: '/planner-SUB/GroupVote', component: _groupVote.groupVote }),
-        _react2.default.createElement(_reactRouter.Route, { path: '/settings/ChooseLanguage', component: _chooselanguage.chooselanguage }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/Delete', component: _delete.deleteAcc }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/EditEmail', component: _editemail.editemail }),
-        _react2.default.createElement(_reactRouter.Route, { path: '/settings/EditPic', component: _editpic.editpic }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/EditPhone', component: _editphone.editphone }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/EditPassword', component: _editpassword.editpassword }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/EditName', component: _editname.editname }),
@@ -33569,7 +33508,13 @@ _reactDom2.default.render(_react2.default.createElement(
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/ManageFav', component: _managefav.managefav }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/ManageFriends', component: _managefriends.managefriends }),
         _react2.default.createElement(_reactRouter.Route, { path: '/settings/OrderHistory', component: _orderhistory.orderhistory })
-), document.getElementById('root'));
+), document.getElementById('root')); /**
+                                      * File: index.js
+                                      * Purpose: This JS file imports all the react components,
+                                      *          and handles the navigation between all our different views
+                                      * @AUTHOR: Ryan Kennedy
+                                      * Course: CS 2212
+                                      */
 
 /***/ })
 /******/ ]);
