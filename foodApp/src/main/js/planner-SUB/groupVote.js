@@ -20,7 +20,6 @@ let GroupVote = React.createClass({
                     <form >
                         <strong><b>Chances are you won't ALL agree on a restaurant.</b></strong><br/>
                         <strong><b>And that's fine so we'll pick for you! </b></strong><br/><br/><br/>
-                        <button>PICK FOR ME</button>
                     </form>
                 </div>
             </div>

@@ -25,7 +25,7 @@ let Editphone = React.createClass({
         e.preventDefault();
         alert('Your phone number has been updated: ' + this.state.phone);
         let userName = accountStore.getUser();
-        let newPhone = this.state.phone
+        let newPhone = this.state.phone;
         fetch('http://localhost:8080/manageAccount/updatePhone?' + 'userName=' + userName + '&newPhone='
             + newPhone, {
             method: 'POST',

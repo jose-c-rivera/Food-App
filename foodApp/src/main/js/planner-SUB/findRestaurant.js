@@ -26,11 +26,8 @@ let FindRestaurant = React.createClass({
                                    placeholder="Event name"
                             /><br/><br/>
                         </div>
-                        <input type= "submit"
-                               value="Next Step!" />
                     </form>
 
-                    <button>DELETE EVENT</button>
                 </div>
             </div>
         )

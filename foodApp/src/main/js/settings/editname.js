@@ -6,6 +6,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import accountStore from '../stores/accountStore'
 
 let Editname = React.createClass({
 

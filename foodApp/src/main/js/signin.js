@@ -60,7 +60,6 @@ let SignIn = React.createClass({
         return (
             <div className="signin">
                 <h1 id="title_header">TRAVEL BITES</h1>
-                <Link to="/menu" style={{display: 'block', height: '100%'}}>TEMP SIGN IN</Link>
                 <div id="center_form">
                     <h1>SIGN IN</h1>
                     <hr/><br/>

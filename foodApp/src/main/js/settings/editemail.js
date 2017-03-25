@@ -6,6 +6,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import accountStore from '../stores/accountStore'
 
 let Editemail = React.createClass({
 
@@ -22,7 +23,14 @@ let Editemail = React.createClass({
 
       handleSubmit(e) {
         alert('Your email has been updated: ' + this.state.email);
-        e.preventDefault();
+          let userName = accountStore.getUser();
+          let newEmail = this.state.email;
+          fetch('http://localhost:8080/manageAccount/updateEmail?' + 'userName=' + userName + '&newEmail='
+              + newEmail, {
+              method: 'POST',
+              headers: {}
+          });
+
       },
 
    render(){
@@ -33,7 +41,7 @@ let Editemail = React.createClass({
                     <label>New Name
                     <input type="text" value={this.state.email} onChange={this.handleChange} />
                     </label>
-                    <input type="submit" value="Submit" />
+                    <button><Link to="/setting" style={{display: 'block', height: '100%'}}>Update</Link></button>
                 </form>
                </div>
                <button id="back"><Link to="/setting" style={{display: 'block', height: '100%'}}/></button>

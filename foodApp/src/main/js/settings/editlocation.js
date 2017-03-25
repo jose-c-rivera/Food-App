@@ -26,7 +26,7 @@ let Editlocation = React.createClass({
           e.preventDefault();
           alert('Your location has been updated: ' + this.state.location);
           let userName = accountStore.getUser();
-          let newLocation = this.state.location
+          let newLocation = this.state.location;
           fetch('http://localhost:8080/manageAccount/updateLocation?' + 'userName=' + userName + '&newLocation='
               + newLocation, {
               method: 'POST',

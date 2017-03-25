@@ -833,47 +833,6 @@ module.exports = ReactDOMComponentTree;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-
-/**
- * Simple, lightweight module assisting with the detection and context of
- * Worker. Helps avoid circular dependencies and allows code to reason about
- * whether or not they are in a Worker, even if they never include the main
- * `ReactWorker` dependency.
- */
-var ExecutionEnvironment = {
-
-  canUseDOM: canUseDOM,
-
-  canUseWorkers: typeof Worker !== 'undefined',
-
-  canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
-
-  canUseViewport: canUseDOM && !!window.screen,
-
-  isInWorker: !canUseDOM // For now, this is true - might change in the future.
-
-};
-
-module.exports = ExecutionEnvironment;
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -937,6 +896,47 @@ var accountStore = new AccountStore();
 window.accountStore = accountStore;
 
 exports.default = accountStore;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+
+
+var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+/**
+ * Simple, lightweight module assisting with the detection and context of
+ * Worker. Helps avoid circular dependencies and allows code to reason about
+ * whether or not they are in a Worker, even if they never include the main
+ * `ReactWorker` dependency.
+ */
+var ExecutionEnvironment = {
+
+  canUseDOM: canUseDOM,
+
+  canUseWorkers: typeof Worker !== 'undefined',
+
+  canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
+
+  canUseViewport: canUseDOM && !!window.screen,
+
+  isInWorker: !canUseDOM // For now, this is true - might change in the future.
+
+};
+
+module.exports = ExecutionEnvironment;
 
 /***/ }),
 /* 10 */
@@ -6929,7 +6929,7 @@ module.exports = escapeTextContentForBrowser;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var DOMNamespaces = __webpack_require__(54);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
@@ -8671,7 +8671,7 @@ module.exports = getEventTarget;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var useHasFeature;
 if (ExecutionEnvironment.canUseDOM) {
@@ -12178,7 +12178,7 @@ module.exports = getHostComponentFromComposite;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var contentKey = null;
 
@@ -12406,7 +12406,7 @@ module.exports = isTextInputElement;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var escapeTextContentForBrowser = __webpack_require__(46);
 var setInnerHTML = __webpack_require__(47);
 
@@ -13700,7 +13700,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _navbar = __webpack_require__(22);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -14182,7 +14182,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -14671,7 +14671,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -15160,7 +15160,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _navbar = __webpack_require__(22);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -15641,7 +15641,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -16128,7 +16128,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -16611,7 +16611,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -16843,7 +16843,7 @@ var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -17203,7 +17203,7 @@ var _reactRouter = __webpack_require__(4);
 
 var _navbar = __webpack_require__(22);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -17321,7 +17321,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -17548,14 +17548,7 @@ var FindRestaurant = _react2.default.createClass({
                         }),
                         _react2.default.createElement('br', null),
                         _react2.default.createElement('br', null)
-                    ),
-                    _react2.default.createElement('input', { type: 'submit',
-                        value: 'Next Step!' })
-                ),
-                _react2.default.createElement(
-                    'button',
-                    null,
-                    'DELETE EVENT'
+                    )
                 )
             )
         );
@@ -17658,12 +17651,7 @@ var GroupVote = _react2.default.createClass({
                     ),
                     _react2.default.createElement('br', null),
                     _react2.default.createElement('br', null),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement(
-                        'button',
-                        null,
-                        'PICK FOR ME'
-                    )
+                    _react2.default.createElement('br', null)
                 )
             )
         );
@@ -17814,7 +17802,7 @@ var _reactRouter = __webpack_require__(4);
 
 var _navbar = __webpack_require__(22);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -18326,6 +18314,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
+var _accountStore = __webpack_require__(8);
+
+var _accountStore2 = _interopRequireDefault(_accountStore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18356,7 +18348,12 @@ var Editemail = _react2.default.createClass({
     },
     handleSubmit: function handleSubmit(e) {
         alert('Your email has been updated: ' + this.state.email);
-        e.preventDefault();
+        var userName = _accountStore2.default.getUser();
+        var newEmail = this.state.email;
+        fetch('http://localhost:8080/manageAccount/updateEmail?' + 'userName=' + userName + '&newEmail=' + newEmail, {
+            method: 'POST',
+            headers: {}
+        });
     },
     render: function render() {
         return _react2.default.createElement(
@@ -18379,7 +18376,15 @@ var Editemail = _react2.default.createClass({
                         'New Name',
                         _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleChange })
                     ),
-                    _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+                    _react2.default.createElement(
+                        'button',
+                        null,
+                        _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/setting', style: { display: 'block', height: '100%' } },
+                            'Update'
+                        )
+                    )
                 )
             ),
             _react2.default.createElement(
@@ -18430,7 +18435,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -18544,6 +18549,10 @@ var _react = __webpack_require__(1);
 var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
+
+var _accountStore = __webpack_require__(8);
+
+var _accountStore2 = _interopRequireDefault(_accountStore);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18753,7 +18762,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -19202,7 +19211,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(4);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -19273,11 +19282,6 @@ var SignIn = _react2.default.createClass({
                 'h1',
                 { id: 'title_header' },
                 'TRAVEL BITES'
-            ),
-            _react2.default.createElement(
-                _reactRouter.Link,
-                { to: '/menu', style: { display: 'block', height: '100%' } },
-                'TEMP SIGN IN'
             ),
             _react2.default.createElement(
                 'div',
@@ -19384,7 +19388,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _accountStore = __webpack_require__(9);
+var _accountStore = __webpack_require__(8);
 
 var _accountStore2 = _interopRequireDefault(_accountStore);
 
@@ -20414,7 +20418,7 @@ module.exports = createArrayFromMixed;
 
 /*eslint-disable fb-www/unsafe-html*/
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var createArrayFromMixed = __webpack_require__(152);
 var getMarkupWrap = __webpack_require__(154);
@@ -20503,7 +20507,7 @@ module.exports = createNodesFromMarkup;
 
 /*eslint-disable fb-www/unsafe-html */
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var invariant = __webpack_require__(2);
 
@@ -20822,7 +20826,7 @@ module.exports = memoizeStringOnly;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var performance;
 
@@ -21913,7 +21917,7 @@ module.exports = AutoFocusUtils;
 
 
 var EventPropagators = __webpack_require__(34);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var FallbackCompositionState = __webpack_require__(179);
 var SyntheticCompositionEvent = __webpack_require__(222);
 var SyntheticInputEvent = __webpack_require__(225);
@@ -22303,7 +22307,7 @@ module.exports = BeforeInputEventPlugin;
 
 
 var CSSProperty = __webpack_require__(83);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var ReactInstrumentation = __webpack_require__(12);
 
 var camelizeStyleName = __webpack_require__(150);
@@ -22519,7 +22523,7 @@ module.exports = CSSPropertyOperations;
 
 var EventPluginHub = __webpack_require__(33);
 var EventPropagators = __webpack_require__(34);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactUpdates = __webpack_require__(14);
 var SyntheticEvent = __webpack_require__(17);
@@ -22846,7 +22850,7 @@ module.exports = ChangeEventPlugin;
 var _prodInvariant = __webpack_require__(5);
 
 var DOMLazyTree = __webpack_require__(27);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var createNodesFromMarkup = __webpack_require__(153);
 var emptyFunction = __webpack_require__(13);
@@ -24504,7 +24508,7 @@ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVT
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ExecutionEnvironment = __webpack_require__(8);
+  var ExecutionEnvironment = __webpack_require__(9);
   if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 
     // First check if devtools is not installed
@@ -26305,7 +26309,7 @@ module.exports = ReactDOMOption;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var getNodeForCharacterOffset = __webpack_require__(238);
 var getTextContentAccessor = __webpack_require__(99);
@@ -27122,7 +27126,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 var ReactInvalidSetStateWarningHook = __webpack_require__(207);
 var ReactHostOperationHistoryHook = __webpack_require__(205);
 var ReactComponentTreeHook = __webpack_require__(11);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var performanceNow = __webpack_require__(162);
 var warning = __webpack_require__(3);
@@ -27715,7 +27719,7 @@ module.exports = ReactEventEmitterMixin;
 var _assign = __webpack_require__(6);
 
 var EventListener = __webpack_require__(77);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var PooledClass = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactUpdates = __webpack_require__(14);
@@ -29481,7 +29485,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 var EventPropagators = __webpack_require__(34);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInputSelection = __webpack_require__(91);
 var SyntheticEvent = __webpack_require__(17);
@@ -31037,7 +31041,7 @@ module.exports = getNodeForCharacterOffset;
 
 
 
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 
 /**
  * Generate a mapping of standard vendor prefixes using the defined style property and event name.
