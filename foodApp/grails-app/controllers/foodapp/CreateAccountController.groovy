@@ -1,5 +1,4 @@
 package foodapp
-
 import grails.rest.RestfulController
 
 
@@ -34,6 +33,4 @@ class CreateAccountController extends RestfulController {
             response.status = 422
         }
     }
-
-
 }

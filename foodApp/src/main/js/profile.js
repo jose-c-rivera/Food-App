@@ -16,13 +16,13 @@ let Profile = React.createClass({
         let userName = accountStore.getUser();
 
         fetch('http://localhost:8080/viewAccount/view?' + 'userName=' + userName, {
-                method: 'GET',
-                dataType: 'json',
-                headers: {
-                    "accept": "application/json",
-                    "Content-Type": "application/json"
-                }
-            }).then((response) => {
+            method: 'GET',
+            dataType: 'json',
+            headers: {
+                "accept": "application/json",
+                "Content-Type": "application/json"
+            }
+        }).then((response) => {
             return response.json();
         }).then((responseData) => {
             console.log(responseData.result.phoneNumber);
@@ -51,12 +51,14 @@ let Profile = React.createClass({
                 < NavBar />
                 <h1 id="discover_header">PROFILE</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
-                <h1>{this.state.userName}</h1>
-                <p>username: {this.state.userName}</p>
-                <p>location: {this.state.location}</p>
-                <p>email: {this.state.email}</p>
-                <p>phone: {this.state.phoneNumber}</p>
-                <p>tastes: {this.state.tastes}</p>
+                <div id="profile_info">
+                    <h1>{this.state.userName}</h1>
+                    <p><b>Username:</b> {this.state.userName}</p>
+                    <p><b>Location:</b> {this.state.location}</p>
+                    <p><b>Email:</b> {this.state.email}</p>
+                    <p><b>Phone:</b> {this.state.phoneNumber}</p>
+                    <p><b>Tastes:</b> {this.state.tastes}</p>
+                </div>
             </div>
         )
     }

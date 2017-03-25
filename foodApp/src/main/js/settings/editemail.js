@@ -6,6 +6,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import accountStore from '../stores/accountStore'
 
 let Editemail = React.createClass({
 
@@ -21,8 +22,16 @@ let Editemail = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your email has been updated: ' + this.state.email);
-        e.preventDefault();
+          e.preventDefault();
+          alert('Your email has been updated: ' + this.state.email);
+          let userName = accountStore.getUser();
+          let newEmail = this.state.email
+          fetch('http://localhost:8080/manageAccount/updateEmail?' + 'userName=' + userName + '&newEmail='
+              + newEmail, {
+              method: 'POST',
+              headers: {}
+          });
+
       },
 
    render(){

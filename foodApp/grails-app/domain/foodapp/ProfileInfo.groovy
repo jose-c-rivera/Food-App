@@ -2,6 +2,8 @@ package foodapp
 
 class ProfileInfo {
 
+    String firstName
+    String lastName
     String email
     String phoneNumber
     String location

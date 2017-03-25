@@ -15,6 +15,8 @@ var Profile = React.createClass({
     getInitialState(){
         return{
             email: '',
+            firstName: '',
+            lastName: '',
             phoneNum: '',
             location: '',
             value: [],
@@ -27,6 +29,16 @@ var Profile = React.createClass({
                 { value: 'vegan', label: 'Vegan' },
                 { value: 'sweet', label: 'Sweet' }]
         }
+    },
+
+    handleFirstNameChange(e){
+        e.preventDefault();
+        this.setState({firstName: e.target.value});
+    },
+
+    handleLastNameChange(e){
+        e.preventDefault();
+        this.setState({lastName: e.target.value});
     },
 
     handleEmailChange(e){
@@ -47,12 +59,14 @@ var Profile = React.createClass({
     handleSubmit(e){
         e.preventDefault();
         let name = AccountStore.getUser();
+        let firstName = this.state.firstName;
+        let lastName = this.state.lastName;
         let email = this.state.email;
         let location = this.state.location;
         let phoneNum = this.state.phoneNum;
         let tastes = this.state.value;
-        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email=' + email +
-            '&location=' + location + '&phoneNumber=' + phoneNum + '&value=' + tastes, {
+        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&firstName=' + firstName + '&lastName=' +
+            lastName + '&email=' + email + '&location=' + location + '&phoneNumber=' + phoneNum + '&value=' + tastes, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "json"}
@@ -79,6 +93,20 @@ var Profile = React.createClass({
             <div className="profilesetup">
                 <form onSubmit={this.handleSubmit}>
                     <strong><b> Thank you for signing up! You're almost done...</b></strong><br/>
+                    <label>First Name</label>
+                    <div>
+                        <input type = "text"
+                               placeholder="First Name"
+                               ref="firstName"
+                               onChange = { this.handleFirstNameChange } />
+                    </div>
+                    <label>Last Name</label>
+                    <div>
+                        <input type = "text"
+                               placeholder="Last Name"
+                               ref="lastName"
+                               onChange = { this.handleLastNameChange } />
+                    </div>
                     <label>Email</label>
                     <div>
                         <input type = "text"

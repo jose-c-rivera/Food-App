@@ -6,6 +6,7 @@
  */
 import React from 'react'
 import {Link} from 'react-router'
+import accountStore from '../stores/accountStore'
 
 let Editname = React.createClass({
 
@@ -21,15 +22,23 @@ let Editname = React.createClass({
       },
 
       handleSubmit(e) {
-        alert('Your username has been set: ' + this.state.userName);
-        e.preventDefault();
+          e.preventDefault();
+          alert('Your username has been set: ' + this.state.userName);
+          // let userName = accountStore.getUser();
+          // let newUserName = this.state.userName
+          // fetch('http://localhost:8080/manageAccount/updateUserName?' + 'userName=' + userName + '&newUserName='
+          //     + newUserName, {
+          //     method: 'POST',
+          //     headers: {}
+          // });
+
       },
 
    render(){
            return(
            <div><h1 id="settings_header">EDIT NAME</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <label>New Name
+                    <label>New UserName
                     <input type="text" value={this.state.userName} onChange={this.handleChange} />
                     </label>
                     <input type="submit" value="Submit" />
