@@ -83,6 +83,16 @@ public class YelpAPI {
         return sendRequestAndGetResponse(request);
     }
 
+    public String searchPopularBusinesses(String term, String location) {
+        OAuthRequest request = createOAuthRequest(SEARCH_PATH);
+        request.addQuerystringParameter("term", term);
+        request.addQuerystringParameter("location", location);
+        request.addQuerystringParameter("limit", "6");
+        request.addQuerystringParameter("sort", "2");
+        request.addQuerystringParameter("cc", "CA");
+        return sendRequestAndGetResponse(request);
+    }
+
     /**
      * Creates and sends a request to the Business API by business ID.
      * <p>

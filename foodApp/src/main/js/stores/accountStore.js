@@ -7,6 +7,7 @@ class AccountStore extends EventEmitter {
     constructor(){
         super()
         this.userName = ''
+        this.location = ''
     }
     getUser(){
         return this.userName;
@@ -16,6 +17,15 @@ class AccountStore extends EventEmitter {
         this.userName = name;
         this.emit("change");
     }
+    getLocation(){
+    return this.location
+    }
+
+    changeLocation(location){
+    this.location = location;
+      this.emit("change")
+    }
+
 }
 
 let accountStore = new AccountStore;

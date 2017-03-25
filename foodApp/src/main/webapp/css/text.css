@@ -758,13 +758,24 @@ head {
     left: 40%;
     top: 25%;
 }
-
 #info{
     position: absolute;
     top: 25%;
     width: 600px;
     background-color: #2e6da4;
     word-wrap: break-word;
+}
+
+
+#trendingInfo{
+    position: absolute;
+    align: center;
+    top: 25%;
+    width: 750px;
+    background-color: #2e6da4;
+    word-wrap: break-word;
+    margin-left: 400px;
+    text-align: center;
 }
 
 #center{
@@ -778,4 +789,16 @@ head {
     float: left;
     border-right: 12px, solid, transparent; 
     width: 200px;
+}
+#trendingRest{
+    border-right: 12px, solid, transparent;
+    width: 130px;
+}
+#h4{
+    display: inline-block;
+    px: 20;
+    border: 3px, black;
+}
+#text-color{
+    text-color: #76C4E8
 }

@@ -8,6 +8,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 import ReactDOM from 'react-dom';
 import { NavBar } from '../navbar'
+import AccountStore from "../stores/accountStore"
 class Africa extends Component{
 
     constructor(props){
@@ -15,6 +16,7 @@ class Africa extends Component{
         this.handleRestaurantClick = this.handleRestaurantClick.bind(this);
         this.handleCountryClick = this.handleCountryClick.bind(this);
         this.state = {
+            location: [],
             name1: [],
             image1: [],
             ratingimg1: [],
@@ -58,8 +60,28 @@ class Africa extends Component{
     handleCountryClick() {
         this.setState({displayRestaurants: false});
     }
+
+
     fetchFromAPI(regionName) {
-        fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + 'Restaurant food ' + regionName + '&location=' + 'toronto')
+        let userName = accountStore.getUser();
+
+        fetch('http://localhost:8080/viewAccount/view?' + 'userName=' + userName, {
+                method: 'GET',
+                dataType: 'json',
+                headers: {
+                    "accept": "application/json",
+                    "Content-Type": "application/json"
+                }
+            }).then((response) => {
+            return response.json();
+        }).then((responseData) => {
+            this.setState({location: responseData.result.location});
+            accountStore.changeLocation(this.state.location)
+            console.log(this.state.location);
+
+        });
+
+        fetch('http://localhost:8080/Search/SearchRestaurants?' + '&searchTerm=' + 'Restaurant food ' + regionName + '&location=' + accountStore.getLocation())
             .then(response => {
                 if (response.ok) {
                     response.json().then(json => {

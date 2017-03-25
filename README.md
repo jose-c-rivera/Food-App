@@ -1,12 +1,3 @@
-*********************************************
-*					    *
-*	 __  __	    __	  __	    __	    *
-*	|   |__	 o  __|	  __|   |   __|	    *
-*	|__  __| o |__   |__    |  |__	    *
-*					    *
-*					    *
-*********************************************
-
 *UPDATES*
 1. Updated UML diagram can be found at https://fplan026.github.io/SoftwareDesign.html
 2. Updated project plan page can be found at https://fplan026.github.io/ProjectPlan.html
@@ -19,15 +10,14 @@ TEAM MEMBERS:
 
 * Ryan Kennedy................................devRyan
 * Fran Plancke................................devFran
-* Amy Wang....................................devAmy
 * Mike Davis..................................devMike
 * Yixin Li....................................devElaine
-* Scott Lavelle...............................devScott
 * Jose Carlos Rivera..........................devJose
 
 Executing The Application
 ------------------------------------------------------------------------------------------
 *Recommended to build and run in Linux*
+*Grails is a requirement to run*
 
 1. Open a terminal
 
@@ -40,11 +30,19 @@ Executing The Application
 5. Clone the project from github:
 	"git clone https://github.com/jose-c-rivera/jose-c-rivera.github.io.git"
 
-2. Change directories into jose-c-rivera.github.io and then foodApp, 
+6. Delete the build folder.
+
+7. Set Java Home path. 
+
+8. Install node.js 
+
+9. Add npm to path 
+
+10. Change directories into jose-c-rivera.github.io and then foodApp, 
 	"cd jose-c-rivera.github.io,
 	 cd foodapp"
 
-3. Run "grails run-app"
+11. Run "grails run-app"
 
 
 ORGANIZATION

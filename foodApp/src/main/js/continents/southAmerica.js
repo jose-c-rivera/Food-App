@@ -7,6 +7,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 import ReactDOM from 'react-dom';
+import AccountStore from "../stores/accountStore"
 
 class SouthAmerica extends Component{
 
@@ -58,7 +59,25 @@ class SouthAmerica extends Component{
         this.setState({displayRestaurants: false});
     }
     fetchFromAPI(regionName) {
-        fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + 'Restaurant food ' + regionName + '&location=' + 'toronto')
+        let userName = accountStore.getUser();
+
+        fetch('http://localhost:8080/viewAccount/view?' + 'userName=' + userName, {
+                method: 'GET',
+                dataType: 'json',
+                headers: {
+                    "accept": "application/json",
+                    "Content-Type": "application/json"
+                }
+            }).then((response) => {
+            return response.json();
+        }).then((responseData) => {
+            this.setState({location: responseData.result.location});
+            accountStore.changeLocation(this.state.location)
+            console.log(this.state.location);
+
+        });
+
+        fetch('http://localhost:8080/Search/SearchRestaurants?' + 'searchTerm=' + 'Restaurant food ' + regionName + '&location=' + accountStore.getLocation())
             .then(response => {
                 if (response.ok) {
                     response.json().then(json => {
@@ -182,6 +201,7 @@ class SouthAmerica extends Component{
                 <button id="back"><Link to="/discover" style={{display: 'block', height: '100%'}}></Link></button>
                 <h1 id="discover_header">/ SOUTH AMERICA</h1>
                 <div id="map" ref={display => this.display = display} style={{width: '1000px', height: '700px'}}/>
+                <li><Link to="/discover">DISCOVER</Link></li>
                 <div id="info"><p> Restaurants:</p><p> {this.state.name}</p></div>
                     {this.state.displayRestaurants ? (
                         <div id="info">

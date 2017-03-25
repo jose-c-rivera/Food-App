@@ -31,4 +31,21 @@ class SearchController extends RestfulController {
         render result //just prints the result so far
         response.status = 200
     }
+    def searchPopularRestaurants() {
+
+        /* Search term and location */
+        String term = params.searchTerm
+        String location = params.location
+
+        /* Authentication credentials for our app */
+        String c_key = "xemf3Y2VeAFbwwCWCR1xBA"
+        String c_secret = "3OIrLzmdfOEk45BLcyEZDOXDReg"
+        String token = "bSrUGKfPTmLhABYi15sjU47ZkEBE21Jh"
+        String token_secret = "pYF2IvuRcr0BQZLPbeD9bQJ5F8E"
+
+        YelpAPI yelp = new YelpAPI(c_key, c_secret, token, token_secret)
+        def result = yelp.searchPopularBusinesses(term, location)
+        render result //just prints the result so far
+        response.status = 200
+    }
 }
