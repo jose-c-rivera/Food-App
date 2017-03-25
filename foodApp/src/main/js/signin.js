@@ -59,27 +59,31 @@ let SignIn = React.createClass({
     render (){
         return (
             <div className="signin">
+                <h1 id="title_header">TRAVEL BITES</h1>
                 <Link to="/menu" style={{display: 'block', height: '100%'}}>TEMP SIGN IN</Link>
-
+                <div id="center_form">
+                    <h1>SIGN IN</h1>
+                    <hr/><br/>
                 <form onSubmit={this.handleSubmit}>
                     <label>Enter your username</label>
                     <div>
                         <input type="text"
                            placeholder="Username"
                            onChange={this.handleUserChange}/>
-                    </div>
+                    </div><br/><br/>
                     <label>Enter your password</label>
                     <div>
                     <input type="password"
                            placeholder="Password"
                            onChange={this.handlePasswordChange}/>
-                    </div>
+                    </div><br/><br/>
                     <input type="submit"
                            value="Sign In"/>
-                </form>
+                </form><br/>
                 <label>Don't have an account?
-                    <Link to="/createaccount" style={{display: 'block', height: '80%'}}>Create</Link>
+                    <Link to="/createaccount" style={{display: 'block', height: '80%'}}>Create One!</Link>
                 </label>
+                </div>
             </div>
         )
     }

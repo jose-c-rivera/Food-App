@@ -90,6 +90,9 @@ let CreateAcc = React.createClass({
        return (
 
             <div id="CreateAccount">
+                <div id="center_form">
+                    <h1>CREATE ACCOUNT</h1>
+                    <hr/><br/>
                 <form onSubmit={this.handleSubmit}>
                     <label>UserName</label>
                     <div>
@@ -97,29 +100,29 @@ let CreateAcc = React.createClass({
                                placeholder="Username"
                                ref="username"
                                onChange = {this.handleUserChange} />
-                    </div>
+                    </div><br/>
                     <label>Password</label>
                     <div>
                         <input type = "password"
                                placeholder="Password"
                                onChange = {this.handlePasswordChange} />
-                    </div>
+                    </div><br/>
                     <label>Confirm your password</label>
                     <div>
                         <input type = "password"
                                placeholder="Confirm Password"
                                onChange={this.handleConfirmChange} />
                         {this.state.invalidPassword ? <confirmPassword /> : null}
-                    </div>
+                    </div><br/>
                     <input type= "submit"
                     value="Create Account!" />
                     <input type = "checkbox"
                            checked = {this.state.checked}
                            onClick = {this.handleClick}/>
                     I agree to the terms of service
-                </form>
-
+                </form><br/>
                 <button><Link to="/" style={{display: 'block', height: '100%'}}>Sign In</Link></button>
+                </div>
 
             </div>
             )

@@ -1,24 +1,35 @@
 package foodapp
+
 import grails.rest.RestfulController
 
 class EventController extends RestfulController{
 
-    static responseFormats = ['json','xml']
+    static responseFormats = ['json']
 
     EventController() {
         super(Event)
     }
 
-    def newEvent = new Event(date:"Today",restaurant:"Chili's").save()
-    def newEvent2 = new Event(date:"Tomorrow",restaurant:"AppleBees").save()
-
+    def createEvent(){
+        def userName = params.userName
+        UserAccount account = UserAccount.find{userName == userName}
+        if(account != null){
+            account.profile.info.currentEvent.name = params.eventName
+            System.out.print("You changed your event name to: " + account.profile.info.currentEvent.name)
+            response.status = 200
+        }
+        else{
+            System.out.print('already there')
+            response.status = 422
+        }
+    }
 
     def getAllEvents(){
         respond Event.findAll()
     }
 
-    def deleteEvent(){
-        def temp = Event.get(1)
+    def deleteEvent(int id){
+        def temp = Event.get(id)
         temp.delete()
     }
 }

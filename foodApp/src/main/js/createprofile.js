@@ -15,6 +15,8 @@ var Profile = React.createClass({
     getInitialState(){
         return{
             email: '',
+            firstName: '',
+            lastName: '',
             phoneNum: '',
             location: '',
             value: [],
@@ -27,6 +29,17 @@ var Profile = React.createClass({
                 { value: 'vegan', label: 'Vegan' },
                 { value: 'sweet', label: 'Sweet' }]
         }
+    },
+
+    handleFirstNameChange(e){
+        e.preventDefault();
+        this.setState({firstName: e.target.value});
+    },
+
+
+    handleLastNameChange(e){
+        e.preventDefault();
+        this.setState({lastName: e.target.value});
     },
 
     handleEmailChange(e){
@@ -47,11 +60,13 @@ var Profile = React.createClass({
     handleSubmit(e){
         e.preventDefault();
         let name = AccountStore.getUser();
+        let firstName = this.state.firstName;
+        let lastName = this.state.lastName;
         let email = this.state.email;
         let location = this.state.location;
         let phoneNum = this.state.phoneNum;
         let tastes = this.state.value;
-        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&email=' + email +
+        fetch('http://localhost:8080/createProfile/create?userName=' + name + '&firstName=' + firstName + '&lastName=' + lastName + '&email=' + email +
             '&location=' + location + '&phoneNumber=' + phoneNum + '&value=' + tastes, {
                 method: 'POST',
                 headers: {
@@ -77,27 +92,44 @@ var Profile = React.createClass({
     render (){
         return (
             <div className="profilesetup">
+                <div id="center_form">
+                    <h1>PROFILE CREATION</h1>
+                    <hr/><br/>
                 <form onSubmit={this.handleSubmit}>
-                    <strong><b> Thank you for signing up! You're almost done...</b></strong><br/>
+                    <strong><b> Thank you for signing up! You're almost done...</b></strong><br/><br/>
+                    <label>First Name</label>
+                    <div>
+                        <input type = "text"
+                               placeholder="First Name"
+                               ref="firstName"
+                               onChange = { this.handleFirstNameChange } />
+                    </div><br/>
+                    <label>Last Name</label>
+                    <div>
+                        <input type = "text"
+                               placeholder="Last Name"
+                               ref="lastName"
+                               onChange = { this.handleLastNameChange } />
+                    </div><br/>
                     <label>Email</label>
                     <div>
                         <input type = "text"
                                placeholder="Email"
                                ref="email"
                                onChange = { this.handleEmailChange } />
-                    </div>
+                    </div><br/>
                     <label>Phone Number</label>
                     <div>
                         <input type = "text"
                                placeholder="Phone#"
                                onChange = {this.handlePhoneChange} />
-                    </div>
+                    </div><br/>
                     <label>Location</label>
                     <div>
                         <input type = "text"
                                placeholder="Location"
                                onChange={this.handleLocationChange} />
-                    </div>
+                    </div><br/>
                     <label>Select all flavors you enjoy!</label>
                     <Select
                         name="selectBox"
@@ -106,9 +138,11 @@ var Profile = React.createClass({
                         placeholder="Select your favourite(s)"
                         options={this.state.options}
                         onChange={this.handleSelectChange}/>
+                    <br/>
                     <input type= "submit"
-                           value="Finalize!" />
+                           value="Finalize" />
                 </form>
+                </div>
             </div>
         )
     }

@@ -1,9 +1,41 @@
 body {
-    background: url(http://www.salttechno.com/wp-content/uploads/2015/08/web-designer-pune-background.jpg) no-repeat;
+    background: url(http://www.shunvmall.com/data/out/244/46913747-wallpaper-orange.png) no-repeat;
 }
 
 head {
     background: url(http://www.shunvmall.com/data/out/244/46913747-wallpaper-orange.png) no-repeat;
+}
+
+#banner_front{
+    font-family: Calibri, sans-serif;
+    background: #76c4ea;
+    border-radius: 25px;
+    position: fixed;
+    width: 480px;
+    height: 60px;
+    top: 15%;
+    left: 3%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#center_form{
+    font-family: Calibri, sans-serif;
+    background: #76c4ea;
+    border-radius: 25px;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    margin-left: -50px;
 }
 
 #entry_form{
@@ -17,8 +49,9 @@ head {
 #profile_info{
     font-family: Calibri, sans-serif;
     background: #76c4ea;
+    border-radius: 25px;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 10%;
     border-width:15px;
     padding-left: 30px;
@@ -27,7 +60,54 @@ head {
     padding-bottom: 30px;
     margin-top: -50px;
     margin-left: -50px;
+}
 
+#upcoming_events{
+    font-family: Calibri, sans-serif;
+    background: #76c4ea;
+    border-radius: 25px;
+    position: fixed;
+    top: 75%;
+    left: 55%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#friends_list{
+    font-family: Calibri, sans-serif;
+    background: #567d87;
+    border-radius: 25px;
+    position: fixed;
+    top: 75%;
+    left: 10%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#fav_res{
+    font-family: Calibri, sans-serif;
+    background: #567d87;
+    border-radius: 25px;
+    position: fixed;
+    top: 30%;
+    left: 55%;
+    border-width:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    margin-left: -50px;
 }
 
 #Login{
@@ -58,12 +138,14 @@ head {
     outline: 0;
     padding: 0;
     border: none;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     background: url(../img/arrow_blue.png) no-repeat;
     background-size: contain;
     position:absolute;
     transition: .5s ease;
+    top: 5%;
+    left: 5%;
 }
 
 #back:hover {
@@ -85,10 +167,9 @@ head {
     background-size: 100%;
     position:fixed;
     transition: .5s ease;
-    top: 0;
-    right: 0;
+    top: 3%;
+    right: 3%;
 }
-
 #nav_list {
     outline:0;
     padding: 0;
@@ -108,10 +189,12 @@ head {
     border: none;
     height: 580px;
     width: 570px;
-    max-width: 98%;
     background: url(../img/Discover_button.png) no-repeat;
     background-size: 100%;
+    position:absolute;
 	transition: .5s ease;
+	top: 31%;
+	left: 3%;
 }
 
 #Discover_button:hover {
@@ -130,10 +213,12 @@ head {
     border: none;
     height: 580px;
     width: 570px;
-    max-width: 98%;
     background: url(../img/Planner_button.png) no-repeat;
     background-size: 100%;
+    position:absolute;
     transition: .5s ease;
+    top: 31%;
+    left: 35%;
 }
 
 #Planner_button:hover {
@@ -147,13 +232,16 @@ head {
 
 #Trending_button {
     outline:0;
+    padding: 0;
     border: none;
+    height: 275px;
     width: 570px;
-    height: 270px;
-    max-width: 98%;
     background: url(../img/Trending_button.png) no-repeat;
     background-size: 100%;
+    position:absolute;
     transition: .5s ease;
+    top: 31%;
+    left: 67%;
 }
 
 #Trending_button:hover {
@@ -171,10 +259,12 @@ head {
     border: none;
     height: 280px;
     width: 270px;
-    max-width: 98%;
     background: url(../img/Profile_button.png) no-repeat;
     background-size: 100%;
+    position:absolute;
     transition: .5s ease;
+    top: 63%;
+    left: 67%;
 }
 
 #Profile_button:hover {
@@ -192,10 +282,12 @@ head {
     border: none;
     height: 280px;
     width: 270px;
-    max-width: 98%;
     background: url(../img/Settings_button.png) no-repeat;
     background-size: 100%;
+    position:absolute;
     transition: .5s ease;
+    top: 63%;
+    left: 83%;
 }
 
 #Settings_button:hover {
@@ -206,7 +298,6 @@ head {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-
 /*------------------------------------------------------------CONTINENT SELECT BUTTONS-------------------------------------------------------------------------------------*/
 #nAmerica {
     outline:0;
@@ -214,9 +305,13 @@ head {
     border: none;
     background: url(../img/north_america.png) no-repeat;
     background-size: contain;
+    display: block;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 25%;
+    left: 10%;
 }
 
 #nAmerica:hover {
@@ -236,7 +331,10 @@ head {
     background-size: contain;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 25%;
+    left: 40%;
 }
 
 #sAmerica:hover {
@@ -256,7 +354,10 @@ head {
     background-size: contain;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 25%;
+    left: 70%;
 }
 
 #Europe:hover {
@@ -276,7 +377,10 @@ head {
     background-size: contain;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 60%;
+    left: 10%;
 }
 
 #AsiaME:hover {
@@ -296,7 +400,10 @@ head {
     background-size: contain;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 60%;
+    left: 40%;
 }
 
 #Africa:hover {
@@ -316,7 +423,10 @@ head {
     background-size: contain;
     height: 280px;
     width: 270px;
+    position:absolute;
     transition: .5s ease;
+    top: 60%;
+    left: 70%;
 }
 
 #Australia:hover {
@@ -337,8 +447,10 @@ head {
     background-size: contain;
     height: 500px;
     width: 450px;
-    max-width: 98%;
+    position:absolute;
     transition: .5s ease;
+    top: 31%;
+    left: 5%;
 }
 
 #addFriends:hover {
@@ -358,8 +470,10 @@ head {
     background-size: contain;
     height: 500px;
     width: 450px;
-    max-width: 98%;
+    position:absolute;
     transition: .5s ease;
+    top: 31%;
+    left: 37%;
 }
 
 #findRestaurants:hover {
@@ -379,8 +493,10 @@ head {
     background-size: contain;
     height: 500px;
     width: 450px;
-    max-width: 98%;
+    position:absolute;
     transition: .5s ease;
+    top: 31%;
+    left: 70%;
 }
 
 #vote:hover {
@@ -395,6 +511,16 @@ head {
 
 
 /*-------------------------------------------------SETTINGS BUTTONS---------------------------------------------*/
+#title_header{
+    font-family: Calibri, sans-serif;
+    color: #76c4ea;
+    text-shadow: 5px 5px #245b87;
+    font-size: 150px;
+    position: absolute;
+    top: -7%;
+    left: 20%;
+}
+
 #discover_header{
     font-family: Calibri, sans-serif;
     color: #76c4ea;
@@ -409,8 +535,10 @@ head {
     font-family: Calibri, sans-serif;
     color: #76c4ea;
     text-shadow: 5px 5px #245b87;
-    font-size: 90px;
-    text-align:center;
+    font-size: 150px;
+    position: absolute;
+    top: -7%;
+    left: 20%;
 }
 
 #name {
@@ -650,66 +778,4 @@ head {
     float: left;
     border-right: 12px, solid, transparent; 
     width: 200px;
-}
-
-#container {
-    width: 100%;
-    overflow: hidden;
-}
-
-#childDiv {
-    width: 33.3%;
-    float: left;
-    text-align:center;
-}
-
-#childDiv2 {
-    width: 50%;
-    float: left;
-    text-align:center;
-}
-
-#childDivTop {
-    width: 100%;
-    float: top;
-    margin-right: auto;
-    margin-left: auto;
-    vertical-align: middle;
-}
-
-#topBar {
-    top: 0%;
-    height: 5%;
-
-}
-
-#index {
-    position: absolute;
-    top: 30%;
-    height: 100%;
-    padding: 20px;
-    text-align:left;
-}
-
-#childDiv3 {
-    width: 33.3%;
-    max-width: 33%;
-    float: left;
-    text-align:center;
-}
-
-#containermenu {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-}
-
-#mapcontainer {
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-
-#box {
-    width: 100px;
 }

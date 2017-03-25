@@ -21,24 +21,17 @@ let Discover = React.createClass({
      */
     render(){
         return(
-            <div id="container">
-            <div id="topBar">
+            <div>
+                < NavBar />
+                <h1 id="discover_header">DISCOVER</h1>
                 <button id="back"><Link to="/menu" style={{display: 'block', height: '100%'}}/></button>
-                <h1 id="settings_header"> Discover Page</h1>
-                </div>
-                <div id="childDiv">
                 <button id="nAmerica"><Link to="/NorthAmerica" style={{display: 'block', height: '100%'}}/></button>
                 <button id="sAmerica"><Link to="/SouthAmerica" style={{display: 'block', height: '100%'}}/></button>
-                </div>
-                <div id="childDiv">
                 <button id="Europe"><Link to="/Europe" style={{display: 'block', height: '100%'}}/></button>
                 <button id="AsiaME"><Link to="/Asia" style={{display: 'block', height: '100%'}}/></button>
-                </div>
-                <div id="childDiv">
                 <button id="Africa"><Link to="/Africa" style={{display: 'block', height: '100%'}}/></button>
                 <button id="Australia"><Link to="/Australia" style={{display: 'block', height: '100%'}}/></button>
-                </div>
-                </div>
+            </div>
         )
     },
 });

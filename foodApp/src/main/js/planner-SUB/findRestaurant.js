@@ -10,11 +10,28 @@ let FindRestaurant = React.createClass({
         return{}
     },
 
+
     render(){
         return(
             <div>
-                <h1 id="discover_header">(RESTAURANT)</h1>
+                <h1 id="discover_header">RESTAURANT</h1>
                 <button id="back"><Link to="/planner" style={{display: 'block', height: '100%'}}/></button>
+
+                <div id="center_form">
+                    <form >
+                        <strong><b>Now its time to find a restaurant!</b></strong><br/><br/><br/>
+                        <label>Search</label>
+                        <div>
+                            <input type = "text"
+                                   placeholder="Event name"
+                            /><br/><br/>
+                        </div>
+                        <input type= "submit"
+                               value="Next Step!" />
+                    </form>
+
+                    <button>DELETE EVENT</button>
+                </div>
             </div>
         )
     },
